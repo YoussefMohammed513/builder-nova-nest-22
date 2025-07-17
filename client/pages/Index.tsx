@@ -607,7 +607,7 @@ export default function Index() {
                 suffix: "+",
                 label: "عميل راضٍ",
                 icon: "👥",
-                description: "في جميع أنحاء المنطقة",
+                description: "في جمي�� أنحاء المنطقة",
                 color: "from-green-400 to-green-600",
               },
               {
@@ -729,7 +729,7 @@ export default function Index() {
             />
             <h2 className="heading-secondary mb-6">من نحن</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
-              قصة نجاح بدأت برؤية واضحة لتقديم أفضل الحلول الإبداعية في المنطقة
+              قصة نجاح بدأت ��رؤية واضحة لتقديم أفضل الحلول الإبداعية في المنطقة
             </p>
           </motion.div>
 
@@ -1377,7 +1377,7 @@ export default function Index() {
                 social: ["linkedin", "twitter", "instagram"],
                 color: "from-blue-500 to-[rgb(var(--brand-primary))]",
                 specialties: ["القيادة", "الإدارة", "الاستراتيجية"],
-                quote: "نؤمن بقوة الإبداع في تحويل الأحلام إلى واقع",
+                quote: "نؤمن بقوة الإبداع في تحويل الأحلام إلى و��قع",
               },
               {
                 name: "عبدالاله النهاري",
@@ -1466,7 +1466,7 @@ export default function Index() {
                           whileHover={{ scale: 1.2, rotate: 360 }}
                           className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-xs border border-white/30"
                         >
-                          🔗
+                          ���
                         </motion.button>
                       ))}
                     </div>
@@ -1535,9 +1535,765 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Continue with remaining sections... Due to length constraints, I'll provide the complete enhanced version */}
+      {/* Enhanced Testimonials Section */}
+      <section
+        id="testimonials"
+        className="section-padding relative overflow-hidden"
+      >
+        <AnimatedBackground />
+        <div className="container-padding relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="inline-block p-3 bg-[rgb(var(--brand-primary))]/10 rounded-full mb-6"
+            >
+              <span className="text-4xl">💬</span>
+            </motion.div>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: "100px" }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="h-1 bg-gradient-brand mx-auto mb-6"
+            />
+            <h2 className="heading-secondary mb-6">آراء عملائنا الكرام</h2>
+            <p className="text-xl max-w-3xl mx-auto text-pretty">
+              شهادات حقيقية من عملائنا الذين حققوا النجاح معنا وشاهدوا نمو
+              أعمالهم
+            </p>
+          </motion.div>
 
-      {/* Rest of the component continues with enhanced testimonials, contact, and footer sections... */}
+          <motion.div
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="grid-professional grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+          >
+            {[
+              {
+                name: "أحمد محمد الأسود",
+                company: "مطعم البركة",
+                role: "المدير العام",
+                content:
+                  "تعامل راقي ومهني، حققوا لنا زيادة في المبيعات بنسبة 150% خلال 6 أشهر. فريق محترف وإبداعي حقاً.",
+                rating: 5,
+                image:
+                  "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                date: "منذ شهرين",
+                project: "تصميم هوية بصرية شاملة",
+              },
+              {
+                name: "فاطمة عبدالله السالم",
+                company: "عيادة النور الطبية",
+                role: "مديرة العيادة",
+                content:
+                  "خدمة استثنائية! ساعدونا في بناء ثقة المرضى من خلال التصميم المتميز وإدارة الحسابات الاجتماعية بشكل احترافي.",
+                rating: 5,
+                image:
+                  "https://images.unsplash.com/photo-1494790108755-2616c999db1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                date: "منذ 3 أشهر",
+                project: "هوية طبية + إدارة سوشيال ميديا",
+              },
+              {
+                name: "خالد يوسف النجار",
+                company: "شركة التميز للتجارة",
+                role: "المدير التنفيذي",
+                content:
+                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعاتنا الأونلاين بشكل كبير. شكراً لفريق خطوة المبدع.",
+                rating: 5,
+                image:
+                  "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                date: "منذ شهر",
+                project: "تطوير موقع إلكتروني متكامل",
+              },
+              {
+                name: "سارة أحمد الحداد",
+                company: "معهد الإبداع التعليمي",
+                role: "مؤسسة المعهد",
+                content:
+                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في جذب الطلاب الجدد وبناء سمعة قوية في السوق التعليمي.",
+                rating: 5,
+                image:
+                  "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                date: "منذ 4 أشهر",
+                project: "حملة تسويقية شاملة",
+              },
+              {
+                name: "محمد علي الشامي",
+                company: "مؤسسة الشامي التجارية",
+                role: "صاحب المؤسسة",
+                content:
+                  "فريق متفهم لاحتياجاتنا، سرعة في التنفيذ وجودة عالية في العمل. نوصي بهم بشدة لكل من يريد التميز.",
+                rating: 5,
+                image:
+                  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                date: "منذ شهرين",
+                project: "تصميم هوية + مطبوعات",
+              },
+              {
+                name: "ليلى محمد القاسم",
+                company: "صالون الأناقة",
+                role: "مالكة الصالون",
+                content:
+                  "تحسن كبير في حضورنا الرقمي! زبائن جدد كل يوم بفضل الحملات الإعلانية المدروسة والمحتوى الجذاب.",
+                rating: 5,
+                image:
+                  "https://images.unsplash.com/photo-1502323777036-f29e3972d82f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                date: "منذ 5 أشهر",
+                project: "إدارة سوشيال ميديا + إعلانات",
+              },
+            ].map((testimonial, index) => (
+              <motion.div
+                key={index}
+                variants={scaleIn}
+                whileHover={{ y: -10, scale: 1.02 }}
+                className="card rounded-professional-xl p-6 hover:shadow-professional-lg transition-all duration-500 relative overflow-hidden group"
+              >
+                <motion.div className="absolute inset-0 bg-gradient-to-br from-[rgb(var(--brand-primary))]/5 to-[rgb(var(--brand-secondary))]/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
+                <div className="relative z-10">
+                  {/* Stars Rating */}
+                  <div className="flex gap-1 mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <motion.span
+                        key={i}
+                        initial={{ opacity: 0, scale: 0 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: i * 0.1, duration: 0.3 }}
+                        className="text-yellow-400 text-lg"
+                      >
+                        ⭐
+                      </motion.span>
+                    ))}
+                  </div>
+
+                  {/* Quote */}
+                  <div className="mb-6">
+                    <p className="text-lg leading-relaxed text-pretty italic">
+                      "{testimonial.content}"
+                    </p>
+                  </div>
+
+                  {/* Client Info */}
+                  <div className="flex items-start gap-4">
+                    <motion.img
+                      whileHover={{ scale: 1.1 }}
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      className="w-12 h-12 rounded-full object-cover border-2 border-[rgb(var(--brand-primary))]/20"
+                      loading="lazy"
+                    />
+                    <div className="flex-1">
+                      <h4 className="font-semibold text-lg mb-1">
+                        {testimonial.name}
+                      </h4>
+                      <p className="text-[rgb(var(--brand-primary))] font-medium text-sm mb-1">
+                        {testimonial.role}
+                      </p>
+                      <p className="text-sm opacity-70 mb-2">
+                        {testimonial.company}
+                      </p>
+                      <div className="flex items-center justify-between text-xs opacity-60">
+                        <span>{testimonial.date}</span>
+                        <span className="bg-[rgb(var(--brand-primary))]/10 px-2 py-1 rounded-full">
+                          {testimonial.project}
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Quote Icon */}
+                <div className="absolute top-4 left-4 text-[rgb(var(--brand-primary))]/20 text-4xl font-bold">
+                  "
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+
+          {/* Testimonials Stats */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mt-16 text-center"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+              {[
+                { number: "98%", label: "معدل رضا العملاء", icon: "😊" },
+                { number: "500+", label: "عميل راضٍ", icon: "👥" },
+                { number: "4.9/5", label: "متوسط التقييم", icon: "⭐" },
+                { number: "24/7", label: "دعم فني مستمر", icon: "🔧" },
+              ].map((stat, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: index * 0.1, duration: 0.5 }}
+                  viewport={{ once: true }}
+                  className="text-center"
+                >
+                  <div className="text-3xl mb-2">{stat.icon}</div>
+                  <div className="text-2xl font-bold text-[rgb(var(--brand-primary))] mb-1">
+                    {stat.number}
+                  </div>
+                  <div className="text-sm opacity-70">{stat.label}</div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Enhanced Contact Section */}
+      <section
+        id="contact"
+        className="section-padding bg-gradient-brand relative overflow-hidden"
+      >
+        <div className="absolute inset-0 opacity-10">
+          <div
+            className={
+              'absolute inset-0 bg-[url(\'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cg fill-opacity="0.1"%3E%3Cpolygon fill="%23fff" points="50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40"/%3E%3C/g%3E%3C/svg%3E\')] bg-center'
+            }
+          ></div>
+        </div>
+
+        <div className="container-padding relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="inline-block p-3 bg-white/20 rounded-full mb-6"
+            >
+              <span className="text-4xl">📞</span>
+            </motion.div>
+            <h2 className="heading-secondary text-white mb-6">
+              تواصل معنا الآن
+            </h2>
+            <p className="text-xl text-white/90 max-w-3xl mx-auto text-pretty">
+              جاهزون لتحويل أفكارك إلى واقع مبهر. تواصل معنا اليوم واحصل على
+              استشارة مجانية
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            {/* Contact Form */}
+            <motion.div
+              variants={slideFromLeft}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              className="glass rounded-professional-xl p-8 border border-white/20"
+            >
+              <h3 className="text-2xl font-bold text-white mb-6">
+                احجز استشارتك المجانية
+              </h3>
+
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <motion.div
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.1 }}
+                    className="space-y-2"
+                  >
+                    <label className="block text-white text-sm font-medium">
+                      الاسم الكامل
+                    </label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-white/40 transition-colors backdrop-blur-sm"
+                      placeholder="أدخل اسمك الكامل"
+                    />
+                  </motion.div>
+
+                  <motion.div
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: 0.2 }}
+                    className="space-y-2"
+                  >
+                    <label className="block text-white text-sm font-medium">
+                      رقم الهاتف
+                    </label>
+                    <input
+                      type="tel"
+                      className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-white/40 transition-colors backdrop-blur-sm"
+                      placeholder="+967 XX XXX XXXX"
+                    />
+                  </motion.div>
+                </div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 }}
+                  className="space-y-2"
+                >
+                  <label className="block text-white text-sm font-medium">
+                    البريد الإلكتروني
+                  </label>
+                  <input
+                    type="email"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-white/40 transition-colors backdrop-blur-sm"
+                    placeholder="example@domain.com"
+                  />
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                  className="space-y-2"
+                >
+                  <label className="block text-white text-sm font-medium">
+                    نوع الخدمة المطلوبة
+                  </label>
+                  <select className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:border-white/40 transition-colors backdrop-blur-sm">
+                    <option value="" className="bg-gray-800">
+                      اختر نوع الخدمة
+                    </option>
+                    <option value="branding" className="bg-gray-800">
+                      تصميم الهوية البصرية
+                    </option>
+                    <option value="social" className="bg-gray-800">
+                      إدارة وسائل التواصل
+                    </option>
+                    <option value="printing" className="bg-gray-800">
+                      التصميم والطباعة
+                    </option>
+                    <option value="ads" className="bg-gray-800">
+                      الإعلانات الممولة
+                    </option>
+                    <option value="video" className="bg-gray-800">
+                      إنتاج المحتوى المرئي
+                    </option>
+                    <option value="web" className="bg-gray-800">
+                      تطوير المواقع
+                    </option>
+                  </select>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.5 }}
+                  className="space-y-2"
+                >
+                  <label className="block text-white text-sm font-medium">
+                    تفاصيل المشروع
+                  </label>
+                  <textarea
+                    rows="4"
+                    className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-white/40 transition-colors backdrop-blur-sm resize-none"
+                    placeholder="اكتب تفاصيل مشروعك وما تريد تحقيقه..."
+                  ></textarea>
+                </motion.div>
+
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full py-4 bg-white text-[rgb(var(--brand-primary))] rounded-lg font-bold text-lg hover:bg-white/90 transition-colors relative overflow-hidden group"
+                >
+                  <motion.div className="absolute inset-0 bg-gradient-to-r from-[rgb(var(--brand-primary))] to-[rgb(var(--brand-secondary))] opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+                  <span className="relative z-10 flex items-center justify-center gap-2">
+                    🚀 إرسال الطلب
+                  </span>
+                </motion.button>
+              </div>
+            </motion.div>
+
+            {/* Contact Info */}
+            <motion.div
+              variants={slideFromRight}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              className="space-y-8"
+            >
+              <div className="grid gap-6">
+                {[
+                  {
+                    icon: "📱",
+                    title: "رقم الهاتف",
+                    info: "+967-78-466-8027",
+                    description: "متاح 24/7 للرد على استفساراتك",
+                    color: "from-green-500 to-emerald-500",
+                  },
+                  {
+                    icon: "📧",
+                    title: "البريد الإلكتروني",
+                    info: "info@stepagency.com",
+                    description: "نرد خلال ساعة واحدة",
+                    color: "from-blue-500 to-cyan-500",
+                  },
+                  {
+                    icon: "📍",
+                    title: "العنوان",
+                    info: "صنعاء، اليمن",
+                    description: "نخدم العملاء في جميع أنحاء العالم العربي",
+                    color: "from-purple-500 to-violet-500",
+                  },
+                  {
+                    icon: "⏰",
+                    title: "ساعات العمل",
+                    info: "السبت - الخميس",
+                    description: "من 9 صباحاً إلى 6 مساءً",
+                    color: "from-orange-500 to-red-500",
+                  },
+                ].map((contact, index) => (
+                  <motion.div
+                    key={index}
+                    initial={{ opacity: 0, x: 50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1, duration: 0.6 }}
+                    viewport={{ once: true }}
+                    whileHover={{ scale: 1.02, x: 10 }}
+                    className="glass rounded-professional-lg p-6 border border-white/20 hover:border-white/40 transition-all duration-300 group relative overflow-hidden"
+                  >
+                    <motion.div
+                      className={`absolute inset-0 bg-gradient-to-r ${contact.color} opacity-0 group-hover:opacity-10 transition-opacity duration-300`}
+                    />
+                    <div className="relative z-10 flex items-start gap-4">
+                      <motion.div
+                        whileHover={{ scale: 1.2, rotate: 10 }}
+                        className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center text-2xl flex-shrink-0"
+                      >
+                        {contact.icon}
+                      </motion.div>
+                      <div>
+                        <h4 className="text-white font-semibold text-lg mb-1">
+                          {contact.title}
+                        </h4>
+                        <p className="text-white/90 font-medium mb-2">
+                          {contact.info}
+                        </p>
+                        <p className="text-white/70 text-sm">
+                          {contact.description}
+                        </p>
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
+
+              {/* Social Media */}
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.6 }}
+                viewport={{ once: true }}
+                className="glass rounded-professional-lg p-6 border border-white/20"
+              >
+                <h4 className="text-white font-bold text-lg mb-4">
+                  تابعنا على وسائل التواصل
+                </h4>
+                <div className="flex gap-4">
+                  {[
+                    {
+                      platform: "Facebook",
+                      icon: "📘",
+                      color: "from-blue-600 to-blue-700",
+                    },
+                    {
+                      platform: "Instagram",
+                      icon: "📸",
+                      color: "from-pink-500 to-purple-600",
+                    },
+                    {
+                      platform: "Twitter",
+                      icon: "🐦",
+                      color: "from-sky-400 to-sky-600",
+                    },
+                    {
+                      platform: "LinkedIn",
+                      icon: "💼",
+                      color: "from-blue-700 to-blue-800",
+                    },
+                    {
+                      platform: "WhatsApp",
+                      icon: "💬",
+                      color: "from-green-500 to-green-600",
+                    },
+                  ].map((social, index) => (
+                    <motion.button
+                      key={index}
+                      whileHover={{ scale: 1.1, rotate: 360 }}
+                      whileTap={{ scale: 0.9 }}
+                      className={`w-12 h-12 bg-gradient-to-br ${social.color} rounded-full flex items-center justify-center text-white text-xl hover:shadow-lg transition-all duration-300`}
+                    >
+                      {social.icon}
+                    </motion.button>
+                  ))}
+                </div>
+              </motion.div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* Enhanced Footer */}
+      <footer className="bg-[rgb(var(--surface-primary))] border-t border-[rgb(var(--outline-variant))] relative overflow-hidden">
+        <div className="absolute inset-0 opacity-5">
+          <div
+            className={
+              'absolute inset-0 bg-[url(\'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cg fill-opacity="0.1"%3E%3Cpolygon fill="%23000" points="50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40"/%3E%3C/g%3E%3C/svg%3E\')] bg-center'
+            }
+          ></div>
+        </div>
+
+        <div className="container-padding relative z-10">
+          {/* Main Footer Content */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 py-16">
+            {/* Company Info */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              <div>
+                <img
+                  src="https://cdn.builder.io/api/v1/assets/6cac5a504765458ea9034ccfe6de8d2b/logo-25dded?format=webp&width=400"
+                  alt="خطوة للدعاية والإعلان"
+                  className="h-12 w-auto mb-4"
+                  loading="lazy"
+                />
+                <p className="leading-relaxed text-pretty mb-6">
+                  وكالة إبداعية متخصصة في تصميم الهويات البصرية والتسويق الرقمي،
+                  نساعدك في بناء علامة تجارية قوية ومؤثرة.
+                </p>
+              </div>
+
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <span className="text-[rgb(var(--brand-primary))]">📱</span>
+                  <span className="font-medium">+967-78-466-8027</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-[rgb(var(--brand-primary))]">📧</span>
+                  <span>info@stepagency.com</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-[rgb(var(--brand-primary))]">📍</span>
+                  <span>صنعاء، اليمن</span>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Services */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.1, duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <h4 className="text-xl font-bold mb-6 text-[rgb(var(--brand-primary))]">
+                خدماتنا
+              </h4>
+              <ul className="space-y-3">
+                {[
+                  "تصميم الهوية البصرية",
+                  "إدارة وسائل التواصل",
+                  "التصميم والطباعة",
+                  "الإعلانات الممولة",
+                  "إنتاج المحتوى المرئي",
+                  "تطوير المواقع",
+                ].map((service, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1, duration: 0.3 }}
+                    viewport={{ once: true }}
+                  >
+                    <a
+                      href="#services"
+                      className="hover:text-[rgb(var(--brand-primary))] transition-colors duration-300 flex items-center gap-2"
+                    >
+                      <span className="w-2 h-2 bg-[rgb(var(--brand-primary))] rounded-full"></span>
+                      {service}
+                    </a>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Quick Links */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.2, duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <h4 className="text-xl font-bold mb-6 text-[rgb(var(--brand-primary))]">
+                روابط سريعة
+              </h4>
+              <ul className="space-y-3">
+                {[
+                  { text: "من نحن", href: "#about" },
+                  { text: "أعمالنا", href: "#portfolio" },
+                  { text: "فريقنا", href: "#team" },
+                  { text: "آراء العملاء", href: "#testimonials" },
+                  { text: "تواصل معنا", href: "#contact" },
+                  { text: "��ياسة الخصوصية", href: "#privacy" },
+                ].map((link, index) => (
+                  <motion.li
+                    key={index}
+                    initial={{ opacity: 0, x: -10 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ delay: index * 0.1, duration: 0.3 }}
+                    viewport={{ once: true }}
+                  >
+                    <a
+                      href={link.href}
+                      className="hover:text-[rgb(var(--brand-primary))] transition-colors duration-300 flex items-center gap-2"
+                    >
+                      <span className="w-2 h-2 bg-[rgb(var(--brand-primary))] rounded-full"></span>
+                      {link.text}
+                    </a>
+                  </motion.li>
+                ))}
+              </ul>
+            </motion.div>
+
+            {/* Newsletter */}
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.3, duration: 0.6 }}
+              viewport={{ once: true }}
+            >
+              <h4 className="text-xl font-bold mb-6 text-[rgb(var(--brand-primary))]">
+                ابق على اطلاع
+              </h4>
+              <p className="mb-4 text-sm leading-relaxed">
+                اشترك في نشرتنا البريدية للحصو�� على آخر الأخبار والعروض
+                الحصرية.
+              </p>
+
+              <div className="space-y-4">
+                <div className="flex gap-2">
+                  <input
+                    type="email"
+                    placeholder="بريدك الإلكتروني"
+                    className="flex-1 px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors"
+                  />
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="px-6 py-3 bg-gradient-brand text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300"
+                  >
+                    اشتراك
+                  </motion.button>
+                </div>
+
+                <div className="flex gap-4 pt-4">
+                  {[
+                    {
+                      platform: "Facebook",
+                      icon: "📘",
+                      color: "hover:text-blue-600",
+                    },
+                    {
+                      platform: "Instagram",
+                      icon: "📸",
+                      color: "hover:text-pink-500",
+                    },
+                    {
+                      platform: "Twitter",
+                      icon: "🐦",
+                      color: "hover:text-sky-500",
+                    },
+                    {
+                      platform: "LinkedIn",
+                      icon: "💼",
+                      color: "hover:text-blue-700",
+                    },
+                  ].map((social, index) => (
+                    <motion.a
+                      key={index}
+                      whileHover={{ scale: 1.2, y: -2 }}
+                      whileTap={{ scale: 0.9 }}
+                      href="#"
+                      className={`text-2xl transition-all duration-300 ${social.color}`}
+                    >
+                      {social.icon}
+                    </motion.a>
+                  ))}
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Footer Bottom */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ delay: 0.4, duration: 0.6 }}
+            viewport={{ once: true }}
+            className="border-t border-[rgb(var(--outline-variant))] py-8"
+          >
+            <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+              <div className="text-center md:text-right">
+                <p>&copy; 2024 خطوة للدعاية والإعلان. جميع الحقوق محفوظة.</p>
+              </div>
+
+              <div className="flex items-center gap-6 text-sm">
+                <a
+                  href="#privacy"
+                  className="hover:text-[rgb(var(--brand-primary))] transition-colors"
+                >
+                  سياسة الخصوصية
+                </a>
+                <a
+                  href="#terms"
+                  className="hover:text-[rgb(var(--brand-primary))] transition-colors"
+                >
+                  شروط الاستخدام
+                </a>
+                <a
+                  href="#sitemap"
+                  className="hover:text-[rgb(var(--brand-primary))] transition-colors"
+                >
+                  خريطة الموقع
+                </a>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Floating Action Button */}
+        <motion.a
+          href="#contact"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ delay: 2, duration: 0.5 }}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className="fixed bottom-8 left-8 w-14 h-14 bg-gradient-brand rounded-full flex items-center justify-center text-white text-2xl shadow-professional-lg hover:shadow-professional-xl transition-all duration-300 z-50"
+          style={{ direction: "ltr" }}
+        >
+          💬
+        </motion.a>
+      </footer>
     </div>
   );
 }
