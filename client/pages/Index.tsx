@@ -238,7 +238,7 @@ export default function Index() {
                 onClick={() => setIsMenuOpen(false)}
                 className="inline-block bg-gradient-to-r from-brand-primary to-brand-secondary text-white px-6 py-3 rounded-full font-semibold shadow-lg"
               >
-                احجز استشارتك الم��انية
+                احجز استشارتك المجانية
               </motion.a>
             </div>
           </motion.div>
@@ -255,7 +255,7 @@ export default function Index() {
           style={{ scale: heroScale, opacity: heroOpacity }}
           className="absolute inset-0"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/20 via-purple-500/10 to-brand-secondary/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20"></div>
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
@@ -391,7 +391,7 @@ export default function Index() {
               أرقامنا تتحدث عنا
             </h2>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              سجل حافل من النجاحات والإنجازات مع عملائنا في جميع أنحاء المنطق��
+              سجل حافل من النجاحات والإنجازات مع عملائنا في جميع أنحاء المنطقة
             </p>
           </motion.div>
 
@@ -456,7 +456,7 @@ export default function Index() {
       <section id="about" className="py-20 bg-white relative overflow-hidden">
         {/* Background Decoration */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-brand-primary/5 to-brand-secondary/5 rounded-full -translate-y-32 translate-x-32"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-500/5 to-brand-primary/5 rounded-full translate-y-48 -translate-x-48"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-brand-secondary/5 to-brand-primary/5 rounded-full translate-y-48 -translate-x-48"></div>
 
         <div className="container mx-auto px-4 max-w-7xl relative z-10">
           <motion.div
@@ -473,7 +473,7 @@ export default function Index() {
               className="h-1 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto mb-6"
             />
             <h2 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">
-              من نحن
+              من نح��
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               قصة نجاح بدأت برؤية واضحة لتقديم أفضل الحلول الإبداعية
@@ -497,7 +497,7 @@ export default function Index() {
                 باحترافية عالمية.
               </p>
               <p className="text-lg leading-relaxed text-gray-700 mb-8">
-                نؤمن بأن كل علامة تجارية لها قصة فريدة تستحق أن تُروى بطريقة
+                نؤمن بأن كل علامة تج��رية لها قصة فريدة تستحق أن تُروى بطريقة
                 إبداعية ومؤثرة تلامس قلوب الجمهور وتحقق النتائج المرجوة في عالم
                 تتزايد فيه المنافسة يوماً بعد يوم.
               </p>
@@ -604,7 +604,7 @@ export default function Index() {
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-purple-500 to-brand-secondary rounded-full opacity-70"
+                className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-brand-secondary to-brand-primary rounded-full opacity-70"
               />
             </motion.div>
           </div>
@@ -966,7 +966,7 @@ export default function Index() {
               فريق الخبراء
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              نخبة من المبدعين ��المتخصصين في مجالات التصميم والتسويق الرقمي
+              نخبة من المبدعين والمتخصصين في مجالات التصميم والتسويق الرقمي
               والتطوير
             </p>
           </motion.div>
@@ -1007,7 +1007,7 @@ export default function Index() {
                   "https://source.unsplash.com/300x300/?developer,man,coding,tech,arab",
                 social: ["github", "linkedin", "stackoverflow"],
                 color: "from-green-500 to-teal-500",
-                specialties: ["البرمجة", "التطوير", "التقنية"],
+                specialties: ["البرمجة", "التطوير", "التق��ية"],
               },
               {
                 name: "نورا سالم المطيري",
@@ -1111,7 +1111,7 @@ export default function Index() {
               {
                 name: "محمد العواضي",
                 company: "شركة النخبة التجارية",
-                text: "خدمة رائعة وسرعة في التنفيذ. الفريق محترف جداً وملتزم بالمواعيد. ال��صاميم فاقت توقعاتي بمراحل والنتائج كانت مذهلة.",
+                text: "خدمة رائعة وسرعة في التنفيذ. الفريق محترف جداً وملتزم بالمواعيد. التصاميم فاقت توقعاتي بمراحل والنتائج كانت مذهلة.",
                 rating: 5,
                 image:
                   "https://source.unsplash.com/100x100/?businessman,portrait,man,professional",
@@ -1142,7 +1142,7 @@ export default function Index() {
                 rating: 5,
                 image:
                   "https://source.unsplash.com/100x100/?fashion,woman,designer,business",
-                project: "حملة إعلانية ممولة",
+                project: "حملة إعل��نية ممولة",
               },
               {
                 name: "خالد الأحمدي",
@@ -1367,7 +1367,7 @@ export default function Index() {
               />
               <p className="text-gray-300 leading-relaxed mb-6 text-lg">
                 وكالة إبداعية متخصصة في بناء الهويات التجارية والتسويق الرقمي
-                بمعايير عالمية. ��حن نؤمن بقوة الإبداع في تحويل الأفكار إلى واقع
+                بمعايير عالمية. نحن نؤمن بقوة الإبداع في تحويل الأفكار إلى واقع
                 مذهل يحقق النجاح.
               </p>
               <div className="flex gap-4">
@@ -1395,7 +1395,7 @@ export default function Index() {
                   "الإعلانات الممولة",
                   "تطوير المواقع",
                   "إنتاج المحتوى المرئي",
-                  "الاست��ارات التسويقية",
+                  "الاستشارات التسويقية",
                 ].map((service, index) => (
                   <motion.li
                     key={index}
