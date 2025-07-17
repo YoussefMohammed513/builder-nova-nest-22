@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        arabic: ["Poppins", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -20,12 +23,18 @@ export default {
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#3CD2F5",
+          foreground: "#ffffff",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#7BEAFF",
+          foreground: "#003F58",
+        },
+        brand: {
+          primary: "#3CD2F5",
+          secondary: "#7BEAFF",
+          dark: "#003F58",
+          light: "#f9f9f9",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
