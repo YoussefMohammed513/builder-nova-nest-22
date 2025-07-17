@@ -368,7 +368,7 @@ export default function Index() {
       {/* Stats Section */}
       <section
         id="stats"
-        className="py-20 bg-gradient-to-br from-brand-primary via-purple-500 to-brand-secondary relative overflow-hidden"
+        className="py-20 bg-gradient-to-br from-brand-primary to-brand-secondary relative overflow-hidden"
       >
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
@@ -473,7 +473,7 @@ export default function Index() {
               className="h-1 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto mb-6"
             />
             <h2 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">
-              من نح��
+              من نحن
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               قصة نجاح بدأت برؤية واضحة لتقديم أفضل الحلول الإبداعية
@@ -497,7 +497,7 @@ export default function Index() {
                 باحترافية عالمية.
               </p>
               <p className="text-lg leading-relaxed text-gray-700 mb-8">
-                نؤمن بأن كل علامة تج��رية لها قصة فريدة تستحق أن تُروى بطريقة
+                نؤمن بأن كل علامة تجارية لها قصة فريدة تستحق أن تُروى بطريقة
                 إبداعية ومؤثرة تلامس قلوب الجمهور وتحقق النتائج المرجوة في عالم
                 تتزايد فيه المنافسة يوماً بعد يوم.
               </p>
@@ -517,7 +517,7 @@ export default function Index() {
                   {
                     title: "السرعة",
                     desc: "تسليم في المواعيد المحددة",
-                    icon: "🚀",
+                    icon: "���",
                   },
                   {
                     title: "الدعم",
@@ -666,7 +666,7 @@ export default function Index() {
                 icon: "📱",
                 title: "إدارة وسائل التواصل",
                 description:
-                  "استراتيجيات محتوى مدروسة وإدارة احترافية لحساباتك على منصات التواصل الاجتماعي لزيادة التفاعل",
+                  "استراتيجيات محتوى مدروسة ��إدارة احترافية لحساباتك على منصات التواصل الاجتماعي لزيادة التفاعل",
                 features: [
                   "استراتيجية المحتوى",
                   "التصميم والإبداع",
@@ -1007,7 +1007,7 @@ export default function Index() {
                   "https://source.unsplash.com/300x300/?developer,man,coding,tech,arab",
                 social: ["github", "linkedin", "stackoverflow"],
                 color: "from-green-500 to-teal-500",
-                specialties: ["البرمجة", "التطوير", "التق��ية"],
+                specialties: ["البرمجة", "التطوير", "التقنية"],
               },
               {
                 name: "نورا سالم المطيري",
@@ -1142,7 +1142,7 @@ export default function Index() {
                 rating: 5,
                 image:
                   "https://source.unsplash.com/100x100/?fashion,woman,designer,business",
-                project: "حملة إعل��نية ممولة",
+                project: "حملة إعلانية ممولة",
               },
               {
                 name: "خالد الأحمدي",
