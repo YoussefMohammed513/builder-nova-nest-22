@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion, useScroll, useTransform, useInView } from "framer-motion";
 import { useRef } from "react";
+import { useDarkMode } from "../hooks/use-dark-mode";
 
 // Animation variants
 const fadeInUp = {
@@ -71,22 +72,23 @@ const AnimatedCounter = ({ end, duration = 2000, suffix = "" }) => {
 const FloatingParticles = () => {
   return (
     <div className="absolute inset-0 overflow-hidden pointer-events-none">
-      {[...Array(15)].map((_, i) => (
+      {[...Array(20)].map((_, i) => (
         <motion.div
           key={i}
-          className="absolute rounded-full opacity-20"
+          className="absolute rounded-full"
           style={{
-            background: `linear-gradient(45deg, #3cd2f5, #7beaff)`,
-            width: Math.random() * 8 + 4,
-            height: Math.random() * 8 + 4,
+            background: `linear-gradient(45deg, rgb(var(--brand-primary)), rgb(var(--brand-secondary)))`,
+            width: Math.random() * 6 + 3,
+            height: Math.random() * 6 + 3,
             left: `${Math.random() * 100}%`,
             top: `${Math.random() * 100}%`,
+            opacity: 0.1 + Math.random() * 0.2,
           }}
           animate={{
             x: [0, Math.random() * 200 - 100],
             y: [0, Math.random() * 200 - 100],
             scale: [1, Math.random() + 0.5, 1],
-            opacity: [0.2, 0.8, 0.2],
+            opacity: [0.1, 0.3, 0.1],
           }}
           transition={{
             duration: Math.random() * 10 + 10,
@@ -99,22 +101,68 @@ const FloatingParticles = () => {
   );
 };
 
+// Dark mode toggle component
+const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
+  return (
+    <motion.button
+      onClick={toggleDarkMode}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className="dark-mode-toggle"
+      aria-label={
+        isDarkMode ? "تبديل إلى الوضع الفاتح" : "تبديل إلى الوضع الداكن"
+      }
+    >
+      <motion.div
+        initial={false}
+        animate={{ rotate: isDarkMode ? 180 : 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        {isDarkMode ? (
+          <svg
+            className="w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+              clipRule="evenodd"
+            />
+          </svg>
+        ) : (
+          <svg
+            className="w-5 h-5"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
+          </svg>
+        )}
+      </motion.div>
+    </motion.button>
+  );
+};
+
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
   const { scrollYProgress } = useScroll();
   const heroScale = useTransform(scrollYProgress, [0, 0.5], [1, 1.1]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.3]);
 
   return (
-    <div className="min-h-screen bg-white text-brand-dark overflow-x-hidden">
+    <div className="min-h-screen transition-colors duration-300">
       {/* Navigation */}
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        className="fixed top-0 w-full bg-white/95 backdrop-blur-lg z-50 shadow-lg border-b border-gray-100"
+        className="nav-professional"
       >
-        <div className="container mx-auto px-4 max-w-7xl">
+        <div className="container-padding">
           <div className="flex items-center justify-between py-4">
             {/* Logo */}
             <motion.div
@@ -124,12 +172,12 @@ export default function Index() {
               <img
                 src="https://cdn.builder.io/api/v1/assets/6cac5a504765458ea9034ccfe6de8d2b/logo-25dded?format=webp&width=800"
                 alt="خطوة للدعاية والإعلان"
-                className="h-16 w-auto"
+                className="h-16 w-auto transition-opacity duration-300"
               />
             </motion.div>
 
             {/* Desktop Navigation */}
-            <ul className="hidden lg:flex items-center gap-8 text-brand-dark font-semibold">
+            <ul className="hidden lg:flex items-center gap-8 font-semibold">
               {[
                 { href: "#home", text: "الرئيسية" },
                 { href: "#about", text: "من نحن" },
@@ -142,54 +190,61 @@ export default function Index() {
                 <motion.li key={index} whileHover={{ y: -2 }}>
                   <a
                     href={item.href}
-                    className="hover:text-brand-primary transition-all duration-300 relative group"
+                    className="relative group transition-colors duration-300 hover:text-[rgb(var(--brand-primary))]"
                   >
                     {item.text}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-brand-primary to-brand-secondary group-hover:w-full transition-all duration-300"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[rgb(var(--brand-primary))] to-[rgb(var(--brand-secondary))] group-hover:w-full transition-all duration-300"></span>
                   </a>
                 </motion.li>
               ))}
             </ul>
 
-            {/* CTA Button */}
-            <motion.a
-              href="#contact"
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 15px 35px rgba(60, 210, 245, 0.4)",
-              }}
-              whileTap={{ scale: 0.95 }}
-              className="hidden lg:inline-block bg-gradient-to-r from-brand-primary to-brand-secondary text-white px-6 py-3 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-            >
-              احجز استشارتك المجانية
-            </motion.a>
+            {/* Actions */}
+            <div className="flex items-center gap-4">
+              {/* Dark Mode Toggle */}
+              <DarkModeToggle
+                isDarkMode={isDarkMode}
+                toggleDarkMode={toggleDarkMode}
+              />
 
-            {/* Mobile Menu Button */}
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden p-2 z-50 relative"
-            >
-              <div className="w-6 h-6 flex flex-col justify-around">
-                <motion.span
-                  animate={{
-                    rotate: isMenuOpen ? 45 : 0,
-                    y: isMenuOpen ? 8 : 0,
-                  }}
-                  className="block h-0.5 w-6 bg-brand-dark transform transition-all duration-300"
-                />
-                <motion.span
-                  animate={{ opacity: isMenuOpen ? 0 : 1 }}
-                  className="block h-0.5 w-6 bg-brand-dark transition-all duration-300"
-                />
-                <motion.span
-                  animate={{
-                    rotate: isMenuOpen ? -45 : 0,
-                    y: isMenuOpen ? -8 : 0,
-                  }}
-                  className="block h-0.5 w-6 bg-brand-dark transform transition-all duration-300"
-                />
-              </div>
-            </button>
+              {/* CTA Button */}
+              <motion.a
+                href="#contact"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="hidden lg:inline-flex btn-primary"
+              >
+                احجز استشارتك المجانية
+              </motion.a>
+
+              {/* Mobile Menu Button */}
+              <button
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                className="lg:hidden p-2 z-50 relative rounded-lg transition-colors duration-300 hover:bg-[rgb(var(--surface-variant))]"
+                aria-label="القائمة"
+              >
+                <div className="w-6 h-6 flex flex-col justify-around">
+                  <motion.span
+                    animate={{
+                      rotate: isMenuOpen ? 45 : 0,
+                      y: isMenuOpen ? 8 : 0,
+                    }}
+                    className="block h-0.5 w-6 bg-[rgb(var(--text-primary))] transform transition-all duration-300"
+                  />
+                  <motion.span
+                    animate={{ opacity: isMenuOpen ? 0 : 1 }}
+                    className="block h-0.5 w-6 bg-[rgb(var(--text-primary))] transition-all duration-300"
+                  />
+                  <motion.span
+                    animate={{
+                      rotate: isMenuOpen ? -45 : 0,
+                      y: isMenuOpen ? -8 : 0,
+                    }}
+                    className="block h-0.5 w-6 bg-[rgb(var(--text-primary))] transform transition-all duration-300"
+                  />
+                </div>
+              </button>
+            </div>
           </div>
 
           {/* Mobile Menu */}
@@ -200,7 +255,7 @@ export default function Index() {
               height: isMenuOpen ? "auto" : 0,
             }}
             transition={{ duration: 0.3 }}
-            className="lg:hidden overflow-hidden bg-white/95 backdrop-blur-lg"
+            className="lg:hidden overflow-hidden glass"
           >
             <div className="py-4 space-y-4">
               {[
@@ -222,7 +277,7 @@ export default function Index() {
                   }}
                   transition={{ delay: index * 0.1 }}
                   onClick={() => setIsMenuOpen(false)}
-                  className="block text-brand-dark hover:text-brand-primary transition-colors duration-300 font-semibold py-2"
+                  className="block transition-colors duration-300 hover:text-[rgb(var(--brand-primary))] font-semibold py-2"
                 >
                   {item.text}
                 </motion.a>
@@ -236,7 +291,7 @@ export default function Index() {
                 }}
                 transition={{ delay: 0.7 }}
                 onClick={() => setIsMenuOpen(false)}
-                className="inline-block bg-gradient-to-r from-brand-primary to-brand-secondary text-white px-6 py-3 rounded-full font-semibold shadow-lg"
+                className="inline-block btn-primary mt-4"
               >
                 احجز استشارتك المجانية
               </motion.a>
@@ -255,7 +310,7 @@ export default function Index() {
           style={{ scale: heroScale, opacity: heroOpacity }}
           className="absolute inset-0"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[rgb(var(--brand-primary))]/20 to-[rgb(var(--brand-secondary))]/20"></div>
           <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
@@ -270,25 +325,25 @@ export default function Index() {
         <FloatingParticles />
 
         {/* Hero Content */}
-        <div className="relative z-10 text-center max-w-6xl mx-4">
+        <div className="relative z-10 text-center container-padding">
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, ease: "easeOut" }}
-            className="bg-white/95 backdrop-blur-xl p-8 md:p-12 rounded-3xl shadow-2xl border border-white/20"
+            className="glass p-8 md:p-12 rounded-professional-xl shadow-professional-lg"
           >
             <motion.h1
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold text-brand-dark mb-6 leading-tight"
+              className="heading-primary mb-6 text-balance"
             >
               نصنع لك
               <motion.span
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8, duration: 1 }}
-                className="bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent"
+                className="text-gradient"
               >
                 {" "}
                 هوية{" "}
@@ -300,7 +355,7 @@ export default function Index() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="text-xl md:text-2xl lg:text-3xl mb-8 text-gray-600 leading-relaxed max-w-4xl mx-auto"
+              className="text-xl md:text-2xl lg:text-3xl mb-8 text-[rgb(var(--text-secondary))] leading-relaxed max-w-4xl mx-auto text-pretty"
             >
               بتصاميم احترافية وإعلانات مؤثرة تجعل علامتك تتألق في السوق
               العالمية مع أحدث التقنيات والأساليب الإبداعية
@@ -314,28 +369,18 @@ export default function Index() {
             >
               <motion.a
                 href="#contact"
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: "0 25px 50px rgba(60, 210, 245, 0.5)",
-                  background:
-                    "linear-gradient(135deg, #3CD2F5 0%, #7BEAFF 100%)",
-                }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="group bg-gradient-to-r from-brand-primary to-brand-secondary text-white px-8 py-4 rounded-full text-xl font-semibold shadow-xl transition-all duration-500 hover:shadow-2xl"
+                className="btn-primary text-lg px-8 py-4"
               >
                 <span className="relative z-10">احجز استشارتك المجانية</span>
-                <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-brand-secondary to-brand-primary rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  initial={{ scale: 0 }}
-                  whileHover={{ scale: 1 }}
-                />
               </motion.a>
 
               <motion.a
                 href="#portfolio"
-                whileHover={{ scale: 1.05, y: -2 }}
+                whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="border-2 border-brand-primary text-brand-primary px-8 py-4 rounded-full text-xl font-semibold hover:bg-brand-primary hover:text-white transition-all duration-300 backdrop-blur-sm"
+                className="btn-secondary text-lg px-8 py-4"
               >
                 شاهد أعمالنا
               </motion.a>
@@ -348,12 +393,12 @@ export default function Index() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 2 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center"
         >
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 2, repeat: Infinity }}
-            className="w-6 h-10 border-2 border-white rounded-full flex justify-center relative"
+            className="w-6 h-10 border-2 border-white rounded-full flex justify-center relative mx-auto"
           >
             <motion.div
               animate={{ y: [0, 16, 0], opacity: [1, 0, 1] }}
@@ -368,18 +413,18 @@ export default function Index() {
       {/* Stats Section */}
       <section
         id="stats"
-        className="py-20 bg-gradient-to-br from-brand-primary to-brand-secondary relative overflow-hidden"
+        className="section-padding bg-gradient-brand relative overflow-hidden"
       >
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div
             className={
-              'absolute inset-0 bg-[url(\'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cg fill-opacity="0.1"%3E%3Cpolygon fill="%23fff" points="50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40"/%3E%3C/g%3E%3C/svg%3E\')] bg-center'
+              'absolute inset-0 bg-[url(\'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cg fill-opacity="0.1"%3E%3Cpolygon fill="%23fff" points="50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40"/%3E%3C/g%3E%3C/svg%3E\')] bg-center animate-pulse'
             }
           ></div>
         </div>
 
-        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+        <div className="container-padding relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -387,10 +432,10 @@ export default function Index() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="heading-secondary text-white mb-6">
               أرقامنا تتحدث عنا
             </h2>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto text-pretty">
               سجل حافل من النجاحات والإنجازات مع عملائنا في جميع أنحاء المنطقة
             </p>
           </motion.div>
@@ -400,7 +445,7 @@ export default function Index() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+            className="grid-professional grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
           >
             {[
               {
@@ -436,7 +481,7 @@ export default function Index() {
                 key={index}
                 variants={scaleIn}
                 whileHover={{ scale: 1.05, y: -10 }}
-                className="bg-white/20 backdrop-blur-lg rounded-2xl p-8 text-center border border-white/30 hover:bg-white/30 transition-all duration-300"
+                className="glass rounded-professional-lg p-8 text-center border border-white/30 hover:bg-white/30 transition-all duration-300"
               >
                 <div className="text-4xl mb-4">{stat.icon}</div>
                 <div className="text-5xl md:text-6xl font-bold mb-2 text-white">
@@ -453,12 +498,12 @@ export default function Index() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-20 bg-white relative overflow-hidden">
+      <section id="about" className="section-padding relative overflow-hidden">
         {/* Background Decoration */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-brand-primary/5 to-brand-secondary/5 rounded-full -translate-y-32 translate-x-32"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-brand-secondary/5 to-brand-primary/5 rounded-full translate-y-48 -translate-x-48"></div>
+        <div className="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-[rgb(var(--brand-primary))]/5 to-[rgb(var(--brand-secondary))]/5 rounded-full -translate-y-32 translate-x-32"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-gradient-to-br from-[rgb(var(--brand-secondary))]/5 to-[rgb(var(--brand-primary))]/5 rounded-full translate-y-48 -translate-x-48"></div>
 
-        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+        <div className="container-padding relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -470,12 +515,10 @@ export default function Index() {
               initial={{ width: 0 }}
               whileInView={{ width: "100px" }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="h-1 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto mb-6"
+              className="h-1 bg-gradient-brand mx-auto mb-6"
             />
-            <h2 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">
-              من نحن
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="heading-secondary mb-6">من نحن</h2>
+            <p className="text-xl max-w-3xl mx-auto text-pretty">
               قصة نجاح بدأت برؤية واضحة لتقديم أفضل الحلول الإبداعية
             </p>
           </motion.div>
@@ -487,22 +530,20 @@ export default function Index() {
               whileInView="animate"
               viewport={{ once: true }}
             >
-              <h3 className="text-3xl font-bold text-brand-dark mb-6">
-                رؤيتنا للمستقبل
-              </h3>
-              <p className="text-lg leading-relaxed text-gray-700 mb-6">
-                تأسست "خطوة" لتقديم حلول مبتكرة في مجال الدعاية والإعلان، بخبرة
+              <h3 className="text-3xl font-bold mb-6">رؤيتنا للمستقبل</h3>
+              <p className="text-lg leading-relaxed mb-6 text-pretty">
+                تأسست "خطوة" لتقديم حل��ل مبتكرة في مجال الدعاية والإعلان، بخبرة
                 تجمع بين الإبداع والاحتراف. نعمل على بناء الهويات التجارية
-                القوية، وتنفيذ الحملات التسويقي�� المؤثرة، وإدارة المحتوى الرقمي
+                القوية، وتنفيذ الحملات التسويقية المؤثرة، وإدارة المحتوى الرقمي
                 باحترافية عالمية.
               </p>
-              <p className="text-lg leading-relaxed text-gray-700 mb-8">
+              <p className="text-lg leading-relaxed mb-8 text-pretty">
                 نؤمن بأن كل علامة تجارية لها قصة فريدة تستحق أن تُروى بطريقة
                 إبداعية ومؤثرة تلامس قلوب الجمهور وتحقق النتائج المرجوة في عالم
                 تتزايد فيه المنافسة يوماً بعد يوم.
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="grid-professional grid-cols-1 md:grid-cols-2">
                 {[
                   {
                     title: "الإبداع",
@@ -532,16 +573,16 @@ export default function Index() {
                     transition={{ delay: index * 0.1, duration: 0.6 }}
                     viewport={{ once: true }}
                     whileHover={{ scale: 1.02 }}
-                    className="flex items-start gap-4 p-4 rounded-xl hover:bg-gray-50 transition-all duration-300"
+                    className="card p-4 hover:border-[rgb(var(--brand-primary))]"
                   >
-                    <div className="text-2xl">{item.icon}</div>
-                    <div>
-                      <h4 className="font-semibold text-brand-dark mb-1">
-                        {item.title}
-                      </h4>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        {item.desc}
-                      </p>
+                    <div className="flex items-start gap-3">
+                      <div className="text-2xl">{item.icon}</div>
+                      <div>
+                        <h4 className="font-semibold mb-1">{item.title}</h4>
+                        <p className="text-sm leading-relaxed text-pretty">
+                          {item.desc}
+                        </p>
+                      </div>
                     </div>
                   </motion.div>
                 ))}
@@ -555,13 +596,13 @@ export default function Index() {
               viewport={{ once: true }}
               className="relative"
             >
-              <div className="relative overflow-hidden rounded-3xl shadow-2xl">
+              <div className="relative overflow-hidden rounded-professional-xl shadow-professional-lg">
                 <img
                   src="https://source.unsplash.com/700x600/?creative,team,modern,office,workspace"
                   alt="فريق العمل"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-brand-primary/30 to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-[rgb(var(--brand-primary))]/30 to-transparent"></div>
 
                 {/* Floating Stats */}
                 <motion.div
@@ -569,13 +610,11 @@ export default function Index() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.5, duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="absolute top-6 right-6 bg-white p-4 rounded-2xl shadow-xl"
+                  className="absolute top-6 right-6 card p-4 backdrop-blur-sm"
                 >
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-brand-primary">
-                      500+
-                    </div>
-                    <div className="text-xs text-gray-600">مشروع ناجح</div>
+                    <div className="text-2xl font-bold text-gradient">500+</div>
+                    <div className="text-xs">مشروع ناجح</div>
                   </div>
                 </motion.div>
 
@@ -584,13 +623,11 @@ export default function Index() {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 0.7, duration: 0.6 }}
                   viewport={{ once: true }}
-                  className="absolute bottom-6 left-6 bg-white p-4 rounded-2xl shadow-xl"
+                  className="absolute bottom-6 left-6 card p-4 backdrop-blur-sm"
                 >
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-brand-primary">
-                      8+
-                    </div>
-                    <div className="text-xs text-gray-600">سنوات خبرة</div>
+                    <div className="text-2xl font-bold text-gradient">8+</div>
+                    <div className="text-xs">سنوات خبرة</div>
                   </div>
                 </motion.div>
               </div>
@@ -599,12 +636,12 @@ export default function Index() {
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
-                className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-to-r from-brand-primary to-brand-secondary rounded-full opacity-70"
+                className="absolute -top-4 -right-4 w-8 h-8 bg-gradient-brand rounded-full opacity-70"
               />
               <motion.div
                 animate={{ rotate: -360 }}
                 transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
-                className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-to-r from-brand-secondary to-brand-primary rounded-full opacity-70"
+                className="absolute -bottom-4 -left-4 w-6 h-6 bg-gradient-brand rounded-full opacity-70"
               />
             </motion.div>
           </div>
@@ -614,9 +651,9 @@ export default function Index() {
       {/* Services Section */}
       <section
         id="services"
-        className="py-20 bg-gray-50 relative overflow-hidden"
+        className="section-padding bg-[rgb(var(--surface-variant))] relative overflow-hidden"
       >
-        <div className="container mx-auto px-4 max-w-7xl">
+        <div className="container-padding">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -628,12 +665,10 @@ export default function Index() {
               initial={{ width: 0 }}
               whileInView={{ width: "100px" }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="h-1 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto mb-6"
+              className="h-1 bg-gradient-brand mx-auto mb-6"
             />
-            <h2 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">
-              خدماتنا الاحترافية
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="heading-secondary mb-6">خدماتنا الاحترافية</h2>
+            <p className="text-xl max-w-3xl mx-auto text-pretty">
               نقدم مجموعة شاملة من الخدمات المتخصصة لبناء علامتك التجارية وتحقيق
               أهدافك التسويقية بأحدث الأساليب والتقنيات
             </p>
@@ -644,7 +679,7 @@ export default function Index() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid-professional grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
           >
             {[
               {
@@ -660,13 +695,13 @@ export default function Index() {
                 ],
                 image:
                   "https://source.unsplash.com/400x300/?logo,design,branding,creative",
-                color: "from-blue-500 to-purple-600",
+                color: "from-blue-500 to-[rgb(var(--brand-primary))]",
               },
               {
                 icon: "📱",
                 title: "إدارة وسائل التواصل",
                 description:
-                  "استراتيجيات محتوى مدروسة وإدا��ة احترافية لحساباتك على منصات التواصل الاجتماعي لزيادة التفاعل",
+                  "استراتيجيات محتوى مدروسة وإدارة احترافية لحساباتك على منصات التواصل الاجتماعي لزيادة التفاعل",
                 features: [
                   "استراتيجية المحتوى",
                   "التصميم والإبداع",
@@ -696,7 +731,7 @@ export default function Index() {
                 icon: "📈",
                 title: "الإعلانات الممولة",
                 description:
-                  "حملات إعلانية مدروسة ومستهدفة عبر جميع المنصات الرقمية لضمان ��فضل عائد استثمار وتحقيق الأهداف",
+                  "حملات إعلانية مدروسة ومستهدفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف",
                 features: [
                   "فيسبوك وإنستقرام",
                   "جوجل أدوردز",
@@ -745,7 +780,7 @@ export default function Index() {
                   y: -10,
                   boxShadow: "0 30px 60px rgba(0,0,0,0.15)",
                 }}
-                className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 cursor-pointer"
+                className="card rounded-professional-xl overflow-hidden hover:shadow-professional-lg transition-all duration-500 cursor-pointer group"
               >
                 <div className="relative overflow-hidden h-48">
                   <img
@@ -767,7 +802,7 @@ export default function Index() {
                 </div>
 
                 <div className="p-6">
-                  <p className="text-gray-600 mb-6 leading-relaxed">
+                  <p className="mb-6 leading-relaxed text-pretty">
                     {service.description}
                   </p>
 
@@ -780,8 +815,8 @@ export default function Index() {
                         transition={{ delay: idx * 0.1 }}
                         className="flex items-center gap-3"
                       >
-                        <div className="w-2 h-2 bg-gradient-to-r from-brand-primary to-brand-secondary rounded-full flex-shrink-0"></div>
-                        <span className="text-sm text-gray-600">{feature}</span>
+                        <div className="w-2 h-2 bg-gradient-brand rounded-full flex-shrink-0"></div>
+                        <span className="text-sm">{feature}</span>
                       </motion.div>
                     ))}
                   </div>
@@ -789,7 +824,7 @@ export default function Index() {
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className={`w-full bg-gradient-to-r ${service.color} text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all duration-300`}
+                    className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r ${service.color} text-white hover:shadow-lg`}
                   >
                     اطلب الخدمة الآن
                   </motion.button>
@@ -801,8 +836,8 @@ export default function Index() {
       </section>
 
       {/* Portfolio Section */}
-      <section id="portfolio" className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-7xl">
+      <section id="portfolio" className="section-padding">
+        <div className="container-padding">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -814,12 +849,10 @@ export default function Index() {
               initial={{ width: 0 }}
               whileInView={{ width: "100px" }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="h-1 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto mb-6"
+              className="h-1 bg-gradient-brand mx-auto mb-6"
             />
-            <h2 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">
-              معرض أعمالنا
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="heading-secondary mb-6">معرض أعمالنا</h2>
+            <p className="text-xl max-w-3xl mx-auto text-pretty">
               اكتشف مجموعة من أفضل أعمالنا التي نفخر بتقديمها لعملائنا في مختلف
               القطاعات والمجالات
             </p>
@@ -830,7 +863,7 @@ export default function Index() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid-professional grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
           >
             {[
               {
@@ -839,14 +872,14 @@ export default function Index() {
                 image:
                   "https://source.unsplash.com/600x400/?restaurant,branding,arabic,food",
                 color: "from-orange-500 to-red-500",
-                description: "تص��يم هوية متكاملة تعكس التراث العربي الأصيل",
+                description: "تصميم هوية متكاملة تعكس التراث العربي الأصيل",
               },
               {
                 title: "شركة التقنية الذكية",
                 category: "موقع إلكتروني متقدم",
                 image:
                   "https://source.unsplash.com/600x400/?tech,website,modern,digital",
-                color: "from-blue-500 to-purple-500",
+                color: "from-blue-500 to-[rgb(var(--brand-primary))]",
                 description: "منصة تقنية حديثة بتصميم عصري وتجربة مستخدم مميزة",
               },
               {
@@ -870,7 +903,7 @@ export default function Index() {
                 category: "إدارة سوشيال ميديا",
                 image:
                   "https://source.unsplash.com/600x400/?fashion,clothing,store,boutique",
-                color: "from-pink-500 to-purple-500",
+                color: "from-pink-500 to-[rgb(var(--brand-secondary))]",
                 description: "استراتيجية محتوى جذابة لعلامة أزياء عصرية",
               },
               {
@@ -888,7 +921,7 @@ export default function Index() {
                 whileHover={{ y: -15, scale: 1.02 }}
                 className="group cursor-pointer"
               >
-                <div className="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500">
+                <div className="relative overflow-hidden rounded-professional-xl shadow-professional hover:shadow-professional-lg transition-all duration-500">
                   <img
                     src={project.image}
                     alt={project.title}
@@ -906,7 +939,7 @@ export default function Index() {
                       <h3 className="text-2xl font-bold mb-2">
                         {project.title}
                       </h3>
-                      <p className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                      <p className="text-sm text-white/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100 text-pretty">
                         {project.description}
                       </p>
                     </div>
@@ -933,12 +966,9 @@ export default function Index() {
             className="text-center mt-12"
           >
             <motion.button
-              whileHover={{
-                scale: 1.05,
-                boxShadow: "0 20px 40px rgba(60, 210, 245, 0.3)",
-              }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-gradient-to-r from-brand-primary to-brand-secondary text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+              className="btn-primary"
             >
               عرض جميع الأعمال
             </motion.button>
@@ -947,8 +977,11 @@ export default function Index() {
       </section>
 
       {/* Team Section */}
-      <section id="team" className="py-20 bg-gray-50">
-        <div className="container mx-auto px-4 max-w-7xl">
+      <section
+        id="team"
+        className="section-padding bg-[rgb(var(--surface-variant))]"
+      >
+        <div className="container-padding">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -960,12 +993,10 @@ export default function Index() {
               initial={{ width: 0 }}
               whileInView={{ width: "100px" }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="h-1 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto mb-6"
+              className="h-1 bg-gradient-brand mx-auto mb-6"
             />
-            <h2 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">
-              فريق الخبراء
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="heading-secondary mb-6">فريق الخبراء</h2>
+            <p className="text-xl max-w-3xl mx-auto text-pretty">
               نخبة من المبدعين والمتخصصين في مجالات التصميم والتسويق الرقمي
               والتطوير
             </p>
@@ -976,7 +1007,7 @@ export default function Index() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+            className="grid-professional grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6"
           >
             {[
               {
@@ -986,7 +1017,7 @@ export default function Index() {
                 image:
                   "https://source.unsplash.com/300x300/?professional,man,portrait,business,executive",
                 social: ["linkedin", "twitter", "instagram"],
-                color: "from-blue-500 to-brand-primary",
+                color: "from-blue-500 to-[rgb(var(--brand-primary))]",
                 specialties: ["القيادة", "الإدارة", "الاستراتيجية"],
               },
               {
@@ -996,7 +1027,8 @@ export default function Index() {
                 image:
                   "https://source.unsplash.com/300x300/?professional,man,portrait,creative,designer",
                 social: ["behance", "dribbble", "linkedin"],
-                color: "from-brand-primary to-brand-secondary",
+                color:
+                  "from-[rgb(var(--brand-primary))] to-[rgb(var(--brand-secondary))]",
                 specialties: ["الإبداع", "التصميم", "الابتكار"],
               },
               {
@@ -1036,7 +1068,7 @@ export default function Index() {
                 image:
                   "https://source.unsplash.com/300x300/?professional,man,portrait,graphic,designer",
                 social: ["behance", "dribbble", "instagram"],
-                color: "from-pink-500 to-brand-secondary",
+                color: "from-pink-500 to-[rgb(var(--brand-secondary))]",
                 specialties: ["التصميم", "الجرافيك", "الهوية"],
               },
             ].map((member, index) => (
@@ -1044,7 +1076,7 @@ export default function Index() {
                 key={index}
                 variants={scaleIn}
                 whileHover={{ y: -15, scale: 1.02 }}
-                className="group bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500"
+                className="card rounded-professional-xl overflow-hidden hover:shadow-professional-lg transition-all duration-500 group"
               >
                 <div className="relative overflow-hidden">
                   <img
@@ -1082,13 +1114,13 @@ export default function Index() {
                 </div>
 
                 <div className="p-6 text-center">
-                  <h3 className="text-xl font-bold text-brand-dark mb-1">
+                  <h3 className="text-lg font-bold mb-1 text-balance">
                     {member.name}
                   </h3>
-                  <p className="text-brand-primary font-medium mb-2">
+                  <p className="text-[rgb(var(--brand-primary))] font-medium mb-2 text-sm">
                     {member.role}
                   </p>
-                  <p className="text-sm text-gray-600">{member.experience}</p>
+                  <p className="text-xs">{member.experience}</p>
                 </div>
               </motion.div>
             ))}
@@ -1097,8 +1129,8 @@ export default function Index() {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-7xl">
+      <section className="section-padding">
+        <div className="container-padding">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1110,12 +1142,10 @@ export default function Index() {
               initial={{ width: 0 }}
               whileInView={{ width: "100px" }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="h-1 bg-gradient-to-r from-brand-primary to-brand-secondary mx-auto mb-6"
+              className="h-1 bg-gradient-brand mx-auto mb-6"
             />
-            <h2 className="text-4xl md:text-5xl font-bold text-brand-dark mb-6">
-              آراء عملائنا
-            </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="heading-secondary mb-6">آراء عملائنا</h2>
+            <p className="text-xl max-w-3xl mx-auto text-pretty">
               ما يقوله عملاؤنا عن تجربتهم معنا وجودة خدماتنا ومستوى الإبداع
             </p>
           </motion.div>
@@ -1125,7 +1155,7 @@ export default function Index() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            className="grid-professional grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
           >
             {[
               {
@@ -1158,7 +1188,7 @@ export default function Index() {
               {
                 name: "نورا سالم",
                 company: "متجر الأزياء العصرية",
-                text: "حملة إعلانية ��اجحة جداً زادت من مبيعاتنا بنسبة 300%. الفريق فهم رؤيتنا وترجمها لواقع مذهل.",
+                text: "حملة إعلانية ناجحة جداً زادت من مبيعاتنا بنسبة 300%. الفريق فهم رؤيتنا وترجمها لواقع مذهل.",
                 rating: 5,
                 image:
                   "https://source.unsplash.com/100x100/?fashion,woman,designer,business",
@@ -1187,7 +1217,7 @@ export default function Index() {
                 key={index}
                 variants={scaleIn}
                 whileHover={{ scale: 1.03, y: -5 }}
-                className="bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100"
+                className="card rounded-professional-xl border-[rgb(var(--outline-variant))] hover:border-[rgb(var(--brand-primary))] transition-all duration-500"
               >
                 <div className="flex mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
@@ -1203,7 +1233,7 @@ export default function Index() {
                   ))}
                 </div>
 
-                <p className="text-gray-700 mb-6 text-lg leading-relaxed italic">
+                <p className="text-lg leading-relaxed italic mb-6 text-pretty">
                   "{testimonial.text}"
                 </p>
 
@@ -1211,16 +1241,12 @@ export default function Index() {
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
-                    className="w-14 h-14 rounded-full object-cover border-2 border-brand-primary/20"
+                    className="w-14 h-14 rounded-full object-cover border-2 border-[rgb(var(--brand-primary))]/20"
                   />
                   <div>
-                    <h4 className="font-bold text-brand-dark text-lg">
-                      {testimonial.name}
-                    </h4>
-                    <p className="text-sm text-gray-600 mb-1">
-                      {testimonial.company}
-                    </p>
-                    <span className="text-xs bg-brand-primary/10 text-brand-primary px-2 py-1 rounded-full">
+                    <h4 className="font-bold text-lg">{testimonial.name}</h4>
+                    <p className="text-sm mb-1">{testimonial.company}</p>
+                    <span className="text-xs bg-[rgb(var(--brand-primary))]/10 text-[rgb(var(--brand-primary))] px-2 py-1 rounded-full">
                       {testimonial.project}
                     </span>
                   </div>
@@ -1234,7 +1260,7 @@ export default function Index() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="py-20 bg-gradient-to-br from-brand-primary to-brand-secondary relative overflow-hidden"
+        className="section-padding bg-gradient-brand relative overflow-hidden"
       >
         {/* Background Animation */}
         <div className="absolute inset-0 opacity-20">
@@ -1245,7 +1271,7 @@ export default function Index() {
           ></div>
         </div>
 
-        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+        <div className="container-padding relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -1253,10 +1279,10 @@ export default function Index() {
             viewport={{ once: true }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+            <h2 className="heading-secondary text-white mb-6">
               ابدأ مشروعك معنا اليوم
             </h2>
-            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto text-pretty">
               تواصل معنا الآن واحصل على استشارة مجانية لبناء علامتك التجارية
               وتحقيق أهدافك التسويقية
             </p>
@@ -1273,7 +1299,7 @@ export default function Index() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
+            className="grid-professional grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mb-12"
           >
             {[
               {
@@ -1317,7 +1343,7 @@ export default function Index() {
                   boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
                 }}
                 whileTap={{ scale: 0.95 }}
-                className={`bg-gradient-to-r ${contact.color} text-white p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-500 text-center block group`}
+                className={`group bg-gradient-to-r ${contact.color} text-white p-8 rounded-professional-xl shadow-professional hover:shadow-professional-lg transition-all duration-500 text-center block`}
               >
                 <motion.div
                   whileHover={{ scale: 1.2, rotate: 360 }}
@@ -1339,12 +1365,12 @@ export default function Index() {
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
             viewport={{ once: true }}
-            className="text-center bg-white/10 backdrop-blur-lg rounded-3xl p-8"
+            className="text-center glass rounded-professional-xl p-8"
           >
             <h3 className="text-2xl font-bold text-white mb-4">
               معلومات التواصل
             </h3>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-white/90">
+            <div className="grid-professional grid-cols-1 md:grid-cols-3 text-white/90">
               <div>
                 <h4 className="font-semibold mb-2">📞 الهاتف</h4>
                 <p>+967 78 466 8027</p>
@@ -1366,31 +1392,31 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-brand-dark text-white py-16 relative overflow-hidden">
+      <footer className="bg-[rgb(var(--surface))] border-t border-[rgb(var(--outline-variant))] py-16 relative overflow-hidden transition-colors duration-300">
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-5">
           <div
             className={
-              'absolute inset-0 bg-[url(\'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cg fill-opacity="0.1"%3E%3Cpolygon fill="%23fff" points="50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40"/%3E%3C/g%3E%3C/svg%3E\')] bg-center'
+              'absolute inset-0 bg-[url(\'data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"%3E%3Cg fill-opacity="0.1"%3E%3Cpolygon fill="%23000" points="50 0 60 40 100 50 60 60 50 100 40 60 0 50 40 40"/%3E%3C/g%3E%3C/svg%3E\')] bg-center'
             }
           ></div>
         </div>
 
-        <div className="container mx-auto px-4 max-w-7xl relative z-10">
+        <div className="container-padding relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             <div className="lg:col-span-2">
               <motion.img
                 whileHover={{ scale: 1.05 }}
                 src="https://cdn.builder.io/api/v1/assets/6cac5a504765458ea9034ccfe6de8d2b/logo-25dded?format=webp&width=800"
                 alt="خطوة للدعاية والإعلان"
-                className="h-16 mb-6 filter brightness-0 invert"
+                className="h-16 mb-6 transition-opacity duration-300"
               />
-              <p className="text-gray-300 leading-relaxed mb-6 text-lg">
+              <p className="leading-relaxed mb-6 text-lg text-pretty">
                 وكالة إبداعية متخصصة في بناء الهويات التجارية والتسويق الرقمي
                 بمعايير عالمية. نحن نؤمن بقوة الإبداع في تحويل الأفكار إلى واقع
                 مذهل يحقق النجاح.
               </p>
-              <div className="flex gap-4">
+              <div className="flex gap-4 flex-wrap">
                 {[
                   { icon: "🌟", text: "إبداع لا محدود" },
                   { icon: "🚀", text: "نتائج مضمونة" },
@@ -1405,12 +1431,12 @@ export default function Index() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-6 text-brand-primary">
+              <h3 className="text-xl font-bold mb-6 text-[rgb(var(--brand-primary))]">
                 خدماتنا المميزة
               </h3>
-              <ul className="space-y-3 text-gray-300">
+              <ul className="space-y-3">
                 {[
-                  "تصميم الهوية البصرية",
+                  "تصميم الهوية ��لبصرية",
                   "إدارة وسائل التواصل",
                   "الإعلانات الممولة",
                   "تطوير المواقع",
@@ -1419,7 +1445,10 @@ export default function Index() {
                 ].map((service, index) => (
                   <motion.li
                     key={index}
-                    whileHover={{ x: 10, color: "#3CD2F5" }}
+                    whileHover={{
+                      x: 10,
+                      color: "rgb(var(--brand-primary))",
+                    }}
                     className="cursor-pointer transition-colors duration-300"
                   >
                     → {service}
@@ -1429,56 +1458,56 @@ export default function Index() {
             </div>
 
             <div>
-              <h3 className="text-xl font-bold mb-6 text-brand-primary">
+              <h3 className="text-xl font-bold mb-6 text-[rgb(var(--brand-primary))]">
                 تواصل معنا
               </h3>
-              <div className="space-y-4 text-gray-300">
+              <div className="space-y-4">
                 <div className="flex items-center gap-3">
-                  <span className="text-brand-primary">📞</span>
+                  <span className="text-[rgb(var(--brand-primary))]">📞</span>
                   <div>
                     <p className="font-semibold">هاتف</p>
-                    <p>+967 78 466 8027</p>
+                    <p className="text-sm">+967 78 466 8027</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-brand-primary">✉️</span>
+                  <span className="text-[rgb(var(--brand-primary))]">✉️</span>
                   <div>
                     <p className="font-semibold">إيميل</p>
-                    <p>info@stepagency.com</p>
+                    <p className="text-sm">info@stepagency.com</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-brand-primary">📍</span>
+                  <span className="text-[rgb(var(--brand-primary))]">📍</span>
                   <div>
                     <p className="font-semibold">الموقع</p>
-                    <p>صنعاء، اليمن</p>
+                    <p className="text-sm">صنعاء، اليمن</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="border-t border-gray-700 pt-8">
+          <div className="border-t border-[rgb(var(--outline-variant))] pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-              <p className="text-gray-300 text-center md:text-right">
+              <p className="text-center md:text-right">
                 © 2025 خطوة للدعاية والإعلان. جميع الحقوق محفوظة.
               </p>
-              <div className="flex gap-6 text-sm text-gray-400">
+              <div className="flex gap-6 text-sm">
                 <a
                   href="#"
-                  className="hover:text-brand-primary transition-colors"
+                  className="hover:text-[rgb(var(--brand-primary))] transition-colors"
                 >
                   سياسة الخصوصية
                 </a>
                 <a
                   href="#"
-                  className="hover:text-brand-primary transition-colors"
+                  className="hover:text-[rgb(var(--brand-primary))] transition-colors"
                 >
                   شروط الاستخدام
                 </a>
                 <a
                   href="#"
-                  className="hover:text-brand-primary transition-colors"
+                  className="hover:text-[rgb(var(--brand-primary))] transition-colors"
                 >
                   اتفاقية الخدمة
                 </a>
