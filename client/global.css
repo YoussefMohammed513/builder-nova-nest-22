@@ -1,14 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
-  /**
-   * Tailwind CSS theme
-   * tailwind.config.ts expects the following color variables to be expressed as HSL values.
-   * A different format will require also updating the theme in tailwind.config.ts.
-  */
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
@@ -38,7 +34,7 @@
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -53,7 +49,7 @@
     --brand-primary: #3cd2f5;
     --brand-secondary: #7beaff;
     --brand-dark: #003f58;
-    --brand-light: #f9f9f9;
+    --brand-light: #f9fafb;
   }
 
   .dark {
@@ -103,13 +99,20 @@
   html {
     direction: rtl;
     lang: ar;
+    scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-brand-light text-brand-dark;
-    font-family: "Poppins", sans-serif;
-    line-height: 1.6;
+    @apply bg-white text-brand-dark;
+    font-family: "Cairo", "Poppins", sans-serif;
+    line-height: 1.7;
     direction: rtl;
+    font-feature-settings:
+      "liga" 1,
+      "kern" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   h1,
@@ -118,7 +121,255 @@
   h4,
   h5,
   h6 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    font-family: "Cairo", "Poppins", sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+  }
+
+  p {
+    font-family: "Cairo", "Poppins", sans-serif;
+    line-height: 1.7;
+  }
+
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #3cd2f5, #7beaff);
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, #2bb3d1, #5bc8e8);
+  }
+
+  /* Selection color */
+  ::selection {
+    background: rgba(60, 210, 245, 0.3);
+    color: #003f58;
+  }
+
+  ::-moz-selection {
+    background: rgba(60, 210, 245, 0.3);
+    color: #003f58;
+  }
+
+  /* Gradient text utilities */
+  .gradient-text {
+    @apply bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent;
+  }
+
+  /* Glass morphism effect */
+  .glass {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+  }
+
+  /* Floating animation */
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .floating {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  /* Pulse animation */
+  @keyframes pulse-custom {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+
+  .pulse-custom {
+    animation: pulse-custom 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  /* Gradient background */
+  .bg-gradient-brand {
+    background: linear-gradient(135deg, #3cd2f5 0%, #7beaff 100%);
+  }
+
+  /* Text shadow */
+  .text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Box shadow utilities */
+  .shadow-brand {
+    box-shadow: 0 25px 50px -12px rgba(60, 210, 245, 0.25);
+  }
+
+  .shadow-brand-lg {
+    box-shadow: 0 35px 60px -12px rgba(60, 210, 245, 0.35);
+  }
+
+  /* Button hover effects */
+  .btn-brand {
+    @apply bg-gradient-to-r from-brand-primary to-brand-secondary text-white font-semibold py-3 px-6 rounded-full shadow-lg transition-all duration-300;
+  }
+
+  .btn-brand:hover {
+    @apply shadow-xl scale-105;
+    box-shadow: 0 20px 40px rgba(60, 210, 245, 0.4);
+  }
+
+  /* Card hover effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-2xl hover:-translate-y-2;
+  }
+
+  /* Responsive typography */
+  @screen sm {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+
+  @screen md {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  @screen lg {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  @screen xl {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  /* RTL specific adjustments */
+  [dir="rtl"] .text-right {
+    text-align: right;
+  }
+
+  [dir="rtl"] .float-right {
+    float: right;
+  }
+
+  [dir="rtl"] .ml-auto {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  [dir="rtl"] .mr-auto {
+    margin-right: auto;
+    margin-left: 0;
+  }
+
+  /* Animation delays for staggered effects */
+  .delay-100 {
+    animation-delay: 0.1s;
+  }
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
+  .delay-300 {
+    animation-delay: 0.3s;
+  }
+  .delay-400 {
+    animation-delay: 0.4s;
+  }
+  .delay-500 {
+    animation-delay: 0.5s;
+  }
+
+  /* Loading spinner */
+  .spinner {
+    @apply animate-spin rounded-full border-4 border-gray-200 border-t-brand-primary;
+  }
+
+  /* Focus styles */
+  .focus-brand:focus {
+    @apply outline-none ring-2 ring-brand-primary ring-opacity-50;
+  }
+
+  /* Mobile menu animations */
+  @keyframes slideDown {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .slide-down {
+    animation: slideDown 0.3s ease-out;
+  }
+
+  /* Parallax effect */
+  .parallax {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+
+  /* Brand specific utilities */
+  .text-brand-gradient {
+    @apply bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent;
+  }
+
+  .border-brand-gradient {
+    border-image: linear-gradient(135deg, #3cd2f5, #7beaff) 1;
+  }
+}
+
+/* Print styles */
+@media print {
+  * {
+    -webkit-print-color-adjust: exact !important;
+    color-adjust: exact !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .bg-brand-primary {
+    background-color: #0066cc !important;
+  }
+
+  .text-brand-primary {
+    color: #0066cc !important;
+  }
+}
+
+/* Reduce motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
