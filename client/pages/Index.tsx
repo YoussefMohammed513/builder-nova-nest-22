@@ -493,7 +493,7 @@ export default function Index() {
               <p className="text-lg leading-relaxed text-gray-700 mb-6">
                 تأسست "خطوة" لتقديم حلول مبتكرة في مجال الدعاية والإعلان، بخبرة
                 تجمع بين الإبداع والاحتراف. نعمل على بناء الهويات التجارية
-                القوية، وتنفيذ الحملات التسويقية المؤثرة، وإدارة المحتوى الرقمي
+                القوية، وتنفيذ الحملات التسويقي�� المؤثرة، وإدارة المحتوى الرقمي
                 باحترافية عالمية.
               </p>
               <p className="text-lg leading-relaxed text-gray-700 mb-8">
@@ -696,7 +696,7 @@ export default function Index() {
                 icon: "📈",
                 title: "الإعلانات الممولة",
                 description:
-                  "حملات إعلانية مدروسة ومستهدفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف",
+                  "حملات إعلانية مدروسة ومستهدفة عبر جميع المنصات الرقمية لضمان ��فضل عائد استثمار وتحقيق الأهداف",
                 features: [
                   "فيسبوك وإنستقرام",
                   "جوجل أدوردز",
@@ -839,7 +839,7 @@ export default function Index() {
                 image:
                   "https://source.unsplash.com/600x400/?restaurant,branding,arabic,food",
                 color: "from-orange-500 to-red-500",
-                description: "تصميم هوية متكاملة تعكس التراث العربي الأصيل",
+                description: "تص��يم هوية متكاملة تعكس التراث العربي الأصيل",
               },
               {
                 title: "شركة التقنية الذكية",
@@ -980,44 +980,64 @@ export default function Index() {
           >
             {[
               {
-                name: "أحمد محمد السعدي",
+                name: "يوسف محمد البرطي",
+                role: "المدير التنفيذي",
+                experience: "المدير التنفيذي",
+                image:
+                  "https://source.unsplash.com/300x300/?professional,man,portrait,business,executive",
+                social: ["linkedin", "twitter", "instagram"],
+                color: "from-blue-500 to-brand-primary",
+                specialties: ["القيادة", "الإدارة", "الاستراتيجية"],
+              },
+              {
+                name: "عبدالاله النهاري",
                 role: "مدير إبداعي",
-                experience: "8 سنوات خبرة",
+                experience: "خبير إبداعي",
                 image:
-                  "https://source.unsplash.com/300x300/?professional,man,portrait,business,arab",
-                social: ["linkedin", "behance", "twitter"],
-                color: "from-blue-500 to-purple-500",
-                specialties: ["الإبداع", "القيادة", "الاستراتيجية"],
+                  "https://source.unsplash.com/300x300/?professional,man,portrait,creative,designer",
+                social: ["behance", "dribbble", "linkedin"],
+                color: "from-brand-primary to-brand-secondary",
+                specialties: ["الإبداع", "التصميم", "الابتكار"],
               },
               {
-                name: "فاطمة أحمد الزهراني",
-                role: "مصممة جرافيك أولى",
-                experience: "6 سنوات خبرة",
+                name: "محمد مقبل نعمان",
+                role: "مختص تسويق رقمي",
+                experience: "خبير تسويقي",
                 image:
-                  "https://source.unsplash.com/300x300/?professional,woman,portrait,designer,arab",
-                social: ["instagram", "dribbble", "behance"],
-                color: "from-pink-500 to-purple-500",
-                specialties: ["التصميم", "الهوية", "الإبداع"],
-              },
-              {
-                name: "محمد عبدالله القحطاني",
-                role: "مطور مواقع متقدم",
-                experience: "7 سنوات خبرة",
-                image:
-                  "https://source.unsplash.com/300x300/?developer,man,coding,tech,arab",
-                social: ["github", "linkedin", "stackoverflow"],
+                  "https://source.unsplash.com/300x300/?professional,man,portrait,marketing,business",
+                social: ["linkedin", "twitter", "facebook"],
                 color: "from-green-500 to-teal-500",
-                specialties: ["البرمجة", "التطوير", "التقنية"],
+                specialties: ["التسويق", "الحملات", "التحليل"],
               },
               {
-                name: "نورا سالم المطيري",
-                role: "أخصائية تسويق رقمي",
-                experience: "5 سنوات خبرة",
+                name: "محمود عبدالغني الشرفي",
+                role: "مطور ومصمم مواقع",
+                experience: "خبير تقني",
                 image:
-                  "https://source.unsplash.com/300x300/?marketing,woman,professional,business,arab",
-                social: ["twitter", "linkedin", "instagram"],
+                  "https://source.unsplash.com/300x300/?professional,man,portrait,developer,tech",
+                social: ["github", "linkedin", "behance"],
+                color: "from-purple-500 to-blue-500",
+                specialties: ["التطوير", "التصميم", "التقنية"],
+              },
+              {
+                name: "عبدالله مناع",
+                role: "أخصائي علاقات عامة",
+                experience: "خبير تواصل",
+                image:
+                  "https://source.unsplash.com/300x300/?professional,man,portrait,business,communication",
+                social: ["linkedin", "twitter", "instagram"],
                 color: "from-orange-500 to-red-500",
-                specialties: ["التسويق", "التحليل", "الإعلانات"],
+                specialties: ["العلاقات", "التواصل", "الإعلام"],
+              },
+              {
+                name: "اسيد محمد البرعي",
+                role: "مصمم جرافيك",
+                experience: "مصمم محترف",
+                image:
+                  "https://source.unsplash.com/300x300/?professional,man,portrait,graphic,designer",
+                social: ["behance", "dribbble", "instagram"],
+                color: "from-pink-500 to-brand-secondary",
+                specialties: ["التصميم", "الجرافيك", "الهوية"],
               },
             ].map((member, index) => (
               <motion.div
