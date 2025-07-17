@@ -653,7 +653,7 @@ export default function Index() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid-professional grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8"
           >
             {[
               {
@@ -807,7 +807,7 @@ export default function Index() {
                 عالم تتزايد فيه المنافسة والتحديات يوماً بعد يوم.
               </p>
 
-              <div className="grid-professional grid-cols-1 md:grid-cols-2">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
                 {[
                   {
                     title: "الإبداع اللامحدود",
@@ -993,7 +993,7 @@ export default function Index() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid-professional grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
           >
             {[
               {
@@ -1083,7 +1083,7 @@ export default function Index() {
                   "مواقع إلكترونية عصرية ومتجاوبة مع جميع الأجهزة مع أفضل تجربة مستخدم وتحسين محركات البحث المتقدم",
                 features: [
                   "التصميم المتجاوب الحديث",
-                  "التطوير البرمجي المتقدم",
+                  "التطوير البرمجي المت��دم",
                   "تحسين السيو والأداء",
                   "الاستضافة والصيانة المستمرة",
                 ],
@@ -1226,7 +1226,7 @@ export default function Index() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid-professional grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
           >
             {[
               {
@@ -1419,7 +1419,7 @@ export default function Index() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid-professional grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4 sm:gap-6"
           >
             {[
               {
@@ -1629,7 +1629,7 @@ export default function Index() {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid-professional grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
           >
             {[
               {
@@ -2239,7 +2239,8 @@ export default function Index() {
                 ابق على اطلاع
               </h4>
               <p className="mb-4 text-sm leading-relaxed">
-                اشترك في نشرتنا البريدية للحصول على آخر الأخبار والعروض الحصرية.
+                اشترك في نشرتنا البريدية للحصو�� على آخر الأخبار والعروض
+                الحصرية.
               </p>
 
               <div className="space-y-4">
