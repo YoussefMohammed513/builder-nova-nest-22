@@ -266,11 +266,13 @@
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
+    @apply inline-flex items-center justify-center rounded-full px-4 sm:px-6 py-3 sm:py-4 text-sm sm:text-base font-semibold transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50;
     background: rgb(var(--surface));
     color: rgb(var(--brand-primary));
     border: 2px solid rgb(var(--brand-primary));
     box-shadow: 0 2px 4px 0 rgba(var(--shadow), 0.1);
+    min-height: 44px;
+    touch-action: manipulation;
   }
 
   .btn-secondary:hover {
@@ -278,6 +280,12 @@
     color: rgb(var(--text-inverse));
     transform: translateY(-2px);
     box-shadow: 0 8px 25px 0 rgba(var(--brand-primary), 0.25);
+  }
+
+  @media (max-width: 768px) {
+    .btn-secondary:active {
+      transform: scale(0.95);
+    }
   }
 
   /* Professional Card Styles */
