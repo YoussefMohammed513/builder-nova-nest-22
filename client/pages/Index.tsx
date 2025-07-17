@@ -144,7 +144,7 @@ const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
       whileTap={{ scale: 0.95 }}
       className="dark-mode-toggle relative overflow-hidden"
       aria-label={
-        isDarkMode ? "تبديل إلى الوضع الفاتح" : "تبديل إلى الوضع الداكن"
+        isDarkMode ? "تبديل إلى الو��ع الفاتح" : "تبديل إلى الوضع الداكن"
       }
     >
       <motion.div
@@ -414,7 +414,7 @@ export default function Index() {
                   onClick={() => setIsMenuOpen(false)}
                   className="block btn-primary text-center touch-target mx-4 text-responsive-base"
                 >
-                  احجز استش��رتك المجانية 🚀
+                  احجز استشارتك المجانية 🚀
                 </motion.a>
 
                 {/* Social links in mobile menu */}
@@ -483,14 +483,15 @@ export default function Index() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3, duration: 0.8 }}
-              className="heading-primary mb-6 text-balance"
+              className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight mb-6 text-balance leading-tight"
             >
               نصنع لك
               <motion.span
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.8, duration: 1 }}
-                className="text-gradient relative inline-block"
+                whileHover={{ scale: 1.05 }}
+                className="text-gradient relative inline-block cursor-pointer"
               >
                 {" "}
                 هوية{" "}
@@ -507,7 +508,7 @@ export default function Index() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.5, duration: 0.8 }}
-              className="text-xl md:text-2xl lg:text-3xl mb-8 text-white/90 leading-relaxed max-w-4xl mx-auto text-pretty"
+              className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-8 text-white/90 leading-relaxed max-w-4xl mx-auto text-pretty px-4"
             >
               بتصاميم احترافية وإعلانات مؤثرة تجعل علامتك تتألق في السوق
               العالمية مع أحدث التقنيات والأساليب الإبداعية المبتكرة
@@ -517,21 +518,25 @@ export default function Index() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.8 }}
-              className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8"
+              className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 px-4"
             >
               <motion.a
                 href="#contact"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="group btn-primary text-lg px-8 py-4 relative overflow-hidden"
+                className="group btn-primary text-responsive-lg px-6 sm:px-8 py-3 sm:py-4 relative overflow-hidden touch-target mobile-optimized w-full sm:w-auto text-center"
               >
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-[rgb(var(--brand-secondary))] to-[rgb(var(--brand-primary))] opacity-0"
                   whileHover={{ opacity: 1 }}
                   transition={{ duration: 0.3 }}
                 />
-                <span className="relative z-10 flex items-center gap-2">
-                  🎯 احجز استشارتك المجانية
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                  <span className="text-xl">🎯</span>
+                  <span className="hidden sm:inline">
+                    احجز استشارتك المجانية
+                  </span>
+                  <span className="sm:hidden">احجز الآن</span>
                 </span>
               </motion.a>
 
@@ -539,26 +544,45 @@ export default function Index() {
                 href="#portfolio"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
-                className="btn-secondary text-lg px-8 py-4 flex items-center gap-2"
+                className="btn-secondary text-responsive-lg px-6 sm:px-8 py-3 sm:py-4 flex items-center justify-center gap-2 touch-target mobile-optimized w-full sm:w-auto"
               >
-                <span>👁️ شاهد أعمالنا</span>
+                <span className="text-xl">👁️</span>
+                <span className="hidden sm:inline">شاهد أعمالنا</span>
+                <span className="sm:hidden">أعمالنا</span>
               </motion.a>
             </motion.div>
 
-            {/* Trust Indicators */}
+            {/* Enhanced Trust Indicators */}
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.8 }}
-              className="flex flex-wrap justify-center gap-4 text-sm text-white/70"
+              className="flex flex-wrap justify-center gap-3 sm:gap-4 text-xs sm:text-sm text-white/70 px-4"
             >
-              <span className="flex items-center gap-1">⭐ تقييم 4.9/5</span>
-              <span className="flex items-center gap-1">
-                🏆 أكثر من 500 عميل راضٍ
-              </span>
-              <span className="flex items-center gap-1">
-                🚀 أكثر من 1200 مشروع
-              </span>
+              <motion.span
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center gap-1 bg-white/10 px-3 py-2 rounded-full backdrop-blur-sm border border-white/20 touch-target"
+              >
+                <span className="text-lg">⭐</span>
+                <span className="hidden sm:inline">تقييم 4.9/5</span>
+                <span className="sm:hidden">4.9/5</span>
+              </motion.span>
+              <motion.span
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center gap-1 bg-white/10 px-3 py-2 rounded-full backdrop-blur-sm border border-white/20 touch-target"
+              >
+                <span className="text-lg">🏆</span>
+                <span className="hidden sm:inline">أكثر من 500 عميل راضٍ</span>
+                <span className="sm:hidden">500+ عميل</span>
+              </motion.span>
+              <motion.span
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center gap-1 bg-white/10 px-3 py-2 rounded-full backdrop-blur-sm border border-white/20 touch-target"
+              >
+                <span className="text-lg">🚀</span>
+                <span className="hidden sm:inline">أكثر من 1200 مشروع</span>
+                <span className="sm:hidden">1200+ مشروع</span>
+              </motion.span>
             </motion.div>
           </motion.div>
         </div>
@@ -778,7 +802,7 @@ export default function Index() {
                 المحتوى الرقمي باحترافية تضاهي المعايير العالمية.
               </p>
               <p className="text-lg leading-relaxed mb-8 text-pretty">
-                نؤمن بأن كل علامة تجارية لها قصة فريدة تستحق أ�� تُروى بطريقة
+                نؤمن بأن كل علامة تجارية لها قصة فريدة تستحق أن تُروى بطريقة
                 إبداعية ومؤثرة تلامس قلو�� الجمهور وتحقق النتائج المرج��ة في
                 عالم تتزايد فيه المنافسة والتحديات يوماً بعد يوم.
               </p>
@@ -976,7 +1000,7 @@ export default function Index() {
                 icon: "🎨",
                 title: "تصميم الهوية البصرية",
                 description:
-                  "شعارات وهويات بصرية متكاملة تعكس شخصية علامتك التجارية وتميزك ع�� المنافسين في السوق المحلي والعالمي",
+                  "شعارات وهويات بصرية متكاملة تعكس شخصية علامتك التجارية وتميزك عن المنافسين في السوق المحلي والعالمي",
                 features: [
                   "تصميم الشعار الاحترافي",
                   "دليل الهوية البصرية الشامل",
@@ -1054,7 +1078,7 @@ export default function Index() {
               },
               {
                 icon: "🌐",
-                title: "تطوير المواقع",
+                title: "تطوير المواق��",
                 description:
                   "مواقع إلكترونية عصرية ومتجاوبة مع جميع الأجهزة مع أفضل تجربة مستخدم وتحسين محركات البحث المتقدم",
                 features: [
@@ -1217,7 +1241,7 @@ export default function Index() {
                 tags: ["هوية", "مطاعم", "تراث"],
               },
               {
-                title: "شركة التقنية الذكية",
+                title: "شر��ة التقنية الذكية",
                 category: "موقع إلكتروني متقدم",
                 image:
                   "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
@@ -1262,7 +1286,7 @@ export default function Index() {
               },
               {
                 title: "شركة الاستثمار العقاري",
-                category: "هوية وموقع إلكتروني",
+                category: "هوية ومو��ع إلكتروني",
                 image:
                   "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-gray-600 to-gray-800",
@@ -1401,7 +1425,7 @@ export default function Index() {
               {
                 name: "يوسف محمد البرطي",
                 role: "المدير التنفيذي",
-                experience: "قائد الفريق والرؤية الاس��راتيجية",
+                experience: "قائد الفريق والرؤية الاستراتيجية",
                 image:
                   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 social: ["linkedin", "twitter", "instagram"],
@@ -1613,7 +1637,7 @@ export default function Index() {
                 company: "مطعم البركة",
                 role: "المدير العام",
                 content:
-                  "تعامل راقي ومهني، حققوا لنا زيادة في المبيعات بنسبة 150% خلال 6 أشهر. فريق ��حترف وإبداعي حقاً.",
+                  "تعامل راقي ومهني، حققوا لنا زيادة في المبيعات بنسبة 150% خلال 6 أشهر. فريق محترف وإبداعي حقاً.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1637,7 +1661,7 @@ export default function Index() {
                 company: "شركة التميز للتجارة",
                 role: "المدير التنفيذي",
                 content:
-                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعاتنا الأونلاين بشكل كبير. شكراً لفريق خطوة المبدع.",
+                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعاتنا الأونلاين بشكل كبير. شكراً لفري�� خطوة المبدع.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1661,7 +1685,7 @@ export default function Index() {
                 company: "مؤسسة الشامي التجارية",
                 role: "صاحب المؤسسة",
                 content:
-                  "فريق متفهم لاحتياجاتنا، سرعة في التنفيذ وجودة عالية في العمل. نوصي بهم بشدة لكل من يريد التميز.",
+                  "فريق متفهم لاحتياجاتنا، سرعة في التنفيذ وجودة عالية ��ي العمل. نوصي بهم بشدة لكل من يريد التميز.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1983,7 +2007,7 @@ export default function Index() {
                   {
                     icon: "⏰",
                     title: "ساعات العمل",
-                    info: "السبت - ال��ميس",
+                    info: "السبت - الخميس",
                     description: "من 9 صباحاً إلى 6 مساءً",
                     color: "from-orange-500 to-red-500",
                   },
@@ -2108,7 +2132,7 @@ export default function Index() {
                 />
                 <p className="leading-relaxed text-pretty mb-6">
                   وكالة إبداعية متخصصة في تصميم الهويات البصرية والتسويق الرقمي،
-                  نساعدك في بناء علامة ت��ارية قوية ومؤثرة.
+                  نساعدك في بناء علامة تجارية قوية ومؤثرة.
                 </p>
               </div>
 
@@ -2282,7 +2306,7 @@ export default function Index() {
           >
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-center md:text-right">
-                <p>&copy; 2024 خطوة للدعاية والإعلان. جميع الحقوق محفوظة.</p>
+                <p>&copy; 2024 خطوة للدعاية والإعلا��. جميع الحقوق محفوظة.</p>
               </div>
 
               <div className="flex items-center gap-6 text-sm">
