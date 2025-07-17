@@ -266,7 +266,7 @@ export default function Index() {
             </motion.div>
 
             {/* Desktop Navigation */}
-            <ul className="hidden lg:flex items-center gap-8 font-semibold">
+            <ul className="hidden lg:flex items-center gap-6 xl:gap-8 font-semibold">
               {[
                 { href: "#home", text: "الرئيسية", icon: "🏠" },
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
@@ -279,14 +279,16 @@ export default function Index() {
                 <motion.li
                   key={index}
                   whileHover={{ y: -2 }}
-                  className="group relative"
+                  whileTap={{ scale: 0.95 }}
+                  className="group relative touch-target"
                 >
                   <a
                     href={item.href}
-                    className="relative flex items-center gap-2 transition-colors duration-300 hover:text-[rgb(var(--brand-primary))] py-2 px-3 rounded-lg"
+                    className="relative flex items-center gap-2 transition-colors duration-300 hover:text-[rgb(var(--brand-primary))] py-2 px-3 rounded-lg mobile-optimized text-responsive-sm"
                   >
                     <span className="text-sm opacity-70">{item.icon}</span>
-                    {item.text}
+                    <span className="hidden xl:inline">{item.text}</span>
+                    <span className="xl:hidden">{item.icon}</span>
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[rgb(var(--brand-primary))] to-[rgb(var(--brand-secondary))] group-hover:w-full transition-all duration-300"></span>
                     <motion.div
                       className="absolute inset-0 bg-[rgb(var(--brand-primary))]/10 rounded-lg opacity-0"
@@ -311,20 +313,24 @@ export default function Index() {
                 href="#contact"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="hidden lg:inline-flex btn-primary relative overflow-hidden"
+                className="hidden md:inline-flex btn-primary relative overflow-hidden touch-target text-responsive-sm"
               >
                 <motion.div
                   className="absolute inset-0 bg-gradient-to-r from-[rgb(var(--brand-secondary))] to-[rgb(var(--brand-primary))] opacity-0"
                   whileHover={{ opacity: 1 }}
                   transition={{ duration: 0.3 }}
                 />
-                <span className="relative z-10">احجز استشارتك المجانية</span>
+                <span className="relative z-10 hidden lg:inline">
+                  احجز استشارتك المجانية
+                </span>
+                <span className="relative z-10 lg:hidden">احجز الآن</span>
               </motion.a>
 
               {/* Mobile Menu Button */}
-              <button
+              <motion.button
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
-                className="lg:hidden p-2 z-50 relative rounded-lg transition-colors duration-300 hover:bg-[rgb(var(--surface-variant))]"
+                whileTap={{ scale: 0.95 }}
+                className="lg:hidden p-3 z-50 relative rounded-lg transition-colors duration-300 hover:bg-[rgb(var(--surface-variant))] touch-target mobile-optimized"
                 aria-label="القائمة"
               >
                 <div className="w-6 h-6 flex flex-col justify-around">
@@ -347,21 +353,21 @@ export default function Index() {
                     className="block h-0.5 w-6 bg-[rgb(var(--text-primary))] transform transition-all duration-300"
                   />
                 </div>
-              </button>
+              </motion.button>
             </div>
           </div>
 
-          {/* Mobile Menu */}
+          {/* Enhanced Mobile Menu */}
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{
               opacity: isMenuOpen ? 1 : 0,
               height: isMenuOpen ? "auto" : 0,
             }}
-            transition={{ duration: 0.3 }}
-            className="lg:hidden overflow-hidden glass rounded-professional"
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="lg:hidden overflow-hidden glass rounded-professional mt-4 safe-area-top"
           >
-            <div className="py-4 space-y-4">
+            <div className="py-4 space-y-2 scroll-area max-h-96 overflow-y-auto">
               {[
                 { href: "#home", text: "الرئيسية", icon: "🏠" },
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
@@ -379,27 +385,51 @@ export default function Index() {
                     opacity: isMenuOpen ? 1 : 0,
                     x: isMenuOpen ? 0 : -20,
                   }}
-                  transition={{ delay: index * 0.1 }}
+                  transition={{ delay: index * 0.05, duration: 0.3 }}
+                  whileTap={{ scale: 0.95 }}
                   onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center gap-3 transition-colors duration-300 hover:text-[rgb(var(--brand-primary))] font-semibold py-2 px-3 rounded-lg hover:bg-[rgb(var(--surface-variant))]"
+                  className="flex items-center gap-3 transition-colors duration-300 hover:text-[rgb(var(--brand-primary))] font-semibold py-3 px-4 rounded-lg hover:bg-[rgb(var(--surface-variant))] touch-target mobile-optimized text-responsive-base w-full"
                 >
-                  <span className="text-sm">{item.icon}</span>
-                  {item.text}
+                  <span className="text-lg">{item.icon}</span>
+                  <span className="flex-1">{item.text}</span>
+                  <motion.span
+                    className="text-[rgb(var(--brand-primary))] opacity-0 group-hover:opacity-100"
+                    whileHover={{ x: 5 }}
+                  >
+                    ←
+                  </motion.span>
                 </motion.a>
               ))}
-              <motion.a
-                href="#contact"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{
-                  opacity: isMenuOpen ? 1 : 0,
-                  x: isMenuOpen ? 0 : -20,
-                }}
-                transition={{ delay: 0.7 }}
-                onClick={() => setIsMenuOpen(false)}
-                className="inline-block btn-primary mt-4"
-              >
-                احجز استشارتك المجانية
-              </motion.a>
+
+              <div className="border-t border-[rgb(var(--outline-variant))] pt-4 mt-4">
+                <motion.a
+                  href="#contact"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{
+                    opacity: isMenuOpen ? 1 : 0,
+                    x: isMenuOpen ? 0 : -20,
+                  }}
+                  transition={{ delay: 0.4, duration: 0.3 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={() => setIsMenuOpen(false)}
+                  className="block btn-primary text-center touch-target mx-4 text-responsive-base"
+                >
+                  احجز استش��رتك المجانية 🚀
+                </motion.a>
+
+                {/* Social links in mobile menu */}
+                <div className="flex justify-center gap-4 mt-4 px-4">
+                  {["📘", "📸", "💼", "💬"].map((icon, index) => (
+                    <motion.button
+                      key={index}
+                      whileTap={{ scale: 0.9 }}
+                      className="w-10 h-10 bg-[rgb(var(--surface-variant))] rounded-full flex items-center justify-center text-lg hover:bg-[rgb(var(--brand-primary))] hover:text-white transition-colors duration-300 touch-target"
+                    >
+                      {icon}
+                    </motion.button>
+                  ))}
+                </div>
+              </div>
             </div>
           </motion.div>
         </div>
@@ -607,7 +637,7 @@ export default function Index() {
                 suffix: "+",
                 label: "عميل راضٍ",
                 icon: "👥",
-                description: "في جمي�� أنحاء المنطقة",
+                description: "في جميع أنحاء المنطقة",
                 color: "from-green-400 to-green-600",
               },
               {
@@ -729,7 +759,7 @@ export default function Index() {
             />
             <h2 className="heading-secondary mb-6">من نحن</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
-              قصة نجاح بدأت ��رؤية واضحة لتقديم أفضل الحلول الإبداعية في المنطقة
+              قصة نجاح بدأت برؤية واضحة لتقديم أفضل الحلول الإبداعية في المنطقة
             </p>
           </motion.div>
 
@@ -748,7 +778,7 @@ export default function Index() {
                 المحتوى الرقمي باحترافية تضاهي المعايير العالمية.
               </p>
               <p className="text-lg leading-relaxed mb-8 text-pretty">
-                نؤمن بأن كل علامة تجارية لها قصة فريدة تستحق أن تُروى بطريقة
+                نؤمن بأن كل علامة تجارية لها قصة فريدة تستحق أ�� تُروى بطريقة
                 إبداعية ومؤثرة تلامس قلو�� الجمهور وتحقق النتائج المرج��ة في
                 عالم تتزايد فيه المنافسة والتحديات يوماً بعد يوم.
               </p>
@@ -946,7 +976,7 @@ export default function Index() {
                 icon: "🎨",
                 title: "تصميم الهوية البصرية",
                 description:
-                  "شعارات وهويات بصرية متكاملة تعكس شخصية علامتك التجارية وتميزك عن المنافسين في السوق المحلي والعالمي",
+                  "شعارات وهويات بصرية متكاملة تعكس شخصية علامتك التجارية وتميزك ع�� المنافسين في السوق المحلي والعالمي",
                 features: [
                   "تصميم الشعار الاحترافي",
                   "دليل الهوية البصرية الشامل",
@@ -1371,13 +1401,13 @@ export default function Index() {
               {
                 name: "يوسف محمد البرطي",
                 role: "المدير التنفيذي",
-                experience: "قائد الفريق والرؤية الاستراتيجية",
+                experience: "قائد الفريق والرؤية الاس��راتيجية",
                 image:
                   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 social: ["linkedin", "twitter", "instagram"],
                 color: "from-blue-500 to-[rgb(var(--brand-primary))]",
                 specialties: ["القيادة", "الإدارة", "الاستراتيجية"],
-                quote: "نؤمن بقوة الإبداع في تحويل الأحلام إلى و��قع",
+                quote: "نؤمن بقوة الإبداع في تحويل الأحلام إلى واقع",
               },
               {
                 name: "عبدالاله النهاري",
@@ -1466,7 +1496,7 @@ export default function Index() {
                           whileHover={{ scale: 1.2, rotate: 360 }}
                           className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-xs border border-white/30"
                         >
-                          ���
+                          🔗
                         </motion.button>
                       ))}
                     </div>
@@ -1583,7 +1613,7 @@ export default function Index() {
                 company: "مطعم البركة",
                 role: "المدير العام",
                 content:
-                  "تعامل راقي ومهني، حققوا لنا زيادة في المبيعات بنسبة 150% خلال 6 أشهر. فريق محترف وإبداعي حقاً.",
+                  "تعامل راقي ومهني، حققوا لنا زيادة في المبيعات بنسبة 150% خلال 6 أشهر. فريق ��حترف وإبداعي حقاً.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1953,7 +1983,7 @@ export default function Index() {
                   {
                     icon: "⏰",
                     title: "ساعات العمل",
-                    info: "السبت - الخميس",
+                    info: "السبت - ال��ميس",
                     description: "من 9 صباحاً إلى 6 مساءً",
                     color: "from-orange-500 to-red-500",
                   },
@@ -2078,7 +2108,7 @@ export default function Index() {
                 />
                 <p className="leading-relaxed text-pretty mb-6">
                   وكالة إبداعية متخصصة في تصميم الهويات البصرية والتسويق الرقمي،
-                  نساعدك في بناء علامة تجارية قوية ومؤثرة.
+                  نساعدك في بناء علامة ت��ارية قوية ومؤثرة.
                 </p>
               </div>
 
@@ -2153,7 +2183,7 @@ export default function Index() {
                   { text: "فريقنا", href: "#team" },
                   { text: "آراء العملاء", href: "#testimonials" },
                   { text: "تواصل معنا", href: "#contact" },
-                  { text: "��ياسة الخصوصية", href: "#privacy" },
+                  { text: "سياسة الخصوصية", href: "#privacy" },
                 ].map((link, index) => (
                   <motion.li
                     key={index}
@@ -2185,8 +2215,7 @@ export default function Index() {
                 ابق على اطلاع
               </h4>
               <p className="mb-4 text-sm leading-relaxed">
-                اشترك في نشرتنا البريدية للحصو�� على آخر الأخبار والعروض
-                الحصرية.
+                اشترك في نشرتنا البريدية للحصول على آخر الأخبار والعروض الحصرية.
               </p>
 
               <div className="space-y-4">
