@@ -557,4 +557,284 @@
   .rounded-professional-xl {
     border-radius: 2rem;
   }
+
+  /* Mobile-first responsive design */
+  .mobile-optimized {
+    @apply touch-manipulation select-none;
+  }
+
+  /* Touch-friendly buttons */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Responsive text sizes */
+  .text-responsive-xs {
+    @apply text-xs sm:text-sm;
+  }
+
+  .text-responsive-sm {
+    @apply text-sm sm:text-base;
+  }
+
+  .text-responsive-base {
+    @apply text-base sm:text-lg;
+  }
+
+  .text-responsive-lg {
+    @apply text-lg sm:text-xl;
+  }
+
+  .text-responsive-xl {
+    @apply text-xl sm:text-2xl;
+  }
+
+  .text-responsive-2xl {
+    @apply text-2xl sm:text-3xl;
+  }
+
+  /* Responsive spacing */
+  .p-responsive {
+    @apply p-4 sm:p-6 lg:p-8;
+  }
+
+  .px-responsive {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .py-responsive {
+    @apply py-4 sm:py-6 lg:py-8;
+  }
+
+  .m-responsive {
+    @apply m-4 sm:m-6 lg:m-8;
+  }
+
+  .gap-responsive {
+    @apply gap-4 sm:gap-6 lg:gap-8;
+  }
+
+  /* Mobile navigation */
+  .mobile-menu {
+    @apply fixed inset-0 z-50 bg-white dark:bg-slate-800 transform transition-transform duration-300;
+  }
+
+  .mobile-menu.closed {
+    @apply translate-x-full;
+  }
+
+  .mobile-menu.open {
+    @apply translate-x-0;
+  }
+
+  /* Swipe gestures support */
+  .swipe-container {
+    @apply touch-pan-x;
+  }
+
+  /* Improved scroll areas */
+  .scroll-area {
+    @apply overflow-auto overscroll-contain;
+  }
+
+  /* Safe area support for mobile */
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
+
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .safe-area-left {
+    padding-left: env(safe-area-inset-left);
+  }
+
+  .safe-area-right {
+    padding-right: env(safe-area-inset-right);
+  }
+}
+
+/* Enhanced mobile styles */
+@media (max-width: 768px) {
+  /* Better touch targets */
+  button,
+  a {
+    min-height: 44px;
+    touch-action: manipulation;
+  }
+
+  /* Improved form inputs */
+  input,
+  textarea,
+  select {
+    font-size: 16px; /* Prevents zoom on iOS */
+    touch-action: manipulation;
+  }
+
+  /* Better card spacing on mobile */
+  .card {
+    @apply mx-4 mb-4;
+  }
+
+  /* Mobile-friendly navigation */
+  .nav-professional {
+    @apply px-4;
+  }
+
+  /* Better mobile typography */
+  .heading-primary {
+    @apply text-3xl leading-tight;
+  }
+
+  .heading-secondary {
+    @apply text-2xl leading-tight;
+  }
+
+  /* Mobile-optimized grid */
+  .grid-professional {
+    @apply gap-4;
+  }
+
+  /* Better mobile spacing */
+  .section-padding {
+    @apply py-12;
+  }
+
+  .container-padding {
+    @apply px-4;
+  }
+}
+
+/* Tablet optimizations */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .heading-primary {
+    @apply text-5xl;
+  }
+
+  .heading-secondary {
+    @apply text-4xl;
+  }
+
+  .section-padding {
+    @apply py-16;
+  }
+
+  .container-padding {
+    @apply px-6;
+  }
+}
+
+/* Desktop optimizations */
+@media (min-width: 1024px) {
+  /* Enhanced hover effects */
+  .hover-lift:hover {
+    transform: translateY(-8px);
+    transition: transform 0.3s ease;
+  }
+
+  /* Better desktop spacing */
+  .section-padding {
+    @apply py-20;
+  }
+
+  .container-padding {
+    @apply px-8;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  /* Crisp borders and shadows */
+  .card {
+    border-width: 0.5px;
+  }
+
+  .shadow-professional {
+    box-shadow:
+      0 5px 7.5px -1.5px rgba(var(--shadow), 0.1),
+      0 2px 3px -1px rgba(var(--shadow), 0.05);
+  }
+}
+
+/* Landscape orientation optimizations */
+@media (orientation: landscape) and (max-height: 500px) {
+  .section-padding {
+    @apply py-8;
+  }
+
+  .heading-primary {
+    @apply text-2xl;
+  }
+
+  .heading-secondary {
+    @apply text-xl;
+  }
+}
+
+/* Motion preferences */
+@media (prefers-reduced-motion: no-preference) {
+  /* Enhanced animations for users who prefer motion */
+  .animate-enhanced {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+
+  .hover-rotate:hover {
+    transform: rotate(5deg);
+  }
+}
+
+/* Color scheme adaptations */
+@media (prefers-color-scheme: dark) {
+  /* Ensure proper contrast in auto dark mode */
+  .auto-dark {
+    color-scheme: dark;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-contrast: high) {
+  /* Higher contrast for better accessibility */
+  .card {
+    border-width: 2px;
+    border-color: rgb(var(--outline));
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    border-width: 2px;
+  }
+}
+
+/* Focus improvements for keyboard navigation */
+@media (prefers-reduced-motion: no-preference) {
+  :focus-visible {
+    outline: 3px solid rgb(var(--brand-primary));
+    outline-offset: 2px;
+    transition: outline-offset 0.2s ease;
+  }
+}
+
+/* Print optimizations */
+@media print {
+  /* Hide interactive elements */
+  .no-print {
+    display: none !important;
+  }
+
+  /* Optimize spacing for print */
+  .section-padding {
+    @apply py-4;
+  }
+
+  /* Ensure text is readable */
+  body {
+    color: black !important;
+    background: white !important;
+  }
 }
