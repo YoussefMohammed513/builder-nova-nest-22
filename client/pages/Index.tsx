@@ -204,7 +204,7 @@ export default function Index() {
           >
             <div className="py-4 space-y-4">
               {[
-                { href: "#home", text: "الر��يسية" },
+                { href: "#home", text: "الرئيسية" },
                 { href: "#about", text: "من نحن" },
                 { href: "#services", text: "خدماتنا" },
                 { href: "#stats", text: "إنجازاتنا" },
@@ -238,7 +238,7 @@ export default function Index() {
                 onClick={() => setIsMenuOpen(false)}
                 className="inline-block bg-gradient-to-r from-brand-primary to-brand-secondary text-white px-6 py-3 rounded-full font-semibold shadow-lg"
               >
-                احجز استشارتك المجانية
+                احجز استشارتك الم��انية
               </motion.a>
             </div>
           </motion.div>
@@ -288,7 +288,7 @@ export default function Index() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ delay: 0.8, duration: 1 }}
-                className="bg-gradient-to-r from-brand-primary via-purple-500 to-brand-secondary bg-clip-text text-transparent"
+                className="bg-gradient-to-r from-brand-primary to-brand-secondary bg-clip-text text-transparent"
               >
                 {" "}
                 هوية{" "}
@@ -318,10 +318,10 @@ export default function Index() {
                   scale: 1.05,
                   boxShadow: "0 25px 50px rgba(60, 210, 245, 0.5)",
                   background:
-                    "linear-gradient(135deg, #3CD2F5 0%, #7BEAFF 50%, #9F7AEA 100%)",
+                    "linear-gradient(135deg, #3CD2F5 0%, #7BEAFF 100%)",
                 }}
                 whileTap={{ scale: 0.95 }}
-                className="group bg-gradient-to-r from-brand-primary via-purple-500 to-brand-secondary text-white px-8 py-4 rounded-full text-xl font-semibold shadow-xl transition-all duration-500 hover:shadow-2xl"
+                className="group bg-gradient-to-r from-brand-primary to-brand-secondary text-white px-8 py-4 rounded-full text-xl font-semibold shadow-xl transition-all duration-500 hover:shadow-2xl"
               >
                 <span className="relative z-10">احجز استشارتك المجانية</span>
                 <motion.div
@@ -391,7 +391,7 @@ export default function Index() {
               أرقامنا تتحدث عنا
             </h2>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              سجل حافل من النجاحات والإنجازات مع عملائنا في جميع أنحاء المنطقة
+              سجل حافل من النجاحات والإنجازات مع عملائنا في جميع أنحاء المنطق��
             </p>
           </motion.div>
 
@@ -820,7 +820,7 @@ export default function Index() {
               معرض أعمالنا
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              اكتشف مجموعة من أفضل أعمالنا التي نفخر بتقديمه�� لعملائنا في مختلف
+              اكتشف مجموعة من أفضل أعمالنا التي نفخر بتقديمها لعملائنا في مختلف
               القطاعات والمجالات
             </p>
           </motion.div>
@@ -966,7 +966,7 @@ export default function Index() {
               فريق الخبراء
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              نخبة من المبدعين والمتخصصين في مجالات التصميم والتسويق الرقمي
+              نخبة من المبدعين ��المتخصصين في مجالات التصميم والتسويق الرقمي
               والتطوير
             </p>
           </motion.div>
@@ -1111,7 +1111,7 @@ export default function Index() {
               {
                 name: "محمد العواضي",
                 company: "شركة النخبة التجارية",
-                text: "خدمة رائعة وسرعة في التنفيذ. الفريق محترف جداً وملتزم بالمواعيد. التصاميم فاقت توقعاتي بمراحل والنتائج كانت مذهلة.",
+                text: "خدمة رائعة وسرعة في التنفيذ. الفريق محترف جداً وملتزم بالمواعيد. ال��صاميم فاقت توقعاتي بمراحل والنتائج كانت مذهلة.",
                 rating: 5,
                 image:
                   "https://source.unsplash.com/100x100/?businessman,portrait,man,professional",
@@ -1147,7 +1147,7 @@ export default function Index() {
               {
                 name: "خالد الأحمدي",
                 company: "شركة التقنية الذكية",
-                text: "موقع إلكتروني متطور وسريع مع تجربة مستخدم ممتازة. ال��مل كان احترافي من البداية للنهاية.",
+                text: "موقع إلكتروني متطور وسريع مع تجربة مستخدم ممتازة. العمل كان احترافي من البداية للنهاية.",
                 rating: 5,
                 image:
                   "https://source.unsplash.com/100x100/?tech,ceo,man,business",
@@ -1234,7 +1234,7 @@ export default function Index() {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-              ابدأ مشروعك معنا ال��وم
+              ابدأ مشروعك معنا اليوم
             </h2>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
               تواصل معنا الآن واحصل على استشارة مجانية لبناء علامتك التجارية
@@ -1367,7 +1367,7 @@ export default function Index() {
               />
               <p className="text-gray-300 leading-relaxed mb-6 text-lg">
                 وكالة إبداعية متخصصة في بناء الهويات التجارية والتسويق الرقمي
-                بمعايير عالمية. نحن نؤمن بقوة الإبداع في تحويل الأفكار إلى واقع
+                بمعايير عالمية. ��حن نؤمن بقوة الإبداع في تحويل الأفكار إلى واقع
                 مذهل يحقق النجاح.
               </p>
               <div className="flex gap-4">
@@ -1395,7 +1395,7 @@ export default function Index() {
                   "الإعلانات الممولة",
                   "تطوير المواقع",
                   "إنتاج المحتوى المرئي",
-                  "الاستشارات التسويقية",
+                  "الاست��ارات التسويقية",
                 ].map((service, index) => (
                   <motion.li
                     key={index}
@@ -1414,7 +1414,7 @@ export default function Index() {
               </h3>
               <div className="space-y-4 text-gray-300">
                 <div className="flex items-center gap-3">
-                  <span className="text-brand-primary">��</span>
+                  <span className="text-brand-primary">📞</span>
                   <div>
                     <p className="font-semibold">هاتف</p>
                     <p>+967 78 466 8027</p>
