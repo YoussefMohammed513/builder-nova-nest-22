@@ -517,7 +517,7 @@ export default function Index() {
                   {
                     title: "السرعة",
                     desc: "تسليم في المواعيد المحددة",
-                    icon: "���",
+                    icon: "🚀",
                   },
                   {
                     title: "الدعم",
@@ -666,7 +666,7 @@ export default function Index() {
                 icon: "📱",
                 title: "إدارة وسائل التواصل",
                 description:
-                  "استراتيجيات محتوى مدروسة ��إدارة احترافية لحساباتك على منصات التواصل الاجتماعي لزيادة التفاعل",
+                  "استراتيجيات محتوى مدروسة وإدا��ة احترافية لحساباتك على منصات التواصل الاجتماعي لزيادة التفاعل",
                 features: [
                   "استراتيجية المحتوى",
                   "التصميم والإبداع",
@@ -1138,7 +1138,7 @@ export default function Index() {
               {
                 name: "نورا سالم",
                 company: "متجر الأزياء العصرية",
-                text: "حملة إعلانية ناجحة جداً زادت من مبيعاتنا بنسبة 300%. الفريق فهم رؤيتنا وترجمها لواقع مذهل.",
+                text: "حملة إعلانية ��اجحة جداً زادت من مبيعاتنا بنسبة 300%. الفريق فهم رؤيتنا وترجمها لواقع مذهل.",
                 rating: 5,
                 image:
                   "https://source.unsplash.com/100x100/?fashion,woman,designer,business",
@@ -1214,7 +1214,7 @@ export default function Index() {
       {/* Contact Section */}
       <section
         id="contact"
-        className="py-20 bg-gradient-to-br from-brand-primary via-purple-500 to-brand-secondary relative overflow-hidden"
+        className="py-20 bg-gradient-to-br from-brand-primary to-brand-secondary relative overflow-hidden"
       >
         {/* Background Animation */}
         <div className="absolute inset-0 opacity-20">
