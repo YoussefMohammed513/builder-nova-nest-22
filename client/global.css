@@ -290,12 +290,13 @@
 
   /* Professional Card Styles */
   .card {
-    @apply rounded-3xl p-6 transition-all duration-300;
+    @apply rounded-2xl sm:rounded-3xl p-4 sm:p-6 transition-all duration-300;
     background: rgb(var(--surface));
     border: 1px solid rgb(var(--outline-variant));
     box-shadow:
       0 4px 6px -1px rgba(var(--shadow), 0.1),
       0 2px 4px -1px rgba(var(--shadow), 0.06);
+    touch-action: manipulation;
   }
 
   .card:hover {
@@ -304,6 +305,16 @@
       0 20px 25px -5px rgba(var(--shadow), 0.15),
       0 10px 10px -5px rgba(var(--shadow), 0.1);
     border-color: rgb(var(--brand-primary));
+  }
+
+  @media (max-width: 768px) {
+    .card {
+      @apply rounded-2xl p-4 mx-2;
+    }
+
+    .card:active {
+      transform: scale(0.98);
+    }
   }
 
   /* Glass morphism effect */
