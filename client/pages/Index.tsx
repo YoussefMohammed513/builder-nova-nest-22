@@ -144,7 +144,7 @@ const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
       whileTap={{ scale: 0.95 }}
       className="dark-mode-toggle relative overflow-hidden"
       aria-label={
-        isDarkMode ? "تبديل إلى الو��ع الفاتح" : "تبديل إلى الوضع الداكن"
+        isDarkMode ? "ت��ديل إلى الو��ع الفاتح" : "تبديل إلى الوضع الداكن"
       }
     >
       <motion.div
@@ -1148,10 +1148,13 @@ export default function Index() {
                   <motion.button
                     whileHover={{ scale: 1.02 }}
                     whileTap={{ scale: 0.98 }}
-                    className={`w-full py-3 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r ${service.color} text-white hover:shadow-lg relative overflow-hidden group`}
+                    className={`w-full py-3 sm:py-4 rounded-xl font-semibold transition-all duration-300 bg-gradient-to-r ${service.color} text-white hover:shadow-lg relative overflow-hidden group touch-target mobile-optimized text-responsive-base`}
                   >
                     <motion.div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <span className="relative z-10">اطلب الخدمة ��لآن</span>
+                    <span className="relative z-10 flex items-center justify-center gap-2">
+                      <span>اطلب الخدمة الآن</span>
+                      <span className="text-lg">🚀</span>
+                    </span>
                   </motion.button>
                 </div>
               </motion.div>
@@ -1442,7 +1445,7 @@ export default function Index() {
                 social: ["behance", "dribbble", "linkedin"],
                 color:
                   "from-[rgb(var(--brand-primary))] to-[rgb(var(--brand-secondary))]",
-                specialties: ["الإبداع", "التصميم", "الابتكار"],
+                specialties: ["الإبداع", "التصميم", "ا��ابتكار"],
                 quote: "كل تصميم يحكي قصة، ونحن نكتب أجمل القصص",
               },
               {
@@ -1654,7 +1657,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1494790108755-2616c999db1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 date: "منذ 3 أشهر",
-                project: "هوية طبية + إدارة سوشيال ميديا",
+                project: "هوية طبية + إدارة سوشيا�� ميديا",
               },
               {
                 name: "خالد يوسف النجار",
@@ -2126,7 +2129,7 @@ export default function Index() {
               <div>
                 <img
                   src="https://cdn.builder.io/api/v1/assets/6cac5a504765458ea9034ccfe6de8d2b/logo-25dded?format=webp&width=400"
-                  alt="خطوة للدعاية والإعلان"
+                  alt="خ��وة للدعاية والإعلان"
                   className="h-12 w-auto mb-4"
                   loading="lazy"
                 />
@@ -2307,7 +2310,7 @@ export default function Index() {
           >
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-center md:text-right">
-                <p>&copy; 2024 خطوة للدعاية والإعلا��. جميع الحقوق محفوظة.</p>
+                <p>&copy; 2024 خ��وة للدعاية والإعلا��. جميع الحقوق محفوظة.</p>
               </div>
 
               <div className="flex items-center gap-6 text-sm">
