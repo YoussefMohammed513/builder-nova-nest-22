@@ -475,7 +475,7 @@ export default function Index() {
               className="mb-4"
             >
               <span className="inline-block px-4 py-2 bg-[rgb(var(--brand-primary))]/20 text-[rgb(var(--brand-primary))] rounded-full text-sm font-semibold backdrop-blur-sm">
-                🚀 وكالة إبداعية رائدة في اليمن
+                🚀 وك��لة إبداعية رائدة في اليمن
               </span>
             </motion.div>
 
@@ -798,7 +798,7 @@ export default function Index() {
               <p className="text-lg leading-relaxed mb-6 text-pretty">
                 تأسست "خطوة" لتقديم حلول مبتكرة في مجال الدعاية والإعلان، بخبرة
                 تجمع بين الإبداع والاحتراف العالمي. نعمل على بناء الهويات
-                التجارية القوية، وتنفيذ الحملات التسويقية المؤثرة، وإدارة
+                ��لتجارية القوية، وتنفيذ الحملات التسويقية المؤثرة، وإدارة
                 المحتوى الرقمي باحترافية تضاهي المعايير العالمية.
               </p>
               <p className="text-lg leading-relaxed mb-8 text-pretty">
@@ -1622,7 +1622,7 @@ export default function Index() {
             />
             <h2 className="heading-secondary mb-6">آراء عملائنا الكرام</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
-              شهادات حقيقية من عملائنا الذين حققوا النجاح معنا وشاهدوا نمو
+              شهادات حقيقية من عملائنا الذين حققوا النجاح معن�� وشاهدوا نمو
               أعمالهم
             </p>
           </motion.div>
@@ -1652,7 +1652,7 @@ export default function Index() {
                 company: "عيادة النور الطبية",
                 role: "مديرة العيادة",
                 content:
-                  "خدمة استثنائية! ساعدونا في بناء ثقة المرضى من خلال التصميم المتميز وإدارة الحسابات الاجتماعية بشكل احترافي.",
+                  "خدمة استثنائية! ساعدونا في بناء ثقة المرضى من خلال التصميم المتميز وإدارة الحسابات الاجتماعية بشكل اح��رافي.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1494790108755-2616c999db1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -2337,19 +2337,41 @@ export default function Index() {
           </motion.div>
         </div>
 
-        {/* Floating Action Button */}
-        <motion.a
-          href="#contact"
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
+        {/* Enhanced Floating Action Button */}
+        <motion.div
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 2, duration: 0.5 }}
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className="fixed bottom-8 left-8 w-14 h-14 bg-gradient-brand rounded-full flex items-center justify-center text-white text-2xl shadow-professional-lg hover:shadow-professional-xl transition-all duration-300 z-50"
+          className="fixed bottom-4 sm:bottom-8 left-4 sm:left-8 z-50 safe-area-bottom"
           style={{ direction: "ltr" }}
         >
-          💬
-        </motion.a>
+          <motion.a
+            href="#contact"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            className="w-12 h-12 sm:w-14 sm:h-14 bg-gradient-brand rounded-full flex items-center justify-center text-white text-xl sm:text-2xl shadow-professional-lg hover:shadow-professional-xl transition-all duration-300 touch-target mobile-optimized group relative overflow-hidden"
+          >
+            <motion.div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+            <span className="relative z-10">💬</span>
+
+            {/* Pulse animation */}
+            <motion.div
+              className="absolute inset-0 bg-gradient-brand rounded-full opacity-30"
+              animate={{ scale: [1, 1.2, 1] }}
+              transition={{ duration: 2, repeat: Infinity }}
+            />
+          </motion.a>
+
+          {/* Tooltip for desktop */}
+          <motion.div
+            initial={{ opacity: 0, x: 10 }}
+            whileHover={{ opacity: 1, x: 0 }}
+            className="hidden lg:block absolute right-full top-1/2 transform -translate-y-1/2 mr-3 bg-black/80 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap backdrop-blur-sm"
+          >
+            تواصل معنا
+            <div className="absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2 border-4 border-transparent border-l-black/80"></div>
+          </motion.div>
+        </motion.div>
       </footer>
     </div>
   );
