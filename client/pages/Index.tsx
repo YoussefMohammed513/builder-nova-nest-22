@@ -287,8 +287,7 @@ export default function Index() {
                     className="relative flex items-center gap-2 transition-colors duration-300 hover:text-[rgb(var(--brand-primary))] py-2 px-3 rounded-lg mobile-optimized text-responsive-sm"
                   >
                     <span className="text-sm opacity-70">{item.icon}</span>
-                    <span className="hidden xl:inline">{item.text}</span>
-                    <span className="xl:hidden">{item.icon}</span>
+                    <span className="hidden lg:inline">{item.text}</span>
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-[rgb(var(--brand-primary))] to-[rgb(var(--brand-secondary))] group-hover:w-full transition-all duration-300"></span>
                     <motion.div
                       className="absolute inset-0 bg-[rgb(var(--brand-primary))]/10 rounded-lg opacity-0"
@@ -511,7 +510,7 @@ export default function Index() {
               className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-8 text-white/90 leading-relaxed max-w-4xl mx-auto text-pretty px-4"
             >
               بتصاميم احترافية وإعلانات مؤثرة تجعل علامتك تتألق في السوق
-              العالمية مع أحدث التقنيات والأساليب الإبداعية المبتكرة
+              العالمية مع أحدث التقنيات والأساليب الإبداعية المب��كرة
             </motion.p>
 
             <motion.div
@@ -783,7 +782,7 @@ export default function Index() {
             />
             <h2 className="heading-secondary mb-6">من نحن</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
-              قصة نجاح بدأت برؤية واضحة لتقديم أفضل الحلول الإبداعية في المنطقة
+              قصة نجاح بدأت برؤ��ة واضحة لتقديم أفضل الحلول الإبداعية في المنطقة
             </p>
           </motion.div>
 
@@ -1000,7 +999,7 @@ export default function Index() {
                 icon: "🎨",
                 title: "تصميم الهوية البصرية",
                 description:
-                  "شعارات وهويات بصرية متكاملة تعكس شخصية علامتك التجارية وتميزك عن المنافسين في السوق المحلي والعالمي",
+                  "شعارات وهويات بصرية متكاملة تعكس شخصية علامتك التجارية وتميزك عن المنافسين في السوق المحلي والع��لمي",
                 features: [
                   "تصميم الشعار الاحترافي",
                   "دليل الهوية البصرية الشامل",
@@ -1069,7 +1068,7 @@ export default function Index() {
                   "إنتاج الفيديو الاحترافي",
                   "الموشن جرافيك المتقدم",
                   "التصوير الفوتوغرافي الإبداعي",
-                  "المونتاج والإخراج الفني",
+                  "��لمونتاج والإخراج الفني",
                 ],
                 image:
                   "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
@@ -1282,7 +1281,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-pink-500 to-[rgb(var(--brand-secondary))]",
-                description: "استراتيجية محتوى جذابة لعلامة أزياء عصرية",
+                description: "استراتيجية محت��ى جذابة لعلامة أزياء عصرية",
                 client: "Fashion Plus",
                 year: "2024",
                 tags: ["أزياء", "تسويق", "موضة"],
@@ -1681,7 +1680,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 date: "منذ 4 أشهر",
-                project: "حملة تسويقية شاملة",
+                project: "حملة تسو��قية شاملة",
               },
               {
                 name: "محمد علي الشامي",
@@ -1788,7 +1787,7 @@ export default function Index() {
               {[
                 { number: "98%", label: "معدل رضا العملاء", icon: "😊" },
                 { number: "500+", label: "عميل راضٍ", icon: "👥" },
-                { number: "4.9/5", label: "متوسط التقييم", icon: "⭐" },
+                { number: "4.9/5", label: "متوسط ��لتقييم", icon: "⭐" },
                 { number: "24/7", label: "دعم فني مستمر", icon: "🔧" },
               ].map((stat, index) => (
                 <motion.div
@@ -1876,7 +1875,7 @@ export default function Index() {
                     <input
                       type="text"
                       className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-white/40 transition-colors backdrop-blur-sm"
-                      placeholder="أدخل اسمك الكامل"
+                      placeholder="أد��ل اسمك الكامل"
                     />
                   </motion.div>
 
