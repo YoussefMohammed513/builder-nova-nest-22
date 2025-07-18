@@ -510,7 +510,7 @@ export default function Index() {
               className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-8 text-white/90 leading-relaxed max-w-4xl mx-auto text-pretty px-4"
             >
               بتصاميم احترافية وإعلانات مؤثرة تجعل علامتك تتألق في السوق
-              العالمية مع أحدث التقنيات والأساليب الإبداعية المب��كرة
+              العالمية مع أحدث التقنيات والأساليب الإبداعية المبتكرة
             </motion.p>
 
             <motion.div
@@ -727,12 +727,12 @@ export default function Index() {
             className="mt-16 text-center"
           >
             <h3 className="text-2xl font-bold text-white mb-8">
-              شهادات وجوائز تقديرية
+              شها��ات وجوائز تقديرية
             </h3>
             <div className="flex flex-wrap justify-center gap-8 opacity-70">
               {[
                 "🏅 أفضل وكالة إبداعية",
-                "🎖️ جائزة الابتكار",
+                "🎖�� جائزة الابتكار",
                 "⭐ تقييم 5 نجوم",
               ].map((award, index) => (
                 <motion.div
@@ -782,7 +782,7 @@ export default function Index() {
             />
             <h2 className="heading-secondary mb-6">من نحن</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
-              قصة نجاح بدأت برؤ��ة واضحة لتقديم أفضل الحلول الإبداعية في المنطقة
+              قصة نجاح بدأت برؤية واضحة لتقديم أفضل الحلول الإبداعية في المنطقة
             </p>
           </motion.div>
 
@@ -999,12 +999,12 @@ export default function Index() {
                 icon: "🎨",
                 title: "تصميم الهوية البصرية",
                 description:
-                  "شعارات وهويات بصرية متكاملة تعكس شخصية علامتك التجارية وتميزك عن المنافسين في السوق المحلي والع��لمي",
+                  "شعارات وهويات بصرية متكاملة تعكس شخصية علامتك التجارية وتميزك عن المنافسين في السوق المحلي والعالمي",
                 features: [
                   "تصميم الشعار الاحترافي",
                   "دليل الهوية البصرية الشامل",
                   "القرطاسية والمطبوعات التجارية",
-                  "التطبيقات الرقمية والتفاعلية",
+                  "التطبيقات الرقمية والتفا��لية",
                 ],
                 image:
                   "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
@@ -1052,7 +1052,7 @@ export default function Index() {
                   "فيسب��ك وإنستقرام المتقدم",
                   "جوجل أدوردز المتخصص",
                   "سناب شات وتيك توك الحديث",
-                  "يوتيوب ولينكد إن الاحترافي",
+                  "يوتي��ب ولينكد إن الاحترافي",
                 ],
                 image:
                   "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
@@ -1068,7 +1068,7 @@ export default function Index() {
                   "إنتاج الفيديو الاحترافي",
                   "الموشن جرافيك المتقدم",
                   "التصوير الفوتوغرافي الإبداعي",
-                  "��لمونتاج والإخراج الفني",
+                  "المونتاج والإخراج الفني",
                 ],
                 image:
                   "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
@@ -1243,7 +1243,7 @@ export default function Index() {
                 tags: ["هوية", "مطاعم", "تراث"],
               },
               {
-                title: "شر��ة التقنية الذكية",
+                title: "شر��ة ا��تقنية الذكية",
                 category: "موقع إلكتروني متقدم",
                 image:
                   "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
@@ -1281,7 +1281,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-pink-500 to-[rgb(var(--brand-secondary))]",
-                description: "استراتيجية محت��ى جذابة لعلامة أزياء عصرية",
+                description: "استراتيجية محتوى جذابة لعلامة أزياء عصرية",
                 client: "Fashion Plus",
                 year: "2024",
                 tags: ["أزياء", "تسويق", "موضة"],
@@ -1372,7 +1372,7 @@ export default function Index() {
               whileTap={{ scale: 0.95 }}
               className="btn-primary text-lg px-8 py-4"
             >
-              عرض جميع الأعمال (50+ مشروع)
+              عرض جميع الأعمال (50+ مش��وع)
             </motion.button>
           </motion.div>
         </div>
@@ -1680,7 +1680,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 date: "منذ 4 أشهر",
-                project: "حملة تسو��قية شاملة",
+                project: "حملة تسويقية شاملة",
               },
               {
                 name: "محمد علي الشامي",
@@ -1787,7 +1787,7 @@ export default function Index() {
               {[
                 { number: "98%", label: "معدل رضا العملاء", icon: "😊" },
                 { number: "500+", label: "عميل راضٍ", icon: "👥" },
-                { number: "4.9/5", label: "متوسط ��لتقييم", icon: "⭐" },
+                { number: "4.9/5", label: "متوسط التقييم", icon: "⭐" },
                 { number: "24/7", label: "دعم فني مستمر", icon: "🔧" },
               ].map((stat, index) => (
                 <motion.div
@@ -1875,7 +1875,7 @@ export default function Index() {
                     <input
                       type="text"
                       className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-white/40 transition-colors backdrop-blur-sm"
-                      placeholder="أد��ل اسمك الكامل"
+                      placeholder="أدخل اسمك الكامل"
                     />
                   </motion.div>
 
@@ -1995,7 +1995,7 @@ export default function Index() {
                   {
                     icon: "📧",
                     title: "البريد الإلكتروني",
-                    info: "info@stepagency.com",
+                    info: "stepdesign.agency@gmail.com",
                     description: "نرد خلال ساعة واحدة",
                     color: "from-blue-500 to-cyan-500",
                   },
@@ -2145,7 +2145,7 @@ export default function Index() {
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-[rgb(var(--brand-primary))]">📧</span>
-                  <span>info@stepagency.com</span>
+                  <span>stepdesign.agency@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-[rgb(var(--brand-primary))]">📍</span>
