@@ -144,7 +144,7 @@ const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
       whileTap={{ scale: 0.95 }}
       className="dark-mode-toggle relative overflow-hidden"
       aria-label={
-        isDarkMode ? "ت��ديل إلى الو��ع الفاتح" : "تبديل إلى الوضع الداكن"
+        isDarkMode ? "ت��ديل إلى الو���ع الفاتح" : "تبديل إلى الوضع الداكن"
       }
     >
       <motion.div
@@ -474,7 +474,7 @@ export default function Index() {
               className="mb-4"
             >
               <span className="inline-block px-4 py-2 bg-[rgb(var(--brand-primary))]/20 text-[rgb(var(--brand-primary))] rounded-full text-sm font-semibold backdrop-blur-sm">
-                🚀 وك��لة إبداعية رائدة في اليمن
+                🚀 وكالة إبداعية رائدة في اليمن
               </span>
             </motion.div>
 
@@ -546,7 +546,7 @@ export default function Index() {
                 className="btn-secondary text-responsive-lg px-6 sm:px-8 py-3 sm:py-4 flex items-center justify-center gap-2 touch-target mobile-optimized w-full sm:w-auto"
               >
                 <span className="text-xl">👁️</span>
-                <span className="hidden sm:inline">شاهد أعمالنا</span>
+                <span className="hidden sm:inline">شاهد أعم��لنا</span>
                 <span className="sm:hidden">أعمالنا</span>
               </motion.a>
             </motion.div>
@@ -810,7 +810,7 @@ export default function Index() {
                 {[
                   {
                     title: "الإبداع اللامحدود",
-                    desc: "تصاميم مبتكرة تعكس هويتك الفريدة وتميزك",
+                    desc: "تصاميم مبتكرة تعكس هويتك ا��فريدة وتميزك",
                     icon: "🎨",
                     color: "from-pink-500 to-rose-500",
                   },
@@ -1031,7 +1031,7 @@ export default function Index() {
                 icon: "🖨️",
                 title: "التصميم والطباعة",
                 description:
-                  "مواد طباعية عالية الجودة من الكروت الشخصية إلى اللافتات الكبيرة بأحدث التقنيات والمواد المتطورة",
+                  "مواد طبا��ية عالية الجودة من الكروت الشخصية إلى اللافتات الكبيرة بأحدث التقنيات والمواد المتطورة",
                 features: [
                   "الكروت الشخصية الفاخرة",
                   "البروشورات والكتيبات التفاعلية",
@@ -1568,7 +1568,7 @@ export default function Index() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
               {[
                 { number: "25+", label: "سنوات خبرة جماعية", icon: "🏆" },
-                { number: "15+", label: "شهادة احترافية", icon: "📜" },
+                { number: "15+", label: "شهادة اح��رافية", icon: "📜" },
                 { number: "100%", label: "التزام بالجودة", icon: "✨" },
               ].map((stat, index) => (
                 <motion.div
@@ -1675,7 +1675,7 @@ export default function Index() {
                 company: "معهد الإبداع التعليمي",
                 role: "مؤسسة المعهد",
                 content:
-                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في جذب الطلاب الجدد وبناء سمعة قوية في السوق التعليمي.",
+                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في جذب الطلاب الجد�� وبناء سمعة قوية في السوق التعليمي.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -2309,7 +2309,7 @@ export default function Index() {
           >
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-center md:text-right">
-                <p>&copy; 2024 خ��وة للدعاية والإعلا��. جميع الحقوق محفوظة.</p>
+                <p>&copy; 2024 خ��وة للدعاية والإعلا��. جميع ال��قوق محفوظة.</p>
               </div>
 
               <div className="flex items-center gap-6 text-sm">
