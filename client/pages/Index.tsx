@@ -782,7 +782,7 @@ export default function Index() {
             />
             <h2 className="heading-secondary mb-6">من نحن</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
-              قصة نجاح بدأت برؤية واضحة لتقديم أفضل الحلول الإبداعية في المنطقة
+              ��صة نجاح بدأت برؤية واضحة لتقديم أفضل الحلول الإبداعية في المنطقة
             </p>
           </motion.div>
 
@@ -802,7 +802,7 @@ export default function Index() {
               </p>
               <p className="text-lg leading-relaxed mb-8 text-pretty">
                 نؤمن بأن كل علامة تجارية لها قصة فريدة تستحق أن تُروى بطريقة
-                إبداعية ومؤثرة تلامس قلو�� الجمهور وتحقق النتائج المرج��ة في
+                ��بداعية ومؤثرة تلامس قلو�� الجمهور وتحقق النتائج المرج��ة في
                 عالم تتزايد فيه المنافسة والتحديات يوماً بعد يوم.
               </p>
 
@@ -827,7 +827,7 @@ export default function Index() {
                     color: "from-green-500 to-emerald-500",
                   },
                   {
-                    title: "الدعم المتواصل",
+                    title: "الدعم المتو��صل",
                     desc: "مساندة مست��رة لضمان نجاحك وتميزك",
                     icon: "🤝",
                     color: "from-purple-500 to-violet-500",
@@ -1002,7 +1002,7 @@ export default function Index() {
                   "شعارات وهويات بصرية متكاملة تعكس شخصية علامتك التجارية وتميزك عن المنافسين في السوق المحلي والعالمي",
                 features: [
                   "تصميم الشعار الاحترافي",
-                  "دليل الهوية البصرية الشامل",
+                  "دليل الهوية البصرية ا��شامل",
                   "القرطاسية والمطبوعات التجارية",
                   "التطبيقات الرقمية والتفا��لية",
                 ],
@@ -1047,7 +1047,7 @@ export default function Index() {
                 icon: "📈",
                 title: "الإعلانات الممولة",
                 description:
-                  "حملات إعلانية مدروسة ومستهدفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
+                  "حملات إعلانية مدروسة ومست��دفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
                 features: [
                   "فيسب��ك وإنستقرام المتقدم",
                   "جوجل أدوردز المتخصص",
@@ -1262,7 +1262,7 @@ export default function Index() {
                 description: "حملة إبداعية شاملة لترويج المعرض الفني",
                 client: "معرض الإبداع",
                 year: "2023",
-                tags: ["فن", "إعلان", "ثقافة"],
+                tags: ["ف��", "إعلان", "ثقافة"],
               },
               {
                 title: "عيادة النخبة الطبية",
@@ -1467,7 +1467,7 @@ export default function Index() {
                 social: ["github", "linkedin", "behance"],
                 color: "from-purple-500 to-blue-500",
                 specialties: ["التطوير", "التصميم", "التقنية"],
-                quote: "نحول الأفكار إلى تجارب رقمية مذهلة",
+                quote: "نحول الأ��كار إلى تجارب رقمية مذهلة",
               },
               {
                 name: "عبدالله مناع",
@@ -1639,7 +1639,7 @@ export default function Index() {
                 company: "مطعم البركة",
                 role: "المدير العام",
                 content:
-                  "تعامل راقي ومهني، حققوا لنا زيادة في المبيعات بنسبة 150% خلال 6 أشهر. فريق محترف وإبداعي حقاً.",
+                  "��عامل راقي ومهني، حققوا لنا زيادة في المبيعات بنسبة 150% خلال 6 أشهر. فريق محترف وإبداعي حقاً.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1659,7 +1659,7 @@ export default function Index() {
                 project: "هوية طبية + إدارة سوشيا�� ميديا",
               },
               {
-                name: "خالد يوسف النجار",
+                name: "خالد يوسف ا��نجار",
                 company: "شركة التميز للتجارة",
                 role: "المدير التنفيذي",
                 content:
@@ -1795,6 +1795,249 @@ export default function Index() {
                   initial={{ opacity: 0, scale: 0 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ delay: index * 0.1, duration: 0.5 }}
+                  viewport={{ once: true }}
+                  className="text-center"
+                >
+                  <div className="text-3xl mb-2">{stat.icon}</div>
+                  <div className="text-2xl font-bold text-[rgb(var(--brand-primary))] mb-1">
+                    {stat.number}
+                  </div>
+                  <div className="text-sm opacity-70">{stat.label}</div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Suggestions Section */}
+      <section
+        id="suggestions"
+        className="section-padding bg-[rgb(var(--surface-variant))] relative overflow-hidden"
+      >
+        <AnimatedBackground />
+        <div className="container-padding relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <motion.div
+              initial={{ scale: 0 }}
+              whileInView={{ scale: 1 }}
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="inline-block p-3 bg-[rgb(var(--brand-primary))]/10 rounded-full mb-6"
+            >
+              <span className="text-4xl">💡</span>
+            </motion.div>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ width: "100px" }}
+              transition={{ delay: 0.5, duration: 0.8 }}
+              className="h-1 bg-gradient-brand mx-auto mb-6"
+            />
+            <h2 className="heading-secondary mb-6">اقتراحاتك تهمنا</h2>
+            <p className="text-xl max-w-3xl mx-auto text-pretty">
+              نسعد بتلقي آرائكم واقتراحاتكم لتطوير خدماتنا وتحسين تجربتكم معنا
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            {/* Suggestion Form */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="card p-8"
+            >
+              <h3 className="text-2xl font-bold mb-6 text-center">
+                شاركنا اقترا��ك
+              </h3>
+
+              <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 }}
+                    className="space-y-2"
+                  >
+                    <label className="block text-sm font-medium">الاسم</label>
+                    <input
+                      type="text"
+                      className="w-full px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors"
+                      placeholder="أدخل اسمك"
+                    />
+                  </motion.div>
+
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.2 }}
+                    className="space-y-2"
+                  >
+                    <label className="block text-sm font-medium">
+                      البريد الإلكتروني
+                    </label>
+                    <input
+                      type="email"
+                      className="w-full px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors"
+                      placeholder="example@domain.com"
+                    />
+                  </motion.div>
+                </div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.3 }}
+                  className="space-y-2"
+                >
+                  <label className="block text-sm font-medium">
+                    نوع الاقتراح
+                  </label>
+                  <select className="w-full px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors">
+                    <option value="">اختر نوع الاقتراح</option>
+                    <option value="service">تحسين الخدمات</option>
+                    <option value="design">تطوير التصاميم</option>
+                    <option value="website">تحسين الموقع</option>
+                    <option value="support">خدمة العملاء</option>
+                    <option value="pricing">الأسعار والعروض</option>
+                    <option value="other">أخرى</option>
+                  </select>
+                </motion.div>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.4 }}
+                  className="space-y-2"
+                >
+                  <label className="block text-sm font-medium">التفاصيل</label>
+                  <textarea
+                    rows="4"
+                    className="w-full px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors resize-none"
+                    placeholder="اكتب اقتراحك بالتفصيل..."
+                  ></textarea>
+                </motion.div>
+
+                <motion.button
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full btn-primary py-4 text-responsive-base touch-target mobile-optimized"
+                >
+                  <span className="flex items-center justify-center gap-2">
+                    💡 إرسال الاقتراح
+                  </span>
+                </motion.button>
+              </div>
+            </motion.div>
+
+            {/* Suggestion Categories */}
+            <motion.div
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              viewport={{ once: true }}
+              className="space-y-6"
+            >
+              <h3 className="text-2xl font-bold mb-8">
+                كيف يمكننا تحسين خدماتنا؟
+              </h3>
+
+              {[
+                {
+                  icon: "🎨",
+                  title: "التصاميم والإبداع",
+                  description: "اقتراحات حول جودة التصاميم وأساليب الإبداع",
+                  color: "from-pink-500 to-rose-500",
+                },
+                {
+                  icon: "⚡",
+                  title: "سرعة التنفيذ",
+                  description: "أفكار لتحسين أوقات التسليم وكفاءة العمل",
+                  color: "from-blue-500 to-cyan-500",
+                },
+                {
+                  icon: "💰",
+                  title: "الأسعار والعروض",
+                  description: "اقتراحات حول الباقات والأسعار والعروض الخاصة",
+                  color: "from-green-500 to-emerald-500",
+                },
+                {
+                  icon: "🤝",
+                  title: "خدمة العملاء",
+                  description: "تحسين تجربة التعامل والدعم الفني",
+                  color: "from-purple-500 to-violet-500",
+                },
+                {
+                  icon: "🌐",
+                  title: "الموقع والتجربة",
+                  description: "تطوير الموقع وتحسين تجربة المستخدم",
+                  color: "from-orange-500 to-red-500",
+                },
+                {
+                  icon: "📈",
+                  title: "خدمات جديدة",
+                  description: "اقتراحات لخدمات ومنتجات جديدة",
+                  color: "from-indigo-500 to-blue-500",
+                },
+              ].map((category, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1, duration: 0.6 }}
+                  viewport={{ once: true }}
+                  whileHover={{ scale: 1.02, x: 10 }}
+                  className="card p-6 hover:shadow-professional-lg transition-all duration-300 group relative overflow-hidden cursor-pointer"
+                >
+                  <motion.div
+                    className={`absolute inset-0 bg-gradient-to-r ${category.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
+                  />
+                  <div className="relative z-10 flex items-start gap-4">
+                    <motion.div
+                      whileHover={{ scale: 1.2, rotate: 10 }}
+                      className="w-12 h-12 bg-[rgb(var(--brand-primary))]/10 rounded-full flex items-center justify-center text-2xl flex-shrink-0"
+                    >
+                      {category.icon}
+                    </motion.div>
+                    <div>
+                      <h4 className="font-semibold text-lg mb-2">
+                        {category.title}
+                      </h4>
+                      <p className="text-sm opacity-70 leading-relaxed">
+                        {category.description}
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+          </div>
+
+          {/* Suggestion Stats */}
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            viewport={{ once: true }}
+            className="mt-16 text-center"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
+              {[
+                { number: "250+", label: "اقتراح تم تنفيذه", icon: "✅" },
+                { number: "95%", label: "من الاقتراحات مفيدة", icon: "💡" },
+                { number: "48", label: "ساعة متوسط الرد", icon: "⚡" },
+              ].map((stat, index) => (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, scale: 0 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ delay: index * 0.2, duration: 0.5 }}
                   viewport={{ once: true }}
                   className="text-center"
                 >
@@ -2309,7 +2552,9 @@ export default function Index() {
           >
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-center md:text-right">
-                <p>&copy; 2024 خ��وة للدعاية والإعلا��. جميع ال��قوق محفوظة.</p>
+                <p>
+                  &copy; 2024 خ��وة للدعاية والإعلا��. جميع ال����قوق محفوظة.
+                </p>
               </div>
 
               <div className="flex items-center gap-6 text-sm">
