@@ -1474,7 +1474,7 @@ export default function Index() {
               {
                 name: "عبدالله مناع",
                 role: "أخصائي علاقات عامة",
-                experience: "خبير التواصل والعلاقا��",
+                experience: "خبير التواصل والعلاقات",
                 image:
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 social: ["linkedin", "twitter", "instagram"],
