@@ -272,7 +272,7 @@ export default function Index() {
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
                 { href: "#services", text: "خدماتنا", icon: "⚙️" },
                 { href: "#stats", text: "إنجازاتنا", icon: "📊" },
-                { href: "#portfolio", text: "أعمالنا", icon: "💼" },
+                { href: "#portfolio", text: "أعمالنا", icon: "��" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
                 { href: "#contact", text: "تواصل معنا", icon: "📞" },
@@ -376,7 +376,7 @@ export default function Index() {
                 { href: "#portfolio", text: "أعمالنا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
-                { href: "#contact", text: "تواصل معنا", icon: "��" },
+                { href: "#contact", text: "تواصل معنا", icon: "📞" },
               ].map((item, index) => (
                 <motion.a
                   key={index}
@@ -729,7 +729,7 @@ export default function Index() {
             className="mt-16 text-center"
           >
             <h3 className="text-2xl font-bold text-white mb-8">
-              شها��ات وجوائز تقدي��ية
+              شها��ات وجوائز تقديرية
             </h3>
             <div className="flex flex-wrap justify-center gap-8 opacity-70">
               {[
@@ -1049,11 +1049,11 @@ export default function Index() {
                 icon: "📈",
                 title: "الإعلانات الممولة",
                 description:
-                  "حملات إعلانية مدروسة ومست��دفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف ال��حددة",
+                  "حملات إعلانية مدروسة ومست��دفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
                 features: [
                   "فيسب��ك وإنستقرام المتقدم",
                   "جوجل أدوردز المتخصص",
-                  "سناب ��ات وتيك توك الحديث",
+                  "سناب شات وتيك توك الحديث",
                   "يوتيوب ولينكد إن الاحترافي",
                 ],
                 image:
@@ -1242,7 +1242,7 @@ export default function Index() {
                 description: "تصميم هوية متكاملة تعكس التراث العربي الأصيل",
                 client: "مطعم الأصالة",
                 year: "2024",
-                tags: ["هوية", "مطاعم", "ت��اث"],
+                tags: ["هوية", "مطاعم", "تراث"],
               },
               {
                 title: "شر��ة ا��تقنية الذكية",
@@ -1289,7 +1289,7 @@ export default function Index() {
                 tags: ["أزياء", "تسويق", "موضة"],
               },
               {
-                title: "شركة الاستثمار العقاري",
+                title: "شركة الاستثمار الع��اري",
                 category: "هوية ومو��ع إلكتروني",
                 image:
                   "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
@@ -1330,7 +1330,7 @@ export default function Index() {
                         ))}
                       </div>
                       <div className="text-sm text-white/80 mb-2">
-                        {project.category} ��� {project.year}
+                        {project.category} • {project.year}
                       </div>
                       <h3 className="text-2xl font-bold mb-2">
                         {project.title}
@@ -1474,7 +1474,7 @@ export default function Index() {
               {
                 name: "عبدالله مناع",
                 role: "أخصائي علاقات عامة",
-                experience: "خبير التواصل والعلاقات",
+                experience: "خبي�� التواصل والعلاقات",
                 image:
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 social: ["linkedin", "twitter", "instagram"],
@@ -1641,7 +1641,7 @@ export default function Index() {
                 company: "مطعم البركة",
                 role: "المدير العام",
                 content:
-                  "تعامل راقي ومهني، حققوا لنا زيادة في المبيعات بنسبة 150% خلال 6 أشهر. فريق محترف وإبداعي حقاً.",
+                  "تعام�� راقي ومهني، حققوا لنا زيادة في المبيعات بنسبة 150% خلال 6 أشهر. فريق محترف وإبداعي حقاً.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1661,7 +1661,7 @@ export default function Index() {
                 project: "هوية طبية + إدارة سوشيا�� ميديا",
               },
               {
-                name: "خال�� يوسف ا��نجار",
+                name: "خالد يوسف ا���نجار",
                 company: "شركة التميز للتجارة",
                 role: "المدير التنفيذي",
                 content:
@@ -1882,7 +1882,7 @@ export default function Index() {
                     className="space-y-2"
                   >
                     <label className="block text-sm font-medium">
-                      البريد الإلك��روني
+                      البريد الإلكتروني
                     </label>
                     <input
                       type="email"
@@ -1965,7 +1965,7 @@ export default function Index() {
                 },
                 {
                   icon: "💰",
-                  title: "الأسعار والعروض",
+                  title: "الأسعار والعرو��",
                   description: "اقتراحات حول الباقات والأسعار والعروض الخاصة",
                   color: "from-green-500 to-emerald-500",
                 },
