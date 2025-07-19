@@ -1685,7 +1685,7 @@ export default function Index() {
                 project: "حملة تسويقية شاملة",
               },
               {
-                name: "محمد علي الشام��",
+                name: "محمد علي الشامي",
                 company: "مؤسسة الشامي التجارية",
                 role: "صاحب المؤسس��",
                 content:
