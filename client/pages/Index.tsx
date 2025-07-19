@@ -2171,7 +2171,7 @@ export default function Index() {
                       اختر نوع الخدمة
                     </option>
                     <option value="branding" className="bg-gray-800">
-                      تصميم الهوية الب��رية
+                      تصميم الهوية البصرية
                     </option>
                     <option value="social" className="bg-gray-800">
                       إدارة وسائل التواصل
@@ -2488,7 +2488,7 @@ export default function Index() {
               </h4>
               <p className="mb-4 text-sm leading-relaxed">
                 اشترك في نشرتنا البريدية للحصول على آخر الأخبار والعروض
-                الحصري��.
+                الحصرية.
               </p>
 
               <div className="space-y-4">
