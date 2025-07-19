@@ -1411,7 +1411,7 @@ export default function Index() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="h-1 bg-gradient-brand mx-auto mb-6"
             />
-            <h2 className="heading-secondary mb-6">فريق الخبراء المتم��ز</h2>
+            <h2 className="heading-secondary mb-6">فريق الخبراء المتميز</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
               نخبة من المبدعين والمتخصصين في مجالات التصميم والتسويق الرقمي
               والتطوير التقني
