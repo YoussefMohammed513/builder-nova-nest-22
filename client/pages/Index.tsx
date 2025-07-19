@@ -729,7 +729,7 @@ export default function Index() {
             className="mt-16 text-center"
           >
             <h3 className="text-2xl font-bold text-white mb-8">
-              شهادات وجوائز تقدي��ية
+              شهادات وجوائز تقديرية
             </h3>
             <div className="flex flex-wrap justify-center gap-8 opacity-70">
               {[
