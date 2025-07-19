@@ -186,33 +186,12 @@ const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
   );
 };
 
-// Loading component
-const LoadingSpinner = () => (
-  <div className="flex items-center justify-center min-h-screen">
-    <div className="relative">
-      <div className="w-12 h-12 border-4 border-[rgb(var(--brand-primary))]/20 rounded-full animate-spin">
-        <div className="absolute top-0 left-0 w-12 h-12 border-4 border-transparent border-t-[rgb(var(--brand-primary))] rounded-full animate-spin"></div>
-      </div>
-    </div>
-  </div>
-);
-
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
   const { isDarkMode, toggleDarkMode } = useDarkMode();
   const { scrollYProgress } = useScroll();
   const heroScale = useTransform(scrollYProgress, [0, 0.5], [1, 1.1]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.3]);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return <LoadingSpinner />;
-  }
 
   return (
     <div className="min-h-screen transition-colors duration-300">
@@ -575,7 +554,7 @@ export default function Index() {
                 className="btn-secondary text-responsive-lg px-6 sm:px-8 py-3 sm:py-4 flex items-center justify-center gap-2 touch-target mobile-optimized w-full sm:w-auto"
               >
                 <span className="text-xl">👁️</span>
-                <span className="hidden sm:inline">شاهد أعمالنا</span>
+                <span className="hidden sm:inline">شاه�� أعمالنا</span>
                 <span className="sm:hidden">أعمالنا</span>
               </motion.a>
             </motion.div>
@@ -726,7 +705,7 @@ export default function Index() {
                 suffix: "+",
                 label: "مشروع مكتمل",
                 icon: "🚀",
-                description: "بجودة عالمية",
+                description: "��جودة عالمية",
                 color: "from-blue-400 to-blue-600",
               },
               {
@@ -1041,7 +1020,7 @@ export default function Index() {
             <h2 className="heading-secondary mb-6">خدماتنا الاحترافية</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
               نقدم مجموعة شاملة من الخدمات المتخصصة لبناء علامتك التجارية وتحقيق
-              أهدافك التسويقية بأحدث الاستراتيجيات والتقنيات العالمية
+              أهد��فك التسويقية بأحدث الاستراتيجيات والتقنيات العالمية
             </p>
           </motion.div>
 
@@ -1375,7 +1354,7 @@ export default function Index() {
                 description: "تطبيق توصيل مبتكر مع حملة إطلاق ناجحة",
                 client: "سريع للتوصيل",
                 year: "2024",
-                tags: ["تطبيق", "توصيل", "تقنية"],
+                tags: ["تطبي��", "توصيل", "تقنية"],
               },
               {
                 title: "معهد التعليم الرقمي",
@@ -1536,7 +1515,7 @@ export default function Index() {
                 color:
                   "from-[rgb(var(--brand-primary))] to-[rgb(var(--brand-secondary))]",
                 specialties: ["الإبداع", "التصميم", "الابتكار"],
-                quote: "كل تصميم يحكي قصة، ونحن نكتب أجمل القصص",
+                quote: "كل تصمي�� يحكي قصة، ونحن نكتب أجمل القصص",
               },
               {
                 name: "محمد مقبل نعمان",
@@ -1557,7 +1536,7 @@ export default function Index() {
                   "https://cdn.builder.io/api/v1/image/assets%2F6cac5a504765458ea9034ccfe6de8d2b%2Fe600234db88349078d9ae78a2b881deb",
                 social: ["github", "linkedin", "behance"],
                 color: "from-purple-500 to-blue-500",
-                specialties: ["التطوير", "التصميم", "التقنية"],
+                specialties: ["ال��طوير", "التصميم", "التقنية"],
                 quote: "نحول الأفكار إلى تجارب رقمية مذهلة",
               },
               {
@@ -2713,7 +2692,7 @@ export default function Index() {
                   href="#terms"
                   className="hover:text-[rgb(var(--brand-primary))] transition-colors"
                 >
-                  شروط الاستخدام
+                  ��روط الاستخدام
                 </a>
                 <a
                   href="#sitemap"
