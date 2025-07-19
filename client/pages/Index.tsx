@@ -2450,7 +2450,7 @@ export default function Index() {
               <ul className="space-y-3">
                 {[
                   { text: "من نحن", href: "#about" },
-                  { text: "أعمال��ا", href: "#portfolio" },
+                  { text: "أعمالنا", href: "#portfolio" },
                   { text: "فريقنا", href: "#team" },
                   { text: "آراء العملاء", href: "#testimonials" },
                   { text: "اقتراحاتك", href: "#suggestions" },
