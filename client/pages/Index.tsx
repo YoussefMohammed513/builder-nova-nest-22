@@ -1075,7 +1075,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
                 color: "from-purple-500 to-indigo-500",
-                pricing: "ابت��اءً من 10$/فيديو",
+                pricing: "ابتداءً من 10$/فيديو",
               },
               {
                 icon: "🌐",
