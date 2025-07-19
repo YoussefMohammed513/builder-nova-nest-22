@@ -273,7 +273,7 @@ export default function Index() {
                 { href: "#services", text: "خدماتنا", icon: "⚙️" },
                 { href: "#stats", text: "إنجازاتنا", icon: "📊" },
                 { href: "#portfolio", text: "أعمالنا", icon: "💼" },
-                { href: "#team", text: "فريقنا", icon: "👥" },
+                { href: "#team", text: "ف��يقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
                 { href: "#contact", text: "تواصل معنا", icon: "📞" },
               ].map((item, index) => (
@@ -548,7 +548,7 @@ export default function Index() {
                 className="btn-secondary text-responsive-lg px-6 sm:px-8 py-3 sm:py-4 flex items-center justify-center gap-2 touch-target mobile-optimized w-full sm:w-auto"
               >
                 <span className="text-xl">👁️</span>
-                <span className="hidden sm:inline">شاهد أعمالنا</span>
+                <span className="hidden sm:inline">شاهد أعما��نا</span>
                 <span className="sm:hidden">أعمالنا</span>
               </motion.a>
             </motion.div>
@@ -660,7 +660,7 @@ export default function Index() {
               {
                 number: 500,
                 suffix: "+",
-                label: "عم��ل راضٍ",
+                label: "عميل راضٍ",
                 icon: "👥",
                 description: "في جميع أنحاء المنطقة",
                 color: "from-green-400 to-green-600",
@@ -1033,7 +1033,7 @@ export default function Index() {
                 icon: "🖨️",
                 title: "التصميم والطباعة",
                 description:
-                  "مواد طباعية عالية الجودة من الكروت الشخصية إلى اللافتات الكبيرة بأحدث التقنيات والمواد المتطورة",
+                  "مواد طباعية عالية الجود�� من الكروت الشخصية إلى اللافتات الكبيرة بأحدث التقنيات والمواد المتطورة",
                 features: [
                   "الكروت الشخصية الفاخرة",
                   "البروشورات والكتيبات التفاعلية",
@@ -1153,7 +1153,7 @@ export default function Index() {
                   >
                     <motion.div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <span className="relative z-10 flex items-center justify-center gap-2">
-                      <span>اطلب الخدمة الآن</span>
+                      <span>اطلب الخدم�� الآن</span>
                       <span className="text-lg">🚀</span>
                     </span>
                   </motion.button>
@@ -1570,7 +1570,7 @@ export default function Index() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
               {[
                 { number: "25+", label: "سنوات خبرة جماعية", icon: "🏆" },
-                { number: "15+", label: "شهادة احترافية", icon: "📜" },
+                { number: "15+", label: "شهاد�� احترافية", icon: "📜" },
                 { number: "100%", label: "التزام بالجودة", icon: "✨" },
               ].map((stat, index) => (
                 <motion.div
@@ -1677,7 +1677,7 @@ export default function Index() {
                 company: "معهد الإبداع التعليمي",
                 role: "مؤسسة المعهد",
                 content:
-                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في جذب الطلاب الجدد وبناء سمعة قوية في السو�� التعليمي.",
+                  "تصاميم رائعة وأفكار مبتكر��! ساعدونا في جذب الطلاب الجدد وبناء سمعة قوية في السو�� التعليمي.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -2450,7 +2450,7 @@ export default function Index() {
               <ul className="space-y-3">
                 {[
                   { text: "من نحن", href: "#about" },
-                  { text: "أعمالنا", href: "#portfolio" },
+                  { text: "أعمال��ا", href: "#portfolio" },
                   { text: "فريقنا", href: "#team" },
                   { text: "آراء العملاء", href: "#testimonials" },
                   { text: "اقتراحاتك", href: "#suggestions" },
