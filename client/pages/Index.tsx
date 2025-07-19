@@ -376,7 +376,7 @@ export default function Index() {
                 { href: "#portfolio", text: "أعمالنا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
-                { href: "#contact", text: "تواصل معنا", icon: "📞" },
+                { href: "#contact", text: "تواصل معنا", icon: "��" },
               ].map((item, index) => (
                 <motion.a
                   key={index}
@@ -729,7 +729,7 @@ export default function Index() {
             className="mt-16 text-center"
           >
             <h3 className="text-2xl font-bold text-white mb-8">
-              شها��ات وجوائز تقديرية
+              شها��ات وجوائز تقدي��ية
             </h3>
             <div className="flex flex-wrap justify-center gap-8 opacity-70">
               {[
@@ -982,7 +982,7 @@ export default function Index() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="h-1 bg-gradient-brand mx-auto mb-6"
             />
-            <h2 className="heading-secondary mb-6">خدماتنا الاحتراف��ة</h2>
+            <h2 className="heading-secondary mb-6">خدماتنا الاحترافية</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
               نقدم مجموعة شاملة من الخدمات المتخصصة لبناء علامتك التجارية وتحقيق
               أهدافك التسويقية بأحدث الأساليب والتقنيات العالمية
@@ -1049,12 +1049,12 @@ export default function Index() {
                 icon: "📈",
                 title: "الإعلانات الممولة",
                 description:
-                  "حملات إعلانية مدروسة ومست��دفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
+                  "حملات إعلانية مدروسة ومست��دفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف ال��حددة",
                 features: [
                   "فيسب��ك وإنستقرام المتقدم",
                   "جوجل أدوردز المتخصص",
-                  "سناب شات وتيك توك الحديث",
-                  "يوتي��ب ولينكد إن الاحترافي",
+                  "سناب ��ات وتيك توك الحديث",
+                  "يوتيوب ولينكد إن الاحترافي",
                 ],
                 image:
                   "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
@@ -1242,7 +1242,7 @@ export default function Index() {
                 description: "تصميم هوية متكاملة تعكس التراث العربي الأصيل",
                 client: "مطعم الأصالة",
                 year: "2024",
-                tags: ["هوية", "مطاعم", "تر��ث"],
+                tags: ["هوية", "مطاعم", "ت��اث"],
               },
               {
                 title: "شر��ة ا��تقنية الذكية",
@@ -1289,7 +1289,7 @@ export default function Index() {
                 tags: ["أزياء", "تسويق", "موضة"],
               },
               {
-                title: "��ركة الاستثمار العقاري",
+                title: "شركة الاستثمار العقاري",
                 category: "هوية ومو��ع إلكتروني",
                 image:
                   "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
@@ -1661,7 +1661,7 @@ export default function Index() {
                 project: "هوية طبية + إدارة سوشيا�� ميديا",
               },
               {
-                name: "خالد يوسف ا��نجار",
+                name: "خال�� يوسف ا��نجار",
                 company: "شركة التميز للتجارة",
                 role: "المدير التنفيذي",
                 content:
@@ -1882,7 +1882,7 @@ export default function Index() {
                     className="space-y-2"
                   >
                     <label className="block text-sm font-medium">
-                      البريد الإلكت��وني
+                      البريد الإلك��روني
                     </label>
                     <input
                       type="email"
@@ -2115,7 +2115,7 @@ export default function Index() {
                     className="space-y-2"
                   >
                     <label className="block text-white text-sm font-medium">
-                      الاسم الك��مل
+                      الاسم الكامل
                     </label>
                     <input
                       type="text"
@@ -2248,7 +2248,7 @@ export default function Index() {
                     icon: "📍",
                     title: "العنوان",
                     info: "صنعاء، اليمن",
-                    description: "نخدم العملاء في جميع أنحاء العال�� العربي",
+                    description: "نخدم العملاء في جميع أنحاء العالم العربي",
                     color: "from-purple-500 to-violet-500",
                   },
                   {
@@ -2393,7 +2393,7 @@ export default function Index() {
                   <span>stepdesign.agency@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-[rgb(var(--brand-primary))]">����</span>
+                  <span className="text-[rgb(var(--brand-primary))]">📍</span>
                   <span>صنعاء، اليمن</span>
                 </div>
               </div>
@@ -2454,7 +2454,7 @@ export default function Index() {
                   { text: "فريقنا", href: "#team" },
                   { text: "آراء العملاء", href: "#testimonials" },
                   { text: "اقتراحاتك", href: "#suggestions" },
-                  { text: "تواصل ��عنا", href: "#contact" },
+                  { text: "تواصل معنا", href: "#contact" },
                   { text: "سياسة الخصوصية", href: "#privacy" },
                 ].map((link, index) => (
                   <motion.li
