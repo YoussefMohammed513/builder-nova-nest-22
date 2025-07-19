@@ -1463,7 +1463,7 @@ export default function Index() {
               {
                 name: "محمود عبدالغني الشرفي",
                 role: "مطور ومصمم مواقع",
-                experience: "خبير التقنية و��لتطوير",
+                experience: "خبير التقنية والتطوير",
                 image:
                   "https://cdn.builder.io/api/v1/image/assets%2F6cac5a504765458ea9034ccfe6de8d2b%2Fe600234db88349078d9ae78a2b881deb",
                 social: ["github", "linkedin", "behance"],
@@ -1623,7 +1623,7 @@ export default function Index() {
             />
             <h2 className="heading-secondary mb-6">آراء عملائنا الكرام</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
-              شهادات حقيقية من عملائنا الذين حققوا النجاح مع��ا وشهدوا نمواً
+              شهادات حقيقية من عملائنا الذين حققوا النجاح معنا وشهدوا نمواً
               ملحوظاً في أعمالهم ومبيعاتهم
             </p>
           </motion.div>
@@ -1658,7 +1658,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1494790108755-2616c999db1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 date: "منذ 3 أ��هر",
-                project: "هوية طبية + إدارة سوشيال ميد��ا",
+                project: "هوية طبية + إدارة سوشيال ميديا",
               },
               {
                 name: "خالد يوسف النجار",
