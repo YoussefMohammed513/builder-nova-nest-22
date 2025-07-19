@@ -528,22 +528,24 @@ export default function Index() {
               className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8 px-4"
             >
               <motion.a
-                href="#contact"
+                href="https://wa.me/967784668027?text=مرحباً%20أريد%20استشارة%20مجانية%20حول%20خدماتكم"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -2 }}
                 whileTap={{ scale: 0.95 }}
                 className="group btn-primary text-responsive-lg px-6 sm:px-8 py-3 sm:py-4 relative overflow-hidden touch-target mobile-optimized w-full sm:w-auto text-center"
               >
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-[rgb(var(--brand-secondary))] to-[rgb(var(--brand-primary))] opacity-0"
+                  className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 opacity-0"
                   whileHover={{ opacity: 1 }}
                   transition={{ duration: 0.3 }}
                 />
                 <span className="relative z-10 flex items-center justify-center gap-2">
-                  <span className="text-xl">🎯</span>
+                  <span className="text-xl">💬</span>
                   <span className="hidden sm:inline">
-                    احجز استشارتك المجانية
+                    واتساب: احجز استشارتك المجانية
                   </span>
-                  <span className="sm:hidden">احجز الآن</span>
+                  <span className="sm:hidden">واتساب</span>
                 </span>
               </motion.a>
 
@@ -1039,7 +1041,7 @@ export default function Index() {
                 icon: "🖨️",
                 title: "التصميم والطباعة",
                 description:
-                  "مواد طباعية عالية الجودة من الكروت الشخصية إلى اللافتات ا��كبيرة بأحدث التقنيات والمواد المتطورة",
+                  "مواد طباعية عالية الجودة من الكروت الشخصية إلى اللافتات الكبيرة بأحدث التقنيات والمواد المتطورة",
                 features: [
                   "الكروت الشخصية الفاخرة",
                   "البروشورات والكتيبات التفاعلية",
@@ -1274,7 +1276,7 @@ export default function Index() {
               },
               {
                 title: "عيادة النخبة الطبية",
-                category: "تصمي�� شامل ومتكامل",
+                category: "تصميم شامل ومتكامل",
                 image:
                   "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-green-500 to-teal-500",
@@ -1322,7 +1324,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-green-500 to-blue-500",
-                description: "تطبيق توصيل ��بتكر مع حملة إطلاق ناجحة",
+                description: "تطبيق توصيل مبتكر مع حملة إطلاق ناجحة",
                 client: "سريع للتوصيل",
                 year: "2024",
                 tags: ["تطبيق", "توصيل", "تقنية"],
@@ -1507,7 +1509,7 @@ export default function Index() {
                   "https://cdn.builder.io/api/v1/image/assets%2F6cac5a504765458ea9034ccfe6de8d2b%2Fe600234db88349078d9ae78a2b881deb",
                 social: ["github", "linkedin", "behance"],
                 color: "from-purple-500 to-blue-500",
-                specialties: ["التطوير", "التصميم", "التقنية"],
+                specialties: ["التطو��ر", "التصميم", "التقنية"],
                 quote: "نحول الأفكار إلى تجارب رقمية مذهلة",
               },
               {
@@ -1696,7 +1698,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 date: "منذ شهرين",
-                project: "تصميم هوية بصرية شاملة",
+                project: "تصميم هوية بصرية شا��لة",
               },
               {
                 name: "فاطمة عبدالله السالم",
@@ -1715,7 +1717,7 @@ export default function Index() {
                 company: "شركة التميز للتجارة",
                 role: "المدير التنفيذي",
                 content:
-                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعات��ا الأونلاين بشكل كبير. شكراً لفريق خطوة المبدع.",
+                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعاتنا الأونلاين بشكل كبير. شكراً لفريق خطوة المبدع.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1739,7 +1741,7 @@ export default function Index() {
                 company: "مؤسسة الشامي التجارية",
                 role: "صاحب المؤسسة",
                 content:
-                  "فريق متفهم لاحتياجاتنا، سرعة في التنفيذ وجودة عالية في العمل. نوصي بهم بشدة لكل من يريد التميز.",
+                  "فريق متفهم لاحتياجاتنا، سرعة في التنفيذ وجودة عالية في العمل. نوصي بهم ��شدة لكل من يريد التميز.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1957,7 +1959,7 @@ export default function Index() {
                     <option value="design">تطوير التصاميم</option>
                     <option value="website">تحسين الموقع</option>
                     <option value="support">خدمة العملاء</option>
-                    <option value="pricing">الأسع��ر والعروض</option>
+                    <option value="pricing">الأسعار والعروض</option>
                     <option value="other">أخرى</option>
                   </select>
                 </motion.div>
@@ -1997,7 +1999,7 @@ export default function Index() {
               className="space-y-6"
             >
               <h3 className="text-2xl font-bold mb-8">
-                كيف يمكننا تحسين خدماتنا؟
+                كيف يم��ننا تحسين خدماتنا؟
               </h3>
 
               {[
@@ -2022,7 +2024,7 @@ export default function Index() {
                 {
                   icon: "🤝",
                   title: "خدمة العملاء",
-                  description: "تحسين تجربة ال��عامل والدعم الفني",
+                  description: "تحسين تجربة التعامل والدعم الفني",
                   color: "from-purple-500 to-violet-500",
                 },
                 {
