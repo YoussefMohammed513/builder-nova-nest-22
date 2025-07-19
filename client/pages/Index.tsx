@@ -2214,7 +2214,7 @@ export default function Index() {
                 >
                   <motion.div className="absolute inset-0 bg-gradient-to-r from-[rgb(var(--brand-primary))] to-[rgb(var(--brand-secondary))] opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
                   <span className="relative z-10 flex items-center justify-center gap-2">
-                    🚀 إرسال الط��ب
+                    🚀 إرسال الطلب
                   </span>
                 </motion.button>
               </div>
