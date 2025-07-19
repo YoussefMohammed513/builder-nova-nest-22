@@ -985,7 +985,7 @@ export default function Index() {
             <h2 className="heading-secondary mb-6">خدماتنا الاحترافية</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
               نقدم مجموعة شاملة من الخدمات المتخصصة لبناء علامتك التجارية وتحقيق
-              أهدافك التسويقية بأحدث الاستراتيجيات والتقنيات العالمية
+              أهدافك ال��سويقية بأحدث الاستراتيجيات والتقنيات العالمية
             </p>
           </motion.div>
 
@@ -1033,7 +1033,7 @@ export default function Index() {
                 icon: "🖨️",
                 title: "التصميم والطباعة",
                 description:
-                  "مواد طباعية عالية الجودة من الكروت الشخصية إلى اللافتات الكبيرة بأحدث التقنيات والمواد المتطورة",
+                  "مواد طباعية عالية الجودة من الكروت الشخصية إلى اللا��تات الكبيرة بأحدث التقنيات والمواد المتطورة",
                 features: [
                   "الكروت الشخصية الفاخرة",
                   "البروشورات والكتيبات التفاعلية",
@@ -1081,7 +1081,7 @@ export default function Index() {
                 icon: "🌐",
                 title: "تطوير المواقع",
                 description:
-                  "مواقع إلكترونية عصرية ومتجاوبة مع جميع الأجهزة مع أفضل تجربة مستخدم وتحسين محركات البحث المتقدم",
+                  "مواقع إلكترونية عصرية ��متجاوبة مع جميع الأجهزة مع أفضل تجربة مستخدم وتحسين محركات البحث المتقدم",
                 features: [
                   "التصميم المتجاوب الحديث",
                   "التطوير البرمجي المتقدم",
@@ -1490,7 +1490,7 @@ export default function Index() {
                   "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 social: ["behance", "dribbble", "instagram"],
                 color: "from-pink-500 to-[rgb(var(--brand-secondary))]",
-                specialties: ["التصميم", "الجرافيك", "الهوية"],
+                specialties: ["ال��صميم", "الجرافيك", "الهوية"],
                 quote: "الفن الحقيقي يكمن في البساطة المعبرة",
               },
             ].map((member, index) => (
@@ -1681,7 +1681,7 @@ export default function Index() {
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-                date: "منذ 4 أشهر",
+                date: "منذ 4 أ��هر",
                 project: "حملة تسويقية شاملة",
               },
               {
@@ -1920,7 +1920,7 @@ export default function Index() {
                 >
                   <label className="block text-sm font-medium">التفاصيل</label>
                   <textarea
-                    rows="4"
+                    rows={4}
                     className="w-full px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors resize-none"
                     placeholder="اكتب اقتراحك بالتفصيل..."
                   ></textarea>
@@ -1960,7 +1960,7 @@ export default function Index() {
                 {
                   icon: "⚡",
                   title: "سرعة التنفيذ",
-                  description: "أفكار لتحسين أوقات التسليم وكفاءة العمل",
+                  description: "أفكار لتحسين أوقات التسليم وك��اءة العمل",
                   color: "from-blue-500 to-cyan-500",
                 },
                 {
@@ -2201,7 +2201,7 @@ export default function Index() {
                     تفاصيل المشروع
                   </label>
                   <textarea
-                    rows="4"
+                    rows={4}
                     className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-white/40 transition-colors backdrop-blur-sm resize-none"
                     placeholder="اكتب تفاصيل مشروعك وما تريد تحقيقه..."
                   ></textarea>
