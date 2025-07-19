@@ -2303,7 +2303,7 @@ export default function Index() {
                 className="glass rounded-professional-lg p-6 border border-white/20"
               >
                 <h4 className="text-white font-bold text-lg mb-4">
-                  تابعنا على وسائل الت��اصل
+                  تابعنا على وسائل التواصل
                 </h4>
                 <div className="flex gap-4">
                   {[
