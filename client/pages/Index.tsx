@@ -373,7 +373,7 @@ export default function Index() {
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
                 { href: "#services", text: "خدماتنا", icon: "⚙️" },
                 { href: "#stats", text: "إنجازاتنا", icon: "📊" },
-                { href: "#portfolio", text: "أعمال��ا", icon: "💼" },
+                { href: "#portfolio", text: "أعمالنا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
                 { href: "#contact", text: "تواصل معنا", icon: "📞" },
@@ -729,7 +729,7 @@ export default function Index() {
             className="mt-16 text-center"
           >
             <h3 className="text-2xl font-bold text-white mb-8">
-              شها��ات وجوائز تقديرية
+              شها��ات وجوا��ز تقديرية
             </h3>
             <div className="flex flex-wrap justify-center gap-8 opacity-70">
               {[
@@ -805,7 +805,7 @@ export default function Index() {
               <p className="text-lg leading-relaxed mb-8 text-pretty">
                 نؤمن بأن كل علامة تجارية لها قصة فريدة تس��حق أن تُروى بطريقة
                 ��بداعية ومؤثرة تلامس قلو�� الجمهور وتحقق النتائج المرج��ة في
-                عالم تت��ايد فيه المنافسة والتحديات يوماً بعد يوم.
+                عالم تتزايد فيه المنافسة والتحديات يوماً بعد يوم.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
@@ -1006,7 +1006,7 @@ export default function Index() {
                   "تصميم الشعار الاحترافي",
                   "دليل الهوية البصرية ا��شامل",
                   "القرطاسية والمطبوعات التجارية",
-                  "التطبيقات الرقمية والتفا���لية",
+                  "التطبيقات الرقمية والتفا���لي��",
                 ],
                 image:
                   "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
@@ -1210,7 +1210,7 @@ export default function Index() {
             {[
               "الكل",
               "هوية بصرية",
-              "مواقع إلكترو��ية",
+              "مواقع إلكترونية",
               "حملات إعلانية",
               "محتوى مرئي",
             ].map((filter, index) => (
@@ -1239,7 +1239,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-orange-500 to-red-500",
-                description: "تصميم هوية متكاملة تع��س التراث العربي الأصيل",
+                description: "تصميم هوية متكاملة تعكس التراث العربي الأصيل",
                 client: "مطعم الأصالة",
                 year: "2024",
                 tags: ["هوية", "مطاعم", "تراث"],
@@ -1261,7 +1261,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-purple-500 to-pink-500",
-                description: "حملة إبداعية شاملة لترويج المع��ض الفني",
+                description: "حملة إبداعية شاملة لترويج المعرض الفني",
                 client: "معرض الإبداع",
                 year: "2023",
                 tags: ["ف��", "إعلان", "ثقافة"],
@@ -1469,7 +1469,7 @@ export default function Index() {
                 social: ["github", "linkedin", "behance"],
                 color: "from-purple-500 to-blue-500",
                 specialties: ["التطوير", "التصميم", "التقنية"],
-                quote: "نحول الأ��كار إلى تجارب ر��مية مذهلة",
+                quote: "نحول الأ��كار إلى تجارب رقمية مذهلة",
               },
               {
                 name: "عبدالله مناع",
@@ -1570,7 +1570,7 @@ export default function Index() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
               {[
                 { number: "25+", label: "سنوات خبرة جماعية", icon: "🏆" },
-                { number: "15+", label: "شهادة اح��رافية", icon: "📜" },
+                { number: "15+", label: "شهادة احترافية", icon: "📜" },
                 { number: "100%", label: "التزام بالجودة", icon: "✨" },
               ].map((stat, index) => (
                 <motion.div
@@ -1657,7 +1657,7 @@ export default function Index() {
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1494790108755-2616c999db1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-                date: "منذ 3 ��شهر",
+                date: "منذ 3 أشهر",
                 project: "هوية طبية + إدارة سوشيا�� ميديا",
               },
               {
@@ -1677,7 +1677,7 @@ export default function Index() {
                 company: "معهد الإبداع التعليمي",
                 role: "مؤسسة المعهد",
                 content:
-                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في جذب الطلاب الجد�� وبناء سمعة قوية في السوق التعليمي.",
+                  "تصاميم رائع�� وأفكار مبتكرة! ساعدونا في جذب الطلاب الجد�� وبناء سمعة قوية في السوق التعليمي.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -2577,7 +2577,7 @@ export default function Index() {
                   href="#sitemap"
                   className="hover:text-[rgb(var(--brand-primary))] transition-colors"
                 >
-                  خ��يطة الموقع
+                  خريطة الموقع
                 </a>
               </div>
             </div>
