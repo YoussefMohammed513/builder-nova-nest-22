@@ -1978,7 +1978,7 @@ export default function Index() {
                 {
                   icon: "🌐",
                   title: "الموقع والتجربة",
-                  description: "تطوير الموقع وت��سين تجربة المستخدم",
+                  description: "تطوير الموقع وتحسين تجربة المستخدم",
                   color: "from-orange-500 to-red-500",
                 },
                 {
@@ -2416,7 +2416,7 @@ export default function Index() {
                   "التصميم والطباعة",
                   "الإعلانات الممولة",
                   "إنتاج المحتوى المرئي",
-                  "تط��ير المواقع",
+                  "تطوير المواقع",
                 ].map((service, index) => (
                   <motion.li
                     key={index}
@@ -2455,7 +2455,7 @@ export default function Index() {
                   { text: "آراء العملاء", href: "#testimonials" },
                   { text: "اقتراحاتك", href: "#suggestions" },
                   { text: "تواصل معنا", href: "#contact" },
-                  { text: "سيا��ة الخصوصية", href: "#privacy" },
+                  { text: "سياسة الخصوصية", href: "#privacy" },
                 ].map((link, index) => (
                   <motion.li
                     key={index}
