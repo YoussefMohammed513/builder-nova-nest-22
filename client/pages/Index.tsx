@@ -573,7 +573,7 @@ export default function Index() {
                 className="flex items-center gap-1 bg-white/10 px-3 py-2 rounded-full backdrop-blur-sm border border-white/20 touch-target"
               >
                 <span className="text-lg">🏆</span>
-                <span className="hidden sm:inline">أكثر من 500 عميل راض��</span>
+                <span className="hidden sm:inline">أكثر من 500 عميل راضٍ</span>
                 <span className="sm:hidden">500+ عميل</span>
               </motion.span>
               <motion.span
