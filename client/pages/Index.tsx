@@ -2554,7 +2554,7 @@ export default function Index() {
           >
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-center md:text-right">
-                <p>&copy; 2024 خطوة للدعاية والإعلان. ��ميع الحقوق محفوظة.</p>
+                <p>&copy; 2024 خطوة للدعاية والإعلان. جميع الحقوق محفوظة.</p>
               </div>
 
               <div className="flex items-center gap-6 text-sm">
