@@ -729,7 +729,7 @@ export default function Index() {
             className="mt-16 text-center"
           >
             <h3 className="text-2xl font-bold text-white mb-8">
-              شهادات وجوائز تقديري��
+              شهادات وجوائز تقديرية
             </h3>
             <div className="flex flex-wrap justify-center gap-8 opacity-70">
               {[
@@ -1005,7 +1005,7 @@ export default function Index() {
                 features: [
                   "تصميم الشعار الاحترافي",
                   "دليل الهوية البصرية الشامل",
-                  "القرطاسية والمطبوعات ال��جارية",
+                  "القرطاسية والمطبوعات التجا��ية",
                   "التطبيقات الرقمية والتفاعلية",
                 ],
                 image:
@@ -1049,9 +1049,9 @@ export default function Index() {
                 icon: "📈",
                 title: "الإعلانات الممولة",
                 description:
-                  "حملات إعلانية مدروسة ومستهدفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
+                  "حملات إعلانية مدروسة ومستهدفة عبر جميع ��لمنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
                 features: [
-                  "فيسب��ك وإنستقرا�� المتقدم",
+                  "فيسب��ك وإنستقرام المتقدم",
                   "جوجل أدوردز المتخصص",
                   "سناب شات وتيك توك الحديث",
                   "يوتيوب ولينكد إن الاحترافي",
@@ -1212,7 +1212,7 @@ export default function Index() {
               "هوية بصرية",
               "مواقع إلكترونية",
               "حملات إعلانية",
-              "محتوى مرئي",
+              "محتوى م��ئي",
             ].map((filter, index) => (
               <motion.button
                 key={index}
@@ -1240,7 +1240,7 @@ export default function Index() {
                   "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-orange-500 to-red-500",
                 description: "تصميم هوية متكاملة تعكس التراث العربي الأصيل",
-                client: "مطع�� الأصالة",
+                client: "مطعم الأصالة",
                 year: "2024",
                 tags: ["هوية", "مطاعم", "تراث"],
               },
@@ -1374,7 +1374,7 @@ export default function Index() {
               whileTap={{ scale: 0.95 }}
               className="btn-primary text-lg px-8 py-4"
             >
-              عرض جميع الأعمال (50+ مش��وع)
+              عرض جميع الأعمال (50+ مشروع)
             </motion.button>
           </motion.div>
         </div>
@@ -1451,7 +1451,7 @@ export default function Index() {
               },
               {
                 name: "محمد مقبل نعمان",
-                role: "مختص تسويق رقمي",
+                role: "��ختص تسويق رقمي",
                 experience: "ا��تراتيجي التسويق الرقمي",
                 image:
                   "https://cdn.builder.io/api/v1/image/assets%2F6cac5a504765458ea9034ccfe6de8d2b%2F07f3061b142043b482f427d689ddeaa1",
@@ -1649,7 +1649,7 @@ export default function Index() {
                 project: "تصميم هوية بصرية شاملة",
               },
               {
-                name: "فاطمة عب��الله السالم",
+                name: "فاطمة عبدالله السالم",
                 company: "عيادة النور الطبية",
                 role: "مديرة العيادة",
                 content:
@@ -1681,7 +1681,7 @@ export default function Index() {
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-                date: "منذ 4 أشهر",
+                date: "من�� 4 أشهر",
                 project: "حملة تسويقية شاملة",
               },
               {
@@ -1788,7 +1788,7 @@ export default function Index() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {[
                 { number: "98%", label: "معدل رضا العملاء", icon: "😊" },
-                { number: "500+", label: "عميل راضٍ", icon: "👥" },
+                { number: "500+", label: "عميل راضٍ", icon: "��" },
                 { number: "4.9/5", label: "متوسط التقييم", icon: "⭐" },
                 { number: "24/7", label: "دعم فني مستمر", icon: "🔧" },
               ].map((stat, index) => (
@@ -1903,7 +1903,7 @@ export default function Index() {
                   </label>
                   <select className="w-full px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors">
                     <option value="">اختر نوع الاقتراح</option>
-                    <option value="service">تحسين الخدمات</option>
+                    <option value="service">تحسين الخد��ات</option>
                     <option value="design">تطوير التصاميم</option>
                     <option value="website">تحسين الموقع</option>
                     <option value="support">خدمة العملاء</option>
@@ -2177,7 +2177,7 @@ export default function Index() {
                       إدارة وسائل التواصل
                     </option>
                     <option value="printing" className="bg-gray-800">
-                      التصميم و��لطباعة
+                      التصميم والطباعة
                     </option>
                     <option value="ads" className="bg-gray-800">
                       الإعلانات الممولة
@@ -2378,8 +2378,8 @@ export default function Index() {
                   loading="lazy"
                 />
                 <p className="leading-relaxed text-pretty mb-6">
-                  وكالة إبداعية متخصصة في تصميم الهويات البصرية والتسويق
-                  ال��قمي، نساعدك في بناء علامة تجارية قوية ومؤثرة.
+                  وكالة إبداعية متخصصة في تصميم الهويات البصرية والتسويق الرقمي،
+                  نساعدك في بناء علامة تجارية قوية ومؤثرة.
                 </p>
               </div>
 
