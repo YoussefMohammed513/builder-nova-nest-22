@@ -372,8 +372,8 @@ export default function Index() {
                 { href: "#home", text: "الرئيسية", icon: "🏠" },
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
                 { href: "#services", text: "خدماتنا", icon: "⚙️" },
-                { href: "#stats", text: "إن��ازاتنا", icon: "📊" },
-                { href: "#portfolio", text: "أعمالنا", icon: "💼" },
+                { href: "#stats", text: "إنجازاتنا", icon: "📊" },
+                { href: "#portfolio", text: "أعمال��ا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
                 { href: "#contact", text: "تواصل معنا", icon: "📞" },
@@ -784,8 +784,7 @@ export default function Index() {
             />
             <h2 className="heading-secondary mb-6">من نحن</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
-              ��صة نجاح بدأت برؤية واضحة لتقديم ��فضل الحلول الإبداعية في
-              المنطقة
+              ��صة نجاح بدأت برؤية واضحة لتقديم أفضل الحلول الإبداعية في المنطقة
             </p>
           </motion.div>
 
@@ -805,8 +804,8 @@ export default function Index() {
               </p>
               <p className="text-lg leading-relaxed mb-8 text-pretty">
                 نؤمن بأن كل علامة تجارية لها قصة فريدة تس��حق أن تُروى بطريقة
-                ��بداعية ومؤثرة تلامس قلو�� ��لجمهور وتحقق النتائج المرج��ة في
-                عالم تتزايد فيه المنافسة والتحديات يوماً بعد يوم.
+                ��بداعية ومؤثرة تلامس قلو�� الجمهور وتحقق النتائج المرج��ة في
+                عالم تت��ايد فيه المنافسة والتحديات يوماً بعد يوم.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
@@ -1211,7 +1210,7 @@ export default function Index() {
             {[
               "الكل",
               "هوية بصرية",
-              "مواقع إلكترونية",
+              "مواقع إلكترو��ية",
               "حملات إعلانية",
               "محتوى مرئي",
             ].map((filter, index) => (
@@ -1240,7 +1239,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-orange-500 to-red-500",
-                description: "تصميم هوية متكاملة تعكس التراث العربي الأصيل",
+                description: "تصميم هوية متكاملة تع��س التراث العربي الأصيل",
                 client: "مطعم الأصالة",
                 year: "2024",
                 tags: ["هوية", "مطاعم", "تراث"],
@@ -1262,7 +1261,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-purple-500 to-pink-500",
-                description: "حملة إبداعية شاملة لترويج المعرض الفني",
+                description: "حملة إبداعية شاملة لترويج المع��ض الفني",
                 client: "معرض الإبداع",
                 year: "2023",
                 tags: ["ف��", "إعلان", "ثقافة"],
@@ -1284,7 +1283,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-pink-500 to-[rgb(var(--brand-secondary))]",
-                description: "��ستراتيجية محتوى جذابة لعلامة أزياء عصرية",
+                description: "استراتيجية محتوى جذابة لعلامة أزياء عصرية",
                 client: "Fashion Plus",
                 year: "2024",
                 tags: ["أزياء", "تسويق", "موضة"],
@@ -1459,18 +1458,18 @@ export default function Index() {
                 social: ["linkedin", "twitter", "facebook"],
                 color: "from-green-500 to-teal-500",
                 specialties: ["التسويق", "الحملات", "التحليل"],
-                quote: "التسويق الناجح يبدأ بفهم عميق لاحتياجات العملا��",
+                quote: "التسويق الناجح يبدأ بفهم عميق لاحتياجات العملاء",
               },
               {
                 name: "محمود عبدالغني الشرفي",
                 role: "مطور ومصمم مواقع",
                 experience: "خبير التقنية والتطوير",
                 image:
-                  "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                  "https://cdn.builder.io/api/v1/image/assets%2F6cac5a504765458ea9034ccfe6de8d2b%2Fe600234db88349078d9ae78a2b881deb",
                 social: ["github", "linkedin", "behance"],
                 color: "from-purple-500 to-blue-500",
                 specialties: ["التطوير", "التصميم", "التقنية"],
-                quote: "نحول الأ��كار إلى تجارب رقمية مذهلة",
+                quote: "نحول الأ��كار إلى تجارب ر��مية مذهلة",
               },
               {
                 name: "عبدالله مناع",
@@ -1481,7 +1480,7 @@ export default function Index() {
                 social: ["linkedin", "twitter", "instagram"],
                 color: "from-orange-500 to-red-500",
                 specialties: ["العلاقات", "التواصل", "الإعلام"],
-                quote: "الت��اصل الفعال هو الجسر بين الأحلام والواقع",
+                quote: "التواصل الفعال هو الجسر بين الأحلام والواقع",
               },
               {
                 name: "اسيد محمد البرعي",
@@ -1658,7 +1657,7 @@ export default function Index() {
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1494790108755-2616c999db1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-                date: "منذ 3 أشهر",
+                date: "منذ 3 ��شهر",
                 project: "هوية طبية + إدارة سوشيا�� ميديا",
               },
               {
@@ -1671,7 +1670,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 date: "منذ شهر",
-                project: "تطوير موقع إلكترون�� متكامل",
+                project: "تطوير موقع إلكتروني متكامل",
               },
               {
                 name: "سارة أحمد الحداد",
@@ -2379,8 +2378,8 @@ export default function Index() {
                   loading="lazy"
                 />
                 <p className="leading-relaxed text-pretty mb-6">
-                  وكالة إبداعية متخصصة في تص��يم الهويات البصرية والتسويق
-                  الرقمي، نساعدك في بناء علامة تجارية قوية ومؤثرة.
+                  وكالة إبداعية متخصصة في تصميم الهويات البصرية والتسويق الرقمي،
+                  نساعدك في بناء علامة تجارية قوية ومؤثرة.
                 </p>
               </div>
 
@@ -2496,7 +2495,7 @@ export default function Index() {
                 <div className="flex gap-2">
                   <input
                     type="email"
-                    placeholder="بريدك الإلك��روني"
+                    placeholder="بريدك الإلكتروني"
                     className="flex-1 px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors"
                   />
                   <motion.button
@@ -2578,7 +2577,7 @@ export default function Index() {
                   href="#sitemap"
                   className="hover:text-[rgb(var(--brand-primary))] transition-colors"
                 >
-                  خريطة الموقع
+                  خ��يطة الموقع
                 </a>
               </div>
             </div>
