@@ -729,11 +729,11 @@ export default function Index() {
             className="mt-16 text-center"
           >
             <h3 className="text-2xl font-bold text-white mb-8">
-              شهادات وجوائز تقد��رية
+              شهادات وجوائز تقديرية
             </h3>
             <div className="flex flex-wrap justify-center gap-8 opacity-70">
               {[
-                "🏅 أفضل وكالة إبداعية",
+                "🏅 أفضل وكالة ��بداعية",
                 "🎖️ جائزة الابتكار",
                 "⭐ تقييم 5 نجوم",
               ].map((award, index) => (
@@ -982,7 +982,7 @@ export default function Index() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="h-1 bg-gradient-brand mx-auto mb-6"
             />
-            <h2 className="heading-secondary mb-6">خدماتنا الاحترافية</h2>
+            <h2 className="heading-secondary mb-6">خد��اتنا الاحترافية</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
               نقدم مجموعة شاملة من الخدمات المتخصصة لبناء علامتك التجارية وتحقيق
               أهدافك التسويقية بأحدث الأساليب والتقنيات العالمية
@@ -1006,7 +1006,7 @@ export default function Index() {
                   "تصميم الشعار الاحترافي",
                   "دليل الهوية البصرية الشامل",
                   "القرطاسية والمطبوعات التجارية",
-                  "التطبيقات الرقمية والتفاعلية",
+                  "التطبيقا�� الرقمية والتفاعلية",
                 ],
                 image:
                   "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
@@ -1245,7 +1245,7 @@ export default function Index() {
                 tags: ["هوية", "مطاعم", "تراث"],
               },
               {
-                title: "شركة التقنية الذكية",
+                title: "شركة التقني�� الذكية",
                 category: "موقع إلكتروني متقدم",
                 image:
                   "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
@@ -1290,7 +1290,7 @@ export default function Index() {
               },
               {
                 title: "شركة الاستثمار العقاري",
-                category: "هوية وموقع إلكتروني",
+                category: "هوية وموقع إلكترو��ي",
                 image:
                   "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-gray-600 to-gray-800",
@@ -1613,7 +1613,7 @@ export default function Index() {
               transition={{ delay: 0.3, duration: 0.5 }}
               className="inline-block p-3 bg-[rgb(var(--brand-primary))]/10 rounded-full mb-6"
             >
-              <span className="text-4xl">💬</span>
+              <span className="text-4xl">��</span>
             </motion.div>
             <motion.div
               initial={{ width: 0 }}
@@ -1689,7 +1689,7 @@ export default function Index() {
                 company: "مؤسسة الشامي التجارية",
                 role: "صاحب المؤسسة",
                 content:
-                  "فريق متفهم لاحتياجاتنا، سرعة في التنفيذ وجودة عالية في العمل. نوصي بهم بشدة لكل من يريد التميز.",
+                  "فريق متفهم لاحتياجاتنا، سرعة في التنفيذ وجودة عالي�� في العمل. نوصي بهم بشدة لكل من يريد التميز.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -2088,7 +2088,7 @@ export default function Index() {
               تواصل معنا الآن
             </h2>
             <p className="text-xl text-white/90 max-w-3xl mx-auto text-pretty">
-              جاهزون لتحويل أفكارك إلى واقع مبهر. تواصل معنا اليوم واحصل على
+              جاهزون لتحويل أفكارك إلى واقع مبهر. تواصل معنا اليوم واحص�� على
               استشارة مجانية
             </p>
           </motion.div>
@@ -2554,7 +2554,7 @@ export default function Index() {
           >
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-center md:text-right">
-                <p>&copy; 2024 خطوة للدعاية والإعلان. جميع الحقوق محفوظة.</p>
+                <p>&copy; 2024 خ��وة للدعاية والإعلان. جميع الحقوق محفوظة.</p>
               </div>
 
               <div className="flex items-center gap-6 text-sm">
