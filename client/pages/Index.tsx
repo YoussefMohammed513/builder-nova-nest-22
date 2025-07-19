@@ -1297,7 +1297,7 @@ export default function Index() {
                 description: "حلول رقمية متكاملة لشركة عقارية رائدة",
                 client: "العقارية الذهبية",
                 year: "2023",
-                tags: ["عقارات", "استثمار", "��عمال"],
+                tags: ["عقارات", "استثمار", "أعمال"],
               },
             ].map((project, index) => (
               <motion.div
