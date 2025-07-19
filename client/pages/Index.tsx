@@ -2612,7 +2612,7 @@ export default function Index() {
             whileHover={{ opacity: 1, x: 0 }}
             className="hidden lg:block absolute right-full top-1/2 transform -translate-y-1/2 mr-3 bg-black/80 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap backdrop-blur-sm"
           >
-            تواص�� معنا
+            تواصل معنا
             <div className="absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2 border-4 border-transparent border-l-black/80"></div>
           </motion.div>
         </motion.div>
