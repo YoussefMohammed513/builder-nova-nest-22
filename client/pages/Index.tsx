@@ -2085,7 +2085,7 @@ export default function Index() {
               <span className="text-4xl">📞</span>
             </motion.div>
             <h2 className="heading-secondary text-white mb-6">
-              ت��اصل معنا الآن
+              تواصل معنا الآن
             </h2>
             <p className="text-xl text-white/90 max-w-3xl mx-auto text-pretty">
               جاهزون لتحويل أفكارك إلى واقع مبهر. تواصل معنا ال��وم واحصل على
