@@ -378,7 +378,7 @@ export default function Index() {
                 { href: "#home", text: "الرئيسية", icon: "🏠" },
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
                 { href: "#services", text: "خدماتنا", icon: "⚙️" },
-                { href: "#stats", text: "إنجازاتنا", icon: "📊" },
+                { href: "#stats", text: "إنجازاتنا", icon: "��" },
                 { href: "#portfolio", text: "أعمالنا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
@@ -517,7 +517,7 @@ export default function Index() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl mb-8 text-white/90 leading-relaxed max-w-4xl mx-auto text-pretty px-4"
             >
-              بتصاميم احترافية وإعلانات مؤثرة تجعل علامتك تتألق في الأسواق
+              بتصاميم احترافية وإعلانات مؤثرة تجعل علامتك تتألق في ا��أسواق
               العالمية مع أحدث التقنيات والأساليب الإبداعية
             </motion.p>
 
@@ -616,6 +616,35 @@ export default function Index() {
           </motion.div>
           <p className="text-white text-sm mt-2 opacity-70">مرر للأسفل</p>
         </motion.div>
+
+        {/* WhatsApp Floating Button */}
+        <motion.a
+          href="https://wa.me/967784668027?text=مرحباً%20أريد%20التواصل%20معكم%20بخصوص%20خدماتكم"
+          target="_blank"
+          rel="noopener noreferrer"
+          initial={{ scale: 0, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ delay: 3, duration: 0.5 }}
+          whileHover={{ scale: 1.1, y: -5 }}
+          whileTap={{ scale: 0.9 }}
+          className="fixed bottom-6 right-6 z-50 w-16 h-16 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center text-white shadow-lg hover:shadow-xl transition-all duration-300 touch-target"
+          aria-label="تواصل معنا عبر واتساب"
+        >
+          <motion.div
+            animate={{ rotate: [0, 5, -5, 0] }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="text-2xl"
+          >
+            💬
+          </motion.div>
+
+          {/* Pulse animation */}
+          <motion.div
+            animate={{ scale: [1, 1.3, 1], opacity: [0.7, 0, 0.7] }}
+            transition={{ duration: 2, repeat: Infinity }}
+            className="absolute inset-0 bg-green-500 rounded-full"
+          />
+        </motion.a>
       </section>
 
       {/* Stats Section */}
@@ -1009,7 +1038,7 @@ export default function Index() {
                 icon: "🎨",
                 title: "تصميم الهوية البصرية",
                 description:
-                  "شعارات وهويات بصرية متكاملة تعكس شخصية علامتك التجارية وتميزك عن المنافسين في السوق المحلي والعالمي",
+                  "شعارات وهويات بصرية متكاملة تعكس شخصية علامتك التجارية وتميزك عن المنافسين ف�� السوق المحلي والعالمي",
                 features: [
                   "تصميم الشعار الاحترافي",
                   "دليل الهوية البصرية الشامل",
@@ -1291,7 +1320,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-pink-500 to-[rgb(var(--brand-secondary))]",
-                description: "استراتيجية محتوى جذابة لعلامة أزياء عصرية",
+                description: "استرا��يجية محتوى جذابة لعلامة أزياء عصرية",
                 client: "Fashion Plus",
                 year: "2024",
                 tags: ["أزياء", "تسويق", "موضة"],
@@ -1476,7 +1505,7 @@ export default function Index() {
                 social: ["linkedin", "twitter", "instagram"],
                 color: "from-blue-500 to-[rgb(var(--brand-primary))]",
                 specialties: ["القيادة", "الإدارة", "الاستراتيجية"],
-                quote: "نؤمن بقوة الإبداع في تحويل الأحلام إلى واقع",
+                quote: "نؤم�� بقوة الإبداع في تحويل الأحلام إلى واقع",
               },
               {
                 name: "عبدالاله النهاري",
@@ -1509,7 +1538,7 @@ export default function Index() {
                   "https://cdn.builder.io/api/v1/image/assets%2F6cac5a504765458ea9034ccfe6de8d2b%2Fe600234db88349078d9ae78a2b881deb",
                 social: ["github", "linkedin", "behance"],
                 color: "from-purple-500 to-blue-500",
-                specialties: ["التطو��ر", "التصميم", "التقنية"],
+                specialties: ["التطوير", "التصميم", "التقنية"],
                 quote: "نحول الأفكار إلى تجارب رقمية مذهلة",
               },
               {
@@ -1622,7 +1651,7 @@ export default function Index() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
               {[
                 { number: "25+", label: "سنوات خبرة جماعية", icon: "🏆" },
-                { number: "15+", label: "شهادة احترافية", icon: "📜" },
+                { number: "15+", label: "شهادة ��حترافية", icon: "📜" },
                 { number: "100%", label: "التزام بالجودة", icon: "✨" },
               ].map((stat, index) => (
                 <motion.div
@@ -1698,7 +1727,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 date: "منذ شهرين",
-                project: "تصميم هوية بصرية شا��لة",
+                project: "تصميم هوية بصرية شاملة",
               },
               {
                 name: "فاطمة عبدالله السالم",
@@ -1741,7 +1770,7 @@ export default function Index() {
                 company: "مؤسسة الشامي التجارية",
                 role: "صاحب المؤسسة",
                 content:
-                  "فريق متفهم لاحتياجاتنا، سرعة في التنفيذ وجودة عالية في العمل. نوصي بهم ��شدة لكل من يريد التميز.",
+                  "فريق متفهم لاحتياجاتنا، سرعة في التنفيذ وجودة عالية في العمل. نوصي بهم بشدة لكل من يريد التميز.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1999,7 +2028,7 @@ export default function Index() {
               className="space-y-6"
             >
               <h3 className="text-2xl font-bold mb-8">
-                كيف يم��ننا تحسين خدماتنا؟
+                كيف يمكننا تحسين خدماتنا؟
               </h3>
 
               {[
@@ -2235,7 +2264,7 @@ export default function Index() {
                       الإعلانات الممولة
                     </option>
                     <option value="video" className="bg-gray-800">
-                      إنتاج المحتوى المرئي
+                      إنتاج المحتو�� المرئي
                     </option>
                     <option value="web" className="bg-gray-800">
                       تطوير المواقع
@@ -2627,7 +2656,7 @@ export default function Index() {
                   href="#sitemap"
                   className="hover:text-[rgb(var(--brand-primary))] transition-colors"
                 >
-                  خريطة الموقع
+                  خريطة المو��ع
                 </a>
               </div>
             </div>
