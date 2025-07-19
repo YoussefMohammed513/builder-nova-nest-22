@@ -272,7 +272,7 @@ export default function Index() {
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
                 { href: "#services", text: "خدماتنا", icon: "⚙️" },
                 { href: "#stats", text: "إنجازاتنا", icon: "📊" },
-                { href: "#portfolio", text: "أعمالنا", icon: "💼" },
+                { href: "#portfolio", text: "أعما��نا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
                 { href: "#contact", text: "تواصل معنا", icon: "📞" },
@@ -573,7 +573,7 @@ export default function Index() {
                 className="flex items-center gap-1 bg-white/10 px-3 py-2 rounded-full backdrop-blur-sm border border-white/20 touch-target"
               >
                 <span className="text-lg">🏆</span>
-                <span className="hidden sm:inline">أكثر من 500 ��ميل راضٍ</span>
+                <span className="hidden sm:inline">أكثر من 500 عميل راضٍ</span>
                 <span className="sm:hidden">500+ عميل</span>
               </motion.span>
               <motion.span
@@ -668,7 +668,7 @@ export default function Index() {
               {
                 number: 1200,
                 suffix: "+",
-                label: "مشروع ��كتمل",
+                label: "مشروع مكتمل",
                 icon: "🚀",
                 description: "بجودة عالمية",
                 color: "from-blue-400 to-blue-600",
@@ -812,7 +812,7 @@ export default function Index() {
                 {[
                   {
                     title: "الإبداع اللامحدود",
-                    desc: "تصاميم م��تكرة تعكس هويتك الفريدة وتميزك",
+                    desc: "تصاميم مبتكرة تعكس هويتك الفريدة وتميزك",
                     icon: "🎨",
                     color: "from-pink-500 to-rose-500",
                   },
@@ -984,7 +984,7 @@ export default function Index() {
             />
             <h2 className="heading-secondary mb-6">خدماتنا الاحترافية</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
-              نقدم مجموعة شاملة من ال��دمات المتخصصة لبناء علامتك التجارية
+              نقد�� مجموعة شاملة من الخدمات المتخصصة لبناء علامتك التجارية
               وتحقيق أهدافك التسويقية بأحدث الأساليب والتقنيات العالمية
             </p>
           </motion.div>
@@ -1054,7 +1054,7 @@ export default function Index() {
                   "فيسبوك وإنستقرام المتقدم",
                   "جوجل أدوردز المتخصص",
                   "سناب شات وتيك توك الحديث",
-                  "يو��يوب ولينكد إن الاحترافي",
+                  "يوتيوب ولينكد إن الاحترافي",
                 ],
                 image:
                   "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
@@ -1079,7 +1079,7 @@ export default function Index() {
               },
               {
                 icon: "🌐",
-                title: "تط��ير المواقع",
+                title: "تطوير المواقع",
                 description:
                   "مواقع إلكترونية عصرية ومتجاوبة مع جميع الأجهزة مع أفضل تجربة مستخدم وتحسين محركات البحث المتقدم",
                 features: [
@@ -1665,7 +1665,7 @@ export default function Index() {
                 company: "شركة التميز للتجارة",
                 role: "المدير التنفيذي",
                 content:
-                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعاتنا الأونلاين بشكل كبير. شكراً لفريق خطوة المبدع.",
+                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجد��د زاد من مبيعاتنا الأونلاين بشكل كبير. شكراً لفريق خطوة المبدع.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -2574,7 +2574,7 @@ export default function Index() {
                   href="#sitemap"
                   className="hover:text-[rgb(var(--brand-primary))] transition-colors"
                 >
-                  ��ريطة الموقع
+                  خريطة الموقع
                 </a>
               </div>
             </div>
