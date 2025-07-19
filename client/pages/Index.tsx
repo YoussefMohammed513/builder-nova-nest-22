@@ -1245,7 +1245,7 @@ export default function Index() {
                 tags: ["هوية", "مطاعم", "تراث"],
               },
               {
-                title: "شركة التقنية ا��ذكية",
+                title: "شركة التقنية الذكية",
                 category: "موقع إلكتروني متقدم",
                 image:
                   "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
