@@ -310,20 +310,26 @@ export default function Index() {
 
               {/* CTA Button */}
               <motion.a
-                href="#contact"
+                href="https://wa.me/967784668027?text=مرحباً%20أريد%20استشارة%20مجانية%20حول%20خدماتكم"
+                target="_blank"
+                rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="hidden md:inline-flex btn-primary relative overflow-hidden touch-target text-responsive-sm"
               >
                 <motion.div
-                  className="absolute inset-0 bg-gradient-to-r from-[rgb(var(--brand-secondary))] to-[rgb(var(--brand-primary))] opacity-0"
+                  className="absolute inset-0 bg-gradient-to-r from-green-500 to-green-600 opacity-0"
                   whileHover={{ opacity: 1 }}
                   transition={{ duration: 0.3 }}
                 />
-                <span className="relative z-10 hidden lg:inline">
-                  احجز استشارتك المجانية
+                <span className="relative z-10 hidden lg:inline flex items-center gap-2">
+                  <span>💬</span>
+                  واتساب: احجز استشارتك المجانية
                 </span>
-                <span className="relative z-10 lg:hidden">احجز الآن</span>
+                <span className="relative z-10 lg:hidden flex items-center gap-1">
+                  <span>💬</span>
+                  واتساب
+                </span>
               </motion.a>
 
               {/* Mobile Menu Button */}
@@ -371,7 +377,7 @@ export default function Index() {
               {[
                 { href: "#home", text: "الرئيسية", icon: "🏠" },
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
-                { href: "#services", text: "خدما��نا", icon: "⚙️" },
+                { href: "#services", text: "خدماتنا", icon: "⚙️" },
                 { href: "#stats", text: "إنجازاتنا", icon: "📊" },
                 { href: "#portfolio", text: "أعمالنا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
@@ -1005,7 +1011,7 @@ export default function Index() {
                 features: [
                   "تصميم الشعار الاحترافي",
                   "دليل الهوية البصرية الشامل",
-                  "القرطاسية والمطبوعات التجارية",
+                  "القرطاسية وال��طبوعات التجارية",
                   "التطبيقات الرقمية والتفاعلية",
                 ],
                 image:
@@ -1033,7 +1039,7 @@ export default function Index() {
                 icon: "🖨️",
                 title: "التصميم والطباعة",
                 description:
-                  "مواد طباعية عالية الجودة من الكروت الشخصية إلى اللافتات الكبيرة بأحدث التقنيات والمواد المتطورة",
+                  "مواد طباعية عالية الجودة من الكروت الشخصية إلى اللافتات ا��كبيرة بأحدث التقنيات والمواد المتطورة",
                 features: [
                   "الكروت الشخصية الفاخرة",
                   "البروشورات والكتيبات التفاعلية",
@@ -1067,7 +1073,7 @@ export default function Index() {
                 description:
                   "محتوى مرئي احترافي وموشن جرافيك مبدع يحكي قصة علامتك التجارية بطريقة جذابة ومؤثرة تصل إلى قلب جمهورك",
                 features: [
-                  "إنتا�� الفيديو الاحترافي",
+                  "إنتاج الفيديو الاحترافي",
                   "الموشن جرافيك المتقدم",
                   "التصوير الفوتوغرافي الإبداعي",
                   "المونتاج والإخراج الفني",
@@ -1268,7 +1274,7 @@ export default function Index() {
               },
               {
                 title: "عيادة النخبة الطبية",
-                category: "تصميم شامل ومتكامل",
+                category: "تصمي�� شامل ومتكامل",
                 image:
                   "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-green-500 to-teal-500",
@@ -1306,7 +1312,7 @@ export default function Index() {
                   "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-amber-500 to-orange-500",
                 description: "تصميم هوية عصرية لمقهى يجمع بين الأصالة والحداثة",
-                client: "م��هى الأصدقاء",
+                client: "مقهى الأصدقاء",
                 year: "2024",
                 tags: ["مقاهي", "هوية", "محتوى"],
               },
@@ -1316,7 +1322,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-green-500 to-blue-500",
-                description: "تطبيق توصيل مبتكر مع حملة إطلاق ناجحة",
+                description: "تطبيق توصيل ��بتكر مع حملة إطلاق ناجحة",
                 client: "سريع للتوصيل",
                 year: "2024",
                 tags: ["تطبيق", "توصيل", "تقنية"],
@@ -1328,7 +1334,7 @@ export default function Index() {
                   "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-blue-600 to-purple-600",
                 description: "منصة تعليمية شاملة بتصميم تفاعلي وهوية احترافية",
-                client: "أكا��يمية المستقبل",
+                client: "أكاديمية المستقبل",
                 year: "2024",
                 tags: ["تعليم", "منصة", "رقمي"],
               },
@@ -1468,7 +1474,7 @@ export default function Index() {
                 social: ["linkedin", "twitter", "instagram"],
                 color: "from-blue-500 to-[rgb(var(--brand-primary))]",
                 specialties: ["القيادة", "الإدارة", "الاستراتيجية"],
-                quote: "نؤمن بقوة الإبداع في تح��يل الأحلام إلى واقع",
+                quote: "نؤمن بقوة الإبداع في تحويل الأحلام إلى واقع",
               },
               {
                 name: "عبدالاله النهاري",
@@ -1568,7 +1574,7 @@ export default function Index() {
                           whileHover={{ scale: 1.2, rotate: 360 }}
                           className="w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-xs border border-white/30"
                         >
-                          🔗
+                          ��
                         </motion.button>
                       ))}
                     </div>
@@ -1709,7 +1715,7 @@ export default function Index() {
                 company: "شركة التميز للتجارة",
                 role: "المدير التنفيذي",
                 content:
-                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعاتنا الأونلاين بشكل كبير. شكراً لفريق خطوة المبدع.",
+                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعات��ا الأونلاين بشكل كبير. شكراً لفريق خطوة المبدع.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1721,7 +1727,7 @@ export default function Index() {
                 company: "معهد الإبداع التعليمي",
                 role: "مؤسسة المعهد",
                 content:
-                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في جذب الطلاب الجدد وبن��ء سمعة قوية في السوق التعليمي.",
+                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في جذب الطلاب الجدد وبناء سمعة قوية في السوق التعليمي.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1915,7 +1921,7 @@ export default function Index() {
                     <input
                       type="text"
                       className="w-full px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors"
-                      placeholder="أ��خل اسمك"
+                      placeholder="أدخل اسمك"
                     />
                   </motion.div>
 
@@ -1951,7 +1957,7 @@ export default function Index() {
                     <option value="design">تطوير التصاميم</option>
                     <option value="website">تحسين الموقع</option>
                     <option value="support">خدمة العملاء</option>
-                    <option value="pricing">الأسعار والعروض</option>
+                    <option value="pricing">الأسع��ر والعروض</option>
                     <option value="other">أخرى</option>
                   </select>
                 </motion.div>
@@ -2004,7 +2010,7 @@ export default function Index() {
                 {
                   icon: "⚡",
                   title: "سرعة التنفيذ",
-                  description: "أفكار لتحسين أوقات التسليم وكفاءة ا��عمل",
+                  description: "أفكار لتحسين أوقات التسليم وكفاءة العمل",
                   color: "from-blue-500 to-cyan-500",
                 },
                 {
@@ -2016,7 +2022,7 @@ export default function Index() {
                 {
                   icon: "🤝",
                   title: "خدمة العملاء",
-                  description: "تحسين تجربة التعامل والدعم الفني",
+                  description: "تحسين تجربة ال��عامل والدعم الفني",
                   color: "from-purple-500 to-violet-500",
                 },
                 {
@@ -2531,7 +2537,8 @@ export default function Index() {
                 ابق على اطلاع
               </h4>
               <p className="mb-4 text-sm leading-relaxed">
-                اشترك في نشرتنا البريدية للحصول على آخر الأخبار والعروض الحصرية.
+                اشتر�� في نشرتنا البريدية للحصول على آخر الأخبار والعروض
+                الحصرية.
               </p>
 
               <div className="space-y-4">
