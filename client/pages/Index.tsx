@@ -805,7 +805,7 @@ export default function Index() {
               <p className="text-lg leading-relaxed mb-8 text-pretty">
                 نؤمن بأن كل علامة تجارية لها قصة فريدة تستحق أن تُروى بطريقة
                 إبداعية ومؤثرة تلامس قلوب الجمهور وتحقق النتائج المرجوة في عالم
-                تتزايد فيه ��لمنافسة والتحديات يوماً بعد يوم.
+                تتزايد فيه المنافسة والتحديات يوماً بعد يوم.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
