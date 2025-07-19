@@ -272,7 +272,7 @@ export default function Index() {
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
                 { href: "#services", text: "خدماتنا", icon: "⚙️" },
                 { href: "#stats", text: "إنجازاتنا", icon: "📊" },
-                { href: "#portfolio", text: "أعمالنا", icon: "💼" },
+                { href: "#portfolio", text: "أع��النا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
                 { href: "#contact", text: "تواصل معنا", icon: "📞" },
@@ -668,8 +668,8 @@ export default function Index() {
               {
                 number: 1200,
                 suffix: "+",
-                label: "مشروع مكتمل",
-                icon: "��",
+                label: "��شروع مكتمل",
+                icon: "🚀",
                 description: "بجودة عالمية",
                 color: "from-blue-400 to-blue-600",
               },
@@ -795,7 +795,7 @@ export default function Index() {
               whileInView="animate"
               viewport={{ once: true }}
             >
-              <h3 className="text-3xl font-bold mb-6">رؤيتنا للمس��قبل</h3>
+              <h3 className="text-3xl font-bold mb-6">رؤيتنا للمستقبل</h3>
               <p className="text-lg leading-relaxed mb-6 text-pretty">
                 تأسست "خطوة" لتقديم حلول مبتكرة في مجال الدعاية والإعلان، بخبرة
                 تجمع بين الإبداع والاحتراف العالمي. نعمل على بناء الهويات
@@ -1084,7 +1084,7 @@ export default function Index() {
                   "مواقع إلكترونية عصرية ومتجاوبة مع جميع الأجهزة مع أفضل تجربة مستخدم وتحسين محركات البحث المتقدم",
                 features: [
                   "التصميم المتجاوب الحديث",
-                  "التطوير البرمجي المت��دم",
+                  "التطوير البرمجي المتقدم",
                   "تحسين السيو والأداء",
                   "الاستضافة والصيانة المستمرة",
                 ],
@@ -1245,8 +1245,8 @@ export default function Index() {
                 tags: ["هوية", "مطاعم", "تراث"],
               },
               {
-                title: "شركة التقنية الذكية",
-                category: "موقع إلكترون�� متقدم",
+                title: "شركة التقنية ا��ذكية",
+                category: "موقع إلكتروني متقدم",
                 image:
                   "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-blue-500 to-[rgb(var(--brand-primary))]",
@@ -1427,7 +1427,7 @@ export default function Index() {
           >
             {[
               {
-                name: "يوسف محمد البرط��",
+                name: "يوسف محمد البرطي",
                 role: "المدير التنفيذي",
                 experience: "قائد الفريق والرؤية الاستراتيجية",
                 image:
@@ -1446,7 +1446,7 @@ export default function Index() {
                 social: ["behance", "dribbble", "linkedin"],
                 color:
                   "from-[rgb(var(--brand-primary))] to-[rgb(var(--brand-secondary))]",
-                specialties: ["الإبداع", "التصميم", "الابتكار"],
+                specialties: ["ا��إبداع", "التصميم", "الابتكار"],
                 quote: "كل تصميم يحكي قصة، ونحن نكتب أجمل القصص",
               },
               {
@@ -1569,7 +1569,7 @@ export default function Index() {
           >
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
               {[
-                { number: "25+", label: "سنوات خبرة جماعية", icon: "🏆" },
+                { number: "25+", label: "سن��ات خبرة جماعية", icon: "🏆" },
                 { number: "15+", label: "شهادة احترافية", icon: "📜" },
                 { number: "100%", label: "التزام بالجودة", icon: "✨" },
               ].map((stat, index) => (
@@ -1677,7 +1677,7 @@ export default function Index() {
                 company: "معهد الإبداع التعليمي",
                 role: "مؤسسة المعهد",
                 content:
-                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في ��ذب الطلاب الجدد وبناء سمعة قوية في السوق التعليمي.",
+                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في جذب الطلاب الجدد وبناء سمعة قوية في السوق التعليمي.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -2164,7 +2164,7 @@ export default function Index() {
                   className="space-y-2"
                 >
                   <label className="block text-white text-sm font-medium">
-                    نوع الخدمة الم��لوبة
+                    نوع الخدمة المطلوبة
                   </label>
                   <select className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:border-white/40 transition-colors backdrop-blur-sm">
                     <option value="" className="bg-gray-800">
