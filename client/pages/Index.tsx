@@ -1291,7 +1291,7 @@ export default function Index() {
             {[
               {
                 title: "مطعم الأصالة العربية",
-                category: "هوية بصرية شاملة",
+                category: "هوية بصرية ��املة",
                 image:
                   "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-orange-500 to-red-500",
@@ -1670,7 +1670,7 @@ export default function Index() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
               {[
                 { number: "25+", label: "سنوات خبرة جماعية", icon: "🏆" },
-                { number: "15+", label: "شهادة ��حترافية", icon: "📜" },
+                { number: "15+", label: "شهادة ��حترافية", icon: "���" },
                 { number: "100%", label: "التزام بالجودة", icon: "✨" },
               ].map((stat, index) => (
                 <motion.div
@@ -1777,7 +1777,7 @@ export default function Index() {
                 company: "معهد الإبداع التعليمي",
                 role: "مؤسسة المعهد",
                 content:
-                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في جذب الطلاب الجدد وبناء سمعة قوية في السوق التعليمي.",
+                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في جذب الطلاب الجد�� وبناء سمعة قوية في السوق التعليمي.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -2003,7 +2003,7 @@ export default function Index() {
                   </label>
                   <select className="w-full px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors">
                     <option value="">اختر نوع الاقتراح</option>
-                    <option value="service">تحسين الخدمات</option>
+                    <option value="service">تحسي�� الخدمات</option>
                     <option value="design">تطوير التصاميم</option>
                     <option value="website">تحسين الموقع</option>
                     <option value="support">خدمة العملاء</option>
@@ -2060,7 +2060,7 @@ export default function Index() {
                 {
                   icon: "⚡",
                   title: "سرعة التنفيذ",
-                  description: "أفكار لتحسين أوقات التسليم وكفاءة العمل",
+                  description: "أفكار لتحسين أوقات التسليم و��فاءة العمل",
                   color: "from-blue-500 to-cyan-500",
                 },
                 {
@@ -2205,6 +2205,39 @@ export default function Index() {
               <h3 className="text-2xl font-bold text-white mb-6">
                 احجز استشارتك المجانية
               </h3>
+
+              {/* WhatsApp Quick Contact */}
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.1 }}
+                className="mb-6"
+              >
+                <motion.a
+                  href="https://wa.me/967784668027?text=مرحباً%20أريد%20استشارة%20مجانية%20حول%20خدماتكم"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full bg-green-500 hover:bg-green-600 text-white font-semibold py-4 px-6 rounded-lg flex items-center justify-center gap-3 transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  <motion.span
+                    animate={{ rotate: [0, 10, -10, 0] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                    className="text-xl"
+                  >
+                    💬
+                  </motion.span>
+                  <span>تواصل سريع عبر واتساب</span>
+                  <span className="text-sm opacity-80">(الأسرع)</span>
+                </motion.a>
+              </motion.div>
+
+              <div className="flex items-center gap-3 mb-6">
+                <div className="flex-1 h-px bg-white/20"></div>
+                <span className="text-white/60 text-sm">أو املأ النموذج</span>
+                <div className="flex-1 h-px bg-white/20"></div>
+              </div>
 
               <div className="space-y-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
