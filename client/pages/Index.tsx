@@ -1922,7 +1922,7 @@ export default function Index() {
                   <textarea
                     rows={4}
                     className="w-full px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors resize-none"
-                    placeholder="اكتب اقتراحك بالت��صيل..."
+                    placeholder="اكتب اقتراحك بالتفصيل..."
                   ></textarea>
                 </motion.div>
 
@@ -1978,7 +1978,7 @@ export default function Index() {
                 {
                   icon: "🌐",
                   title: "الموقع والتجربة",
-                  description: "تطوير الموقع وت��سين تجربة المستخدم",
+                  description: "تطوير الموقع وتحسين تجربة المستخدم",
                   color: "from-orange-500 to-red-500",
                 },
                 {
@@ -2416,7 +2416,7 @@ export default function Index() {
                   "التصميم والطباعة",
                   "الإعلانات الممولة",
                   "إنتاج المحتوى المرئي",
-                  "تط��ير المواقع",
+                  "تطوير المواقع",
                 ].map((service, index) => (
                   <motion.li
                     key={index}
