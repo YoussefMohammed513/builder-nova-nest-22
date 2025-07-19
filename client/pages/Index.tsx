@@ -268,7 +268,7 @@ export default function Index() {
             {/* Desktop Navigation */}
             <ul className="hidden lg:flex items-center gap-6 xl:gap-8 font-semibold">
               {[
-                { href: "#home", text: "الرئيس��ة", icon: "🏠" },
+                { href: "#home", text: "الرئيسية", icon: "🏠" },
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
                 { href: "#services", text: "خدماتنا", icon: "⚙️" },
                 { href: "#stats", text: "إنجازاتنا", icon: "📊" },
