@@ -372,7 +372,7 @@ export default function Index() {
                 { href: "#home", text: "الرئيسية", icon: "🏠" },
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
                 { href: "#services", text: "خدماتنا", icon: "⚙️" },
-                { href: "#stats", text: "إنجازاتنا", icon: "📊" },
+                { href: "#stats", text: "إن��ازاتنا", icon: "📊" },
                 { href: "#portfolio", text: "أعمالنا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
@@ -784,7 +784,8 @@ export default function Index() {
             />
             <h2 className="heading-secondary mb-6">من نحن</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
-              ��صة نجاح بدأت برؤية واضحة لتقديم أفضل الحلول الإبداعية في المنطقة
+              ��صة نجاح بدأت برؤية واضحة لتقديم ��فضل الحلول الإبداعية في
+              المنطقة
             </p>
           </motion.div>
 
@@ -804,7 +805,7 @@ export default function Index() {
               </p>
               <p className="text-lg leading-relaxed mb-8 text-pretty">
                 نؤمن بأن كل علامة تجارية لها قصة فريدة تس��حق أن تُروى بطريقة
-                ��بداعية ومؤثرة تلامس قلو�� الجمهور وتحقق النتائج المرج��ة في
+                ��بداعية ومؤثرة تلامس قلو�� ��لجمهور وتحقق النتائج المرج��ة في
                 عالم تتزايد فيه المنافسة والتحديات يوماً بعد يوم.
               </p>
 
@@ -913,7 +914,7 @@ export default function Index() {
                     <div className="text-2xl font-bold text-gradient flex items-center gap-2">
                       🏆 8+
                     </div>
-                    <div className="text-xs">سنوات خبر��</div>
+                    <div className="text-xs">سنوات خبرة</div>
                   </div>
                 </motion.div>
 
@@ -1049,7 +1050,7 @@ export default function Index() {
                 icon: "📈",
                 title: "الإعلانات الممولة",
                 description:
-                  "حملات إعلانية مدروسة ومست��دفة عبر جميع ا��منصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
+                  "حملات إعلانية مدروسة ومست��دفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
                 features: [
                   "فيسب��ك وإنستقرام المتقدم",
                   "جوجل أدوردز المتخصص",
@@ -1283,7 +1284,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-pink-500 to-[rgb(var(--brand-secondary))]",
-                description: "استراتيجية محتوى جذابة لعلامة أزياء عصرية",
+                description: "��ستراتيجية محتوى جذابة لعلامة أزياء عصرية",
                 client: "Fashion Plus",
                 year: "2024",
                 tags: ["أزياء", "تسويق", "موضة"],
@@ -1454,11 +1455,11 @@ export default function Index() {
                 role: "مختص تسويق رقمي",
                 experience: "ا��تراتيجي التسويق الرقمي",
                 image:
-                  "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
+                  "https://cdn.builder.io/api/v1/image/assets%2F6cac5a504765458ea9034ccfe6de8d2b%2F07f3061b142043b482f427d689ddeaa1",
                 social: ["linkedin", "twitter", "facebook"],
                 color: "from-green-500 to-teal-500",
                 specialties: ["التسويق", "الحملات", "التحليل"],
-                quote: "التسويق الناجح يبدأ بفهم عميق لاحتياجات العملاء",
+                quote: "التسويق الناجح يبدأ بفهم عميق لاحتياجات العملا��",
               },
               {
                 name: "محمود عبدالغني الشرفي",
@@ -1480,7 +1481,7 @@ export default function Index() {
                 social: ["linkedin", "twitter", "instagram"],
                 color: "from-orange-500 to-red-500",
                 specialties: ["العلاقات", "التواصل", "الإعلام"],
-                quote: "التواصل الفعال هو الجسر بين الأحلام والواقع",
+                quote: "الت��اصل الفعال هو الجسر بين الأحلام والواقع",
               },
               {
                 name: "اسيد محمد البرعي",
@@ -1670,7 +1671,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 date: "منذ شهر",
-                project: "تطوير موقع إلكتروني متكامل",
+                project: "تطوير موقع إلكترون�� متكامل",
               },
               {
                 name: "سارة أحمد الحداد",
@@ -2378,8 +2379,8 @@ export default function Index() {
                   loading="lazy"
                 />
                 <p className="leading-relaxed text-pretty mb-6">
-                  وكالة إبداعية متخصصة في تصميم الهويات البصرية والتسويق الرقمي،
-                  نساعدك في بناء علامة تجارية قوية ومؤثرة.
+                  وكالة إبداعية متخصصة في تص��يم الهويات البصرية والتسويق
+                  الرقمي، نساعدك في بناء علامة تجارية قوية ومؤثرة.
                 </p>
               </div>
 
@@ -2451,7 +2452,7 @@ export default function Index() {
                 {[
                   { text: "من نحن", href: "#about" },
                   { text: "أعمالنا", href: "#portfolio" },
-                  { text: "��ريقنا", href: "#team" },
+                  { text: "فريقنا", href: "#team" },
                   { text: "آراء العملاء", href: "#testimonials" },
                   { text: "اقتراحاتك", href: "#suggestions" },
                   { text: "تواصل معنا", href: "#contact" },
@@ -2495,7 +2496,7 @@ export default function Index() {
                 <div className="flex gap-2">
                   <input
                     type="email"
-                    placeholder="بريدك الإلكتروني"
+                    placeholder="بريدك الإلك��روني"
                     className="flex-1 px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors"
                   />
                   <motion.button
