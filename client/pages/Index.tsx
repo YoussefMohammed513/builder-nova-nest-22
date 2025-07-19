@@ -2373,7 +2373,7 @@ export default function Index() {
               <div>
                 <img
                   src="https://cdn.builder.io/api/v1/assets/6cac5a504765458ea9034ccfe6de8d2b/logo-25dded?format=webp&width=400"
-                  alt="خطوة للد��اية والإعلان"
+                  alt="خطوة للدعاية والإعلان"
                   className="h-12 w-auto mb-4"
                   loading="lazy"
                 />
