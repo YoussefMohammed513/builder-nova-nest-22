@@ -2168,7 +2168,7 @@ export default function Index() {
                   </label>
                   <select className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white focus:outline-none focus:border-white/40 transition-colors backdrop-blur-sm">
                     <option value="" className="bg-gray-800">
-                      اختر نوع ��لخدمة
+                      اختر نوع الخدمة
                     </option>
                     <option value="branding" className="bg-gray-800">
                       تصميم الهوية البصرية
