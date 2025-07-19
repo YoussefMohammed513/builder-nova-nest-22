@@ -321,7 +321,7 @@ export default function Index() {
                   transition={{ duration: 0.3 }}
                 />
                 <span className="relative z-10 hidden lg:inline">
-                  احجز استشارتك المجانية
+                  احجز استشارتك المجا��ية
                 </span>
                 <span className="relative z-10 lg:hidden">احجز الآن</span>
               </motion.a>
@@ -375,7 +375,7 @@ export default function Index() {
                 { href: "#stats", text: "إنجازاتنا", icon: "📊" },
                 { href: "#portfolio", text: "أعمالنا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
-                { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
+                { href: "#suggestions", text: "اقترا��اتك", icon: "💡" },
                 { href: "#contact", text: "تواصل معنا", icon: "📞" },
               ].map((item, index) => (
                 <motion.a
@@ -804,7 +804,7 @@ export default function Index() {
               </p>
               <p className="text-lg leading-relaxed mb-8 text-pretty">
                 نؤمن بأن كل علامة تجارية لها قصة فريدة تستحق أن تُروى بطريقة
-                إبداعية ومؤثرة تلامس قلوب الجمهور وتحق�� النتائج المرجوة في عالم
+                إبداعية ومؤثرة تلامس قلوب الجمهور وتحقق النتائج المرجوة في عالم
                 تتزايد فيه المنافسة والتحديات يوماً بعد يوم.
               </p>
 
@@ -830,7 +830,7 @@ export default function Index() {
                   },
                   {
                     title: "الدعم المتواصل",
-                    desc: "مساندة مستمرة ل��مان نجاحك وتميزك",
+                    desc: "مساندة مستمرة لضمان نجاحك وتميزك",
                     icon: "🤝",
                     color: "from-purple-500 to-violet-500",
                   },
@@ -1049,7 +1049,7 @@ export default function Index() {
                 icon: "📈",
                 title: "الإعلانات الممولة",
                 description:
-                  "حملات إعلانية مدروسة ومستهدفة عبر جميع المنصات الرقمية ��ضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
+                  "حملات إعلانية مدروسة ومستهدفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وت��قيق الأهداف المحددة",
                 features: [
                   "فيسبوك وإنستقرام المتقدم",
                   "جوجل أدوردز المتخصص",
@@ -1261,7 +1261,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-purple-500 to-pink-500",
-                description: "حم��ة إبداعية شاملة لترويج المعرض الفني",
+                description: "حملة إبداعية شاملة لترويج المعرض الفني",
                 client: "معرض الإبداع",
                 year: "2023",
                 tags: ["فن", "إعلان", "ثقافة"],
@@ -1283,7 +1283,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-pink-500 to-[rgb(var(--brand-secondary))]",
-                description: "استراتيجية محتوى جذابة لعلا��ة أزياء عصرية",
+                description: "استراتيجية محتوى جذابة لعلامة أزياء عصرية",
                 client: "Fashion Plus",
                 year: "2024",
                 tags: ["أزياء", "تسويق", "موضة"],
@@ -1463,7 +1463,7 @@ export default function Index() {
               {
                 name: "محمود عبدالغني الشرفي",
                 role: "مطور ومصمم مواقع",
-                experience: "خبير التقنية والتطوير",
+                experience: "خبير التقنية و��لتطوير",
                 image:
                   "https://cdn.builder.io/api/v1/image/assets%2F6cac5a504765458ea9034ccfe6de8d2b%2Fe600234db88349078d9ae78a2b881deb",
                 social: ["github", "linkedin", "behance"],
@@ -1623,7 +1623,7 @@ export default function Index() {
             />
             <h2 className="heading-secondary mb-6">آراء عملائنا الكرام</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
-              شهادات حقيقية من عملائنا الذين حققوا النجاح معنا وشهدوا نمواً
+              شهادات حقيقية من عملائنا الذين حققوا النجاح مع��ا وشهدوا نمواً
               ملحوظاً في أعمالهم ومبيعاتهم
             </p>
           </motion.div>
@@ -1637,7 +1637,7 @@ export default function Index() {
           >
             {[
               {
-                name: "أ��مد محمد الأسود",
+                name: "أحمد محمد الأسود",
                 company: "مطعم البركة",
                 role: "المدير العام",
                 content:
@@ -1657,8 +1657,8 @@ export default function Index() {
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1494790108755-2616c999db1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-                date: "منذ 3 أ��هر",
-                project: "هوية طبية + إدارة سوشيال ميديا",
+                date: "منذ 3 أشهر",
+                project: "هوية طبية + إدارة سوشيال ميد��ا",
               },
               {
                 name: "خالد يوسف النجار",
@@ -1675,9 +1675,9 @@ export default function Index() {
               {
                 name: "سارة أحمد الحداد",
                 company: "معهد الإبداع التعليمي",
-                role: "مؤسسة الم💰��د",
+                role: "مؤسسة المعهد",
                 content:
-                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في جذب الطلاب الجدد وبناء سمعة قوية في السوق التعليمي.",
+                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في جذب الطلاب ا��جدد وبناء سمعة قوية في السوق التعليمي.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1922,7 +1922,7 @@ export default function Index() {
                   <textarea
                     rows={4}
                     className="w-full px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors resize-none"
-                    placeholder="اكتب اقتراحك بالتفصيل..."
+                    placeholder="اكتب اقتراحك بالت��صيل..."
                   ></textarea>
                 </motion.div>
 
@@ -1954,7 +1954,7 @@ export default function Index() {
                 {
                   icon: "🎨",
                   title: "التصاميم والإبداع",
-                  description: "اقتراحات حول جودة التصاميم وأساليب الإبداع",
+                  description: "اقتراحات حول جودة التصاميم وأساليب الإبدا��",
                   color: "from-pink-500 to-rose-500",
                 },
                 {
@@ -1978,7 +1978,7 @@ export default function Index() {
                 {
                   icon: "🌐",
                   title: "الموقع والتجربة",
-                  description: "تطوير الموقع وتحسين تجربة المستخدم",
+                  description: "تطوير الموقع وت��سين تجربة المستخدم",
                   color: "from-orange-500 to-red-500",
                 },
                 {
@@ -2103,7 +2103,7 @@ export default function Index() {
               className="glass rounded-professional-xl p-8 border border-white/20"
             >
               <h3 className="text-2xl font-bold text-white mb-6">
-                احجز استشارتك المجانية
+                احجز استشارتك ا��مجانية
               </h3>
 
               <div className="space-y-6">
@@ -2131,7 +2131,7 @@ export default function Index() {
                     className="space-y-2"
                   >
                     <label className="block text-white text-sm font-medium">
-                      رقم الهاتف
+                      رقم الها��ف
                     </label>
                     <input
                       type="tel"
@@ -2416,7 +2416,7 @@ export default function Index() {
                   "التصميم والطباعة",
                   "الإعلانات الممولة",
                   "إنتاج المحتوى المرئي",
-                  "تطوير المواقع",
+                  "تط��ير المواقع",
                 ].map((service, index) => (
                   <motion.li
                     key={index}
@@ -2452,7 +2452,7 @@ export default function Index() {
                   { text: "من نحن", href: "#about" },
                   { text: "أعمالنا", href: "#portfolio" },
                   { text: "فريقنا", href: "#team" },
-                  { text: "آرا�� العملاء", href: "#testimonials" },
+                  { text: "آراء العملاء", href: "#testimonials" },
                   { text: "اقتراحاتك", href: "#suggestions" },
                   { text: "تواصل معنا", href: "#contact" },
                   { text: "سياسة الخصوصية", href: "#privacy" },
