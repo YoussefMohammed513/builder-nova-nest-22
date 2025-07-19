@@ -2253,7 +2253,7 @@ export default function Index() {
                   },
                   {
                     icon: "⏰",
-                    title: "ساعات الع��ل",
+                    title: "ساعات العمل",
                     info: "السبت - الخميس",
                     description: "من 9 صباحاً إلى 6 مساءً",
                     color: "from-orange-500 to-red-500",
