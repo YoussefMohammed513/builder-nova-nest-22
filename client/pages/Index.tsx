@@ -1239,7 +1239,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-orange-500 to-red-500",
-                description: "تصميم هوية متكاملة تعكس التراث ال��ربي الأصيل",
+                description: "تصميم هوية متكاملة تعكس التراث العربي الأصيل",
                 client: "مطعم الأصالة",
                 year: "2024",
                 tags: ["هوية", "مطاعم", "تراث"],
