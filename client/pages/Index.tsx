@@ -323,7 +323,7 @@ export default function Index() {
                 <span className="relative z-10 hidden lg:inline">
                   احجز استشارتك المجانية
                 </span>
-                <span className="relative z-10 lg:hidden">احجز ا��آن</span>
+                <span className="relative z-10 lg:hidden">احجز الآن</span>
               </motion.a>
 
               {/* Mobile Menu Button */}
@@ -573,7 +573,7 @@ export default function Index() {
                 className="flex items-center gap-1 bg-white/10 px-3 py-2 rounded-full backdrop-blur-sm border border-white/20 touch-target"
               >
                 <span className="text-lg">🏆</span>
-                <span className="hidden sm:inline">أكثر من 500 عميل راضٍ</span>
+                <span className="hidden sm:inline">أكثر من 500 ع��يل راضٍ</span>
                 <span className="sm:hidden">500+ عميل</span>
               </motion.span>
               <motion.span
@@ -729,7 +729,7 @@ export default function Index() {
             className="mt-16 text-center"
           >
             <h3 className="text-2xl font-bold text-white mb-8">
-              شها��ات وجوائز تقديرية
+              شهادات وجوائز تقديرية
             </h3>
             <div className="flex flex-wrap justify-center gap-8 opacity-70">
               {[
@@ -982,7 +982,7 @@ export default function Index() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="h-1 bg-gradient-brand mx-auto mb-6"
             />
-            <h2 className="heading-secondary mb-6">خدماتنا الاحترافية</h2>
+            <h2 className="heading-secondary mb-6">خدماتنا ا��احترافية</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
               نقدم مجموعة شاملة من الخدمات المتخصصة لبناء علامتك التجارية وتحقيق
               أهدافك التسويقية بأحدث الأساليب والتقنيات العالمية
@@ -1005,7 +1005,7 @@ export default function Index() {
                 features: [
                   "تصميم الشعار الاحترافي",
                   "دليل الهوية البصرية الشامل",
-                  "القرطا��ية والمطبوعات التجارية",
+                  "القرطاسية والمطبوعات التجارية",
                   "التطبيقات الرقمية والتفاعلية",
                 ],
                 image:
@@ -1027,7 +1027,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
                 color: "from-pink-500 to-red-500",
-                pricing: "ابتداءً من 5$/شهر",
+                pricing: "ا��تداءً من 5$/شهر",
               },
               {
                 icon: "🖨️",
@@ -1049,10 +1049,10 @@ export default function Index() {
                 icon: "📈",
                 title: "الإعلانات الممولة",
                 description:
-                  "حملات إعلانية مدرو��ة ومستهدفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
+                  "حملات إعلانية مدروسة ومستهدفة عبر جميع المنصات الرقمية لضما�� أفضل عائد استثمار وتحقيق الأهداف المحددة",
                 features: [
                   "فيسب��ك وإنستقرام المتقدم",
-                  "جوجل أدوردز المتخصص",
+                  "ج��جل أدوردز المتخصص",
                   "سناب شات وتيك توك الحديث",
                   "يوتيوب ولينكد إن الاحترافي",
                 ],
@@ -1211,7 +1211,7 @@ export default function Index() {
               "الكل",
               "هوية بصرية",
               "مواقع إلكترونية",
-              "حملات إعلان��ة",
+              "حملات إعلانية",
               "محتوى مرئي",
             ].map((filter, index) => (
               <motion.button
@@ -1286,7 +1286,7 @@ export default function Index() {
                 description: "استراتيجية محتوى جذابة لعلامة أزياء عصرية",
                 client: "Fashion Plus",
                 year: "2024",
-                tags: ["أزياء", "تسويق", "موضة"],
+                tags: ["أز��اء", "تسويق", "موضة"],
               },
               {
                 title: "شركة الاستثمار العقاري",
@@ -1637,7 +1637,7 @@ export default function Index() {
           >
             {[
               {
-                name: "أحمد محمد الأسود",
+                name: "أحمد محمد ��لأسود",
                 company: "مطعم البركة",
                 role: "المدير العام",
                 content:
@@ -1661,7 +1661,7 @@ export default function Index() {
                 project: "هوية طبية + إدارة سوشيال ميديا",
               },
               {
-                name: "خالد يوسف ا��نجار",
+                name: "خالد يوسف النجار",
                 company: "شركة التميز للتجارة",
                 role: "المدير التنفيذي",
                 content:
@@ -1788,7 +1788,7 @@ export default function Index() {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               {[
                 { number: "98%", label: "معدل رضا العملاء", icon: "😊" },
-                { number: "500+", label: "عميل راضٍ", icon: "👥" },
+                { number: "500+", label: "عميل ر��ضٍ", icon: "👥" },
                 { number: "4.9/5", label: "متوسط التقييم", icon: "⭐" },
                 { number: "24/7", label: "دعم فني مستمر", icon: "🔧" },
               ].map((stat, index) => (
@@ -1902,7 +1902,7 @@ export default function Index() {
                     نوع الاقتراح
                   </label>
                   <select className="w-full px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors">
-                    <option value="">اختر نوع الاق��راح</option>
+                    <option value="">اختر نوع الاقتراح</option>
                     <option value="service">تحسين الخدمات</option>
                     <option value="design">تطوير التصاميم</option>
                     <option value="website">تحسين الموقع</option>
@@ -1960,7 +1960,7 @@ export default function Index() {
                 {
                   icon: "⚡",
                   title: "سرعة التنفيذ",
-                  description: "أفكار لتحسين أوقات التسليم وكفاءة العمل",
+                  description: "أفكار لتحسين أوقات ا��تسليم وكفاءة العمل",
                   color: "from-blue-500 to-cyan-500",
                 },
                 {
