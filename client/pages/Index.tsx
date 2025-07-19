@@ -1153,7 +1153,7 @@ export default function Index() {
                   >
                     <motion.div className="absolute inset-0 bg-white/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <span className="relative z-10 flex items-center justify-center gap-2">
-                      <span>اطلب الخدم�� الآن</span>
+                      <span>اطلب الخدمة الآن</span>
                       <span className="text-lg">🚀</span>
                     </span>
                   </motion.button>
