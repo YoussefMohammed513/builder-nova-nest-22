@@ -811,7 +811,7 @@ export default function Index() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
                 {[
                   {
-                    title: "ال��بداع اللامحدود",
+                    title: "الإبداع اللامحدود",
                     desc: "تصاميم مبتكرة تعكس هويتك الفريدة وتميزك",
                     icon: "🎨",
                     color: "from-pink-500 to-rose-500",
