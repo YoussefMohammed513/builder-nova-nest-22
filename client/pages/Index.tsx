@@ -2171,7 +2171,7 @@ export default function Index() {
                       اختر نوع الخدمة
                     </option>
                     <option value="branding" className="bg-gray-800">
-                      تصم��م الهوية البصرية
+                      تصميم الهوية البصرية
                     </option>
                     <option value="social" className="bg-gray-800">
                       إدارة وسائل التواصل
