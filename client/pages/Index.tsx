@@ -1435,7 +1435,7 @@ export default function Index() {
                 social: ["linkedin", "twitter", "instagram"],
                 color: "from-blue-500 to-[rgb(var(--brand-primary))]",
                 specialties: ["القيادة", "الإدارة", "الاستراتيجية"],
-                quote: "ن��من بقوة الإبداع في تحويل الأحلام إلى واقع",
+                quote: "نؤمن بقوة الإبداع في تحويل الأحلام إلى واقع",
               },
               {
                 name: "عبدالاله النهاري",
