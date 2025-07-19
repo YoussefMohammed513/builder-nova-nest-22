@@ -376,7 +376,7 @@ export default function Index() {
                 { href: "#portfolio", text: "أعمالنا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
-                { href: "#contact", text: "تواصل معنا", icon: "📞" },
+                { href: "#contact", text: "تواصل ��عنا", icon: "📞" },
               ].map((item, index) => (
                 <motion.a
                   key={index}
@@ -734,7 +734,7 @@ export default function Index() {
             <div className="flex flex-wrap justify-center gap-8 opacity-70">
               {[
                 "🏅 أفضل وكالة إبداعية",
-                "🎖️ جائزة الابتكار",
+                "��️ جائزة الابتكار",
                 "⭐ تقييم 5 نجوم",
               ].map((award, index) => (
                 <motion.div
@@ -1047,7 +1047,7 @@ export default function Index() {
               },
               {
                 icon: "📈",
-                title: "الإعلانات الممول��",
+                title: "الإعلانات الممولة",
                 description:
                   "حملات إعلانية مدروسة ومستهدفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
                 features: [
@@ -1209,7 +1209,7 @@ export default function Index() {
           >
             {[
               "الكل",
-              "ه��ية بصرية",
+              "هوية بصرية",
               "مواقع إلكترونية",
               "حملات إعلانية",
               "محتوى مرئي",
@@ -1283,7 +1283,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-pink-500 to-[rgb(var(--brand-secondary))]",
-                description: "ا��تراتيجية محتوى جذابة لعلامة أزياء عصرية",
+                description: "استراتيجية محتوى جذابة لعلامة أزياء عصرية",
                 client: "Fashion Plus",
                 year: "2024",
                 tags: ["أزياء", "تسويق", "موضة"],
@@ -1469,7 +1469,7 @@ export default function Index() {
                 social: ["github", "linkedin", "behance"],
                 color: "from-purple-500 to-blue-500",
                 specialties: ["التطوير", "التصميم", "التقنية"],
-                quote: "نحول الأ��كار إلى تجارب رقمية مذهلة",
+                quote: "نحول الأفكار إلى تجارب رقمية مذهلة",
               },
               {
                 name: "عبدالله مناع",
@@ -1479,7 +1479,7 @@ export default function Index() {
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 social: ["linkedin", "twitter", "instagram"],
                 color: "from-orange-500 to-red-500",
-                specialties: ["العلاقات", "��لتواصل", "الإعلام"],
+                specialties: ["العلاقات", "التواصل", "الإعلام"],
                 quote: "التواصل الفعال هو الجسر بين الأحلام والواقع",
               },
               {
@@ -1665,7 +1665,7 @@ export default function Index() {
                 company: "شركة التميز للتجارة",
                 role: "المدير التنفيذي",
                 content:
-                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعاتنا الأونلاين بشكل كبير. شكراً لفري�� ��طوة المبدع.",
+                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعاتنا الأونلاين بشكل كبير. شكراً لفري�� خطوة المبدع.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1972,7 +1972,7 @@ export default function Index() {
                 {
                   icon: "🤝",
                   title: "خدمة العملاء",
-                  description: "تحسين تج��بة التعامل والدعم الفني",
+                  description: "تحسين تجربة التعامل والدعم الفني",
                   color: "from-purple-500 to-violet-500",
                 },
                 {
@@ -2174,7 +2174,7 @@ export default function Index() {
                       تصميم الهوية البصرية
                     </option>
                     <option value="social" className="bg-gray-800">
-                      إدارة وسائل التواصل
+                      إدارة وسائل التواص��
                     </option>
                     <option value="printing" className="bg-gray-800">
                       التصميم والطباعة
@@ -2526,7 +2526,7 @@ export default function Index() {
                     },
                     {
                       platform: "LinkedIn",
-                      icon: "💼",
+                      icon: "��",
                       color: "hover:text-blue-700",
                     },
                   ].map((social, index) => (
