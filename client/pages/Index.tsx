@@ -1246,7 +1246,7 @@ export default function Index() {
               },
               {
                 title: "شركة التقنية الذكية",
-                category: "موقع إل��تروني متقدم",
+                category: "موقع إلكتروني متقدم",
                 image:
                   "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-blue-500 to-[rgb(var(--brand-primary))]",
