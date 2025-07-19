@@ -186,17 +186,6 @@ const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
   );
 };
 
-// Loading component
-const LoadingSpinner = () => (
-  <div className="flex items-center justify-center min-h-screen">
-    <div className="relative">
-      <div className="w-12 h-12 border-4 border-[rgb(var(--brand-primary))]/20 rounded-full animate-spin">
-        <div className="absolute top-0 left-0 w-12 h-12 border-4 border-transparent border-t-[rgb(var(--brand-primary))] rounded-full animate-spin"></div>
-      </div>
-    </div>
-  </div>
-);
-
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isDarkMode, toggleDarkMode } = useDarkMode();
@@ -565,7 +554,7 @@ export default function Index() {
                 className="btn-secondary text-responsive-lg px-6 sm:px-8 py-3 sm:py-4 flex items-center justify-center gap-2 touch-target mobile-optimized w-full sm:w-auto"
               >
                 <span className="text-xl">👁️</span>
-                <span className="hidden sm:inline">شاهد أعمالنا</span>
+                <span className="hidden sm:inline">شاه�� أعمالنا</span>
                 <span className="sm:hidden">أعمالنا</span>
               </motion.a>
             </motion.div>
@@ -716,7 +705,7 @@ export default function Index() {
                 suffix: "+",
                 label: "مشروع مكتمل",
                 icon: "🚀",
-                description: "بجودة عالمية",
+                description: "��جودة عالمية",
                 color: "from-blue-400 to-blue-600",
               },
               {
@@ -1031,7 +1020,7 @@ export default function Index() {
             <h2 className="heading-secondary mb-6">خدماتنا الاحترافية</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
               نقدم مجموعة شاملة من الخدمات المتخصصة لبناء علامتك التجارية وتحقيق
-              أهدافك التسويقية بأحدث الاستراتيجيات والتقنيات العالمية
+              أهد��فك التسويقية بأحدث الاستراتيجيات والتقنيات العالمية
             </p>
           </motion.div>
 
@@ -1324,7 +1313,7 @@ export default function Index() {
                 tags: ["طبي", "صحة", "احتراف"],
               },
               {
-                title: "متجر الأ��ياء العصرية",
+                title: "متجر الأزياء العصرية",
                 category: "إدارة سوشيال ميديا",
                 image:
                   "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
@@ -1365,7 +1354,7 @@ export default function Index() {
                 description: "تطبيق توصيل مبتكر مع حملة إطلاق ناجحة",
                 client: "سريع للتوصيل",
                 year: "2024",
-                tags: ["تطبيق", "توصيل", "تقنية"],
+                tags: ["تطبي��", "توصيل", "تقنية"],
               },
               {
                 title: "معهد التعليم الرقمي",
@@ -1526,7 +1515,7 @@ export default function Index() {
                 color:
                   "from-[rgb(var(--brand-primary))] to-[rgb(var(--brand-secondary))]",
                 specialties: ["الإبداع", "التصميم", "الابتكار"],
-                quote: "كل تصميم يحكي قصة، ونحن نكتب أجمل القصص",
+                quote: "كل تصمي�� يحكي قصة، ونحن نكتب أجمل القصص",
               },
               {
                 name: "محمد مقبل نعمان",
@@ -1547,7 +1536,7 @@ export default function Index() {
                   "https://cdn.builder.io/api/v1/image/assets%2F6cac5a504765458ea9034ccfe6de8d2b%2Fe600234db88349078d9ae78a2b881deb",
                 social: ["github", "linkedin", "behance"],
                 color: "from-purple-500 to-blue-500",
-                specialties: ["التطوير", "التصميم", "التقنية"],
+                specialties: ["ال��طوير", "التصميم", "التقنية"],
                 quote: "نحول الأفكار إلى تجارب رقمية مذهلة",
               },
               {
@@ -1787,7 +1776,7 @@ export default function Index() {
                 project: "تصميم هوية + مطبوعات",
               },
               {
-                name: "ل��لى محمد القاسم",
+                name: "ليلى محمد القاسم",
                 company: "صالون الأناقة",
                 role: "مالكة الصالون",
                 content:
@@ -1930,7 +1919,7 @@ export default function Index() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="h-1 bg-gradient-brand mx-auto mb-6"
             />
-            <h2 className="heading-secondary mb-6">اقتراحاتك ت��منا</h2>
+            <h2 className="heading-secondary mb-6">اقتراحاتك تهمنا</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
               نسعد بتلقي آرائكم واقتراحاتكم لتطوير خدماتنا وتحسين تجربتكم معنا
             </p>
@@ -2074,7 +2063,7 @@ export default function Index() {
                 {
                   icon: "📈",
                   title: "خدمات جديدة",
-                  description: "اقتراحات ��خدمات ومنتجات جديدة",
+                  description: "اقتراحات لخدمات ومنتجات جديدة",
                   color: "from-indigo-500 to-blue-500",
                 },
               ].map((category, index) => (
@@ -2703,7 +2692,7 @@ export default function Index() {
                   href="#terms"
                   className="hover:text-[rgb(var(--brand-primary))] transition-colors"
                 >
-                  شروط الاستخدام
+                  ��روط الاستخدام
                 </a>
                 <a
                   href="#sitemap"
