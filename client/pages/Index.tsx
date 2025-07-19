@@ -1054,7 +1054,7 @@ export default function Index() {
                   "فيسبوك وإنستقرام المتقدم",
                   "جوجل أدوردز المتخصص",
                   "سناب شات وتيك توك الحديث",
-                  "يوتيوب ولي��كد إن الاحترافي",
+                  "يوتيوب ولينكد إن الاحترافي",
                 ],
                 image:
                   "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
