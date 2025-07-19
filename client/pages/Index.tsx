@@ -376,7 +376,7 @@ export default function Index() {
                 { href: "#portfolio", text: "أعمالنا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
-                { href: "#contact", text: "تواصل ��عنا", icon: "📞" },
+                { href: "#contact", text: "تواصل معنا", icon: "📞" },
               ].map((item, index) => (
                 <motion.a
                   key={index}
@@ -733,8 +733,8 @@ export default function Index() {
             </h3>
             <div className="flex flex-wrap justify-center gap-8 opacity-70">
               {[
-                "🏅 أفضل وكالة إبداعية",
-                "��️ جائزة الابتكار",
+                "🏅 أفض�� وكالة إبداعية",
+                "🎖️ جائزة الابتكار",
                 "⭐ تقييم 5 نجوم",
               ].map((award, index) => (
                 <motion.div
@@ -1239,7 +1239,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-orange-500 to-red-500",
-                description: "تصميم هوية متكاملة تعكس التراث العربي الأصيل",
+                description: "ت��ميم هوية متكاملة تعكس التراث العربي الأصيل",
                 client: "مطعم الأصالة",
                 year: "2024",
                 tags: ["هوية", "مطاعم", "تراث"],
@@ -1261,7 +1261,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-purple-500 to-pink-500",
-                description: "حملة إبداعية شاملة لترويج المعرض الفني",
+                description: "حملة إ��داعية شاملة لترويج المعرض الفني",
                 client: "معرض الإبداع",
                 year: "2023",
                 tags: ["فن", "إعلان", "ثقافة"],
@@ -1479,7 +1479,7 @@ export default function Index() {
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 social: ["linkedin", "twitter", "instagram"],
                 color: "from-orange-500 to-red-500",
-                specialties: ["العلاقات", "التواصل", "الإعلام"],
+                specialties: ["العلاقات", "التواص��", "الإعلام"],
                 quote: "التواصل الفعال هو الجسر بين الأحلام والواقع",
               },
               {
@@ -1646,7 +1646,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 date: "منذ شهرين",
-                project: "تصميم هوية بصري�� شاملة",
+                project: "تصميم هوية بصرية شاملة",
               },
               {
                 name: "فاطمة عبدالله السالم",
@@ -1669,7 +1669,7 @@ export default function Index() {
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-                date: "منذ ��هر",
+                date: "منذ شهر",
                 project: "تطوير موقع إلكتروني متكامل",
               },
               {
@@ -1971,7 +1971,7 @@ export default function Index() {
                 },
                 {
                   icon: "🤝",
-                  title: "خدمة العملاء",
+                  title: "خدمة ال��ملاء",
                   description: "تحسين تجربة التعامل والدعم الفني",
                   color: "from-purple-500 to-violet-500",
                 },
@@ -2120,7 +2120,7 @@ export default function Index() {
                     <input
                       type="text"
                       className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-white/40 transition-colors backdrop-blur-sm"
-                      placeholder="��دخل اسمك الكامل"
+                      placeholder="أدخل اسمك الكامل"
                     />
                   </motion.div>
 
@@ -2254,7 +2254,7 @@ export default function Index() {
                   {
                     icon: "⏰",
                     title: "ساعات العمل",
-                    info: "السبت - الخميس",
+                    info: "السبت - ال��ميس",
                     description: "من 9 صباحاً إلى 6 مساءً",
                     color: "from-orange-500 to-red-500",
                   },
@@ -2373,7 +2373,7 @@ export default function Index() {
               <div>
                 <img
                   src="https://cdn.builder.io/api/v1/assets/6cac5a504765458ea9034ccfe6de8d2b/logo-25dded?format=webp&width=400"
-                  alt="خ��وة للدعاية والإعلان"
+                  alt="خطوة للدعاية والإعلان"
                   className="h-12 w-auto mb-4"
                   loading="lazy"
                 />
@@ -2488,7 +2488,7 @@ export default function Index() {
               </h4>
               <p className="mb-4 text-sm leading-relaxed">
                 اشترك في نشر��نا البريدية للحصو�� على آخر الأخبار والعروض
-                الحصرية.
+                الحصر��ة.
               </p>
 
               <div className="space-y-4">
