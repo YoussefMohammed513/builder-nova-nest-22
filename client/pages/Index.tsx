@@ -573,7 +573,7 @@ export default function Index() {
                 className="flex items-center gap-1 bg-white/10 px-3 py-2 rounded-full backdrop-blur-sm border border-white/20 touch-target"
               >
                 <span className="text-lg">🏆</span>
-                <span className="hidden sm:inline">أكثر من 500 عميل راض��</span>
+                <span className="hidden sm:inline">أكثر من 500 عم��ل راضٍ</span>
                 <span className="sm:hidden">500+ عميل</span>
               </motion.span>
               <motion.span
@@ -668,7 +668,7 @@ export default function Index() {
               {
                 number: 1200,
                 suffix: "+",
-                label: "مشروع مكتمل",
+                label: "مشروع مك��مل",
                 icon: "🚀",
                 description: "بجودة عالمية",
                 color: "from-blue-400 to-blue-600",
@@ -795,7 +795,7 @@ export default function Index() {
               whileInView="animate"
               viewport={{ once: true }}
             >
-              <h3 className="text-3xl font-bold mb-6">رؤيتنا للمستقبل</h3>
+              <h3 className="text-3xl font-bold mb-6">رؤيتنا ��لمستقبل</h3>
               <p className="text-lg leading-relaxed mb-6 text-pretty">
                 تأسست "خطوة" لتقديم حلول مبتكرة في مجال الدعاية والإعلان، بخبرة
                 تجمع بين الإبداع والاحتراف العالمي. نعمل على بناء الهويات
@@ -984,8 +984,8 @@ export default function Index() {
             />
             <h2 className="heading-secondary mb-6">خدماتنا الاحترافية</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
-              نقدم مجموعة شاملة من الخدمات المتخصصة لبناء علامتك التجارية وتحقيق
-              أهدافك التسويقية بأحدث الأساليب والتقنيات العالمية
+              نقدم مجموعة شاملة من الخدمات المتخصصة لبنا�� علامتك التجارية
+              وتحقيق أهدافك التسويقية بأحدث الأساليب والتقنيات العالمية
             </p>
           </motion.div>
 
@@ -1075,11 +1075,11 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
                 color: "from-purple-500 to-indigo-500",
-                pricing: "اب��داءً من 10$/فيديو",
+                pricing: "ابتداءً من 10$/فيديو",
               },
               {
                 icon: "🌐",
-                title: "تطوير المواق��",
+                title: "تطوير المواق����",
                 description:
                   "مواقع إلكترونية عصرية ومتجاوبة مع جميع الأجهزة مع أفضل تجربة مستخدم وتحسين محركات البحث المتقدم",
                 features: [
@@ -1246,7 +1246,7 @@ export default function Index() {
               },
               {
                 title: "شركة التقنية الذكية",
-                category: "موقع إلكترو��ي متقدم",
+                category: "موقع إلكتروني متقدم",
                 image:
                   "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-blue-500 to-[rgb(var(--brand-primary))]",
@@ -1427,7 +1427,7 @@ export default function Index() {
           >
             {[
               {
-                name: "يوسف محمد البر��ي",
+                name: "يوسف محمد البرطي",
                 role: "المدير التنفيذي",
                 experience: "قائد الفريق والرؤية الاستراتيجية",
                 image:
@@ -1665,7 +1665,7 @@ export default function Index() {
                 company: "شركة التميز للتجارة",
                 role: "المدير التنفيذي",
                 content:
-                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعاتنا الأونلاين بشكل كبير. شكراً لفريق خطوة المبدع.",
+                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعاتنا ا��أونلاين بشكل كبير. شكراً لفريق خطوة المبدع.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -2032,7 +2032,7 @@ export default function Index() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto">
               {[
                 { number: "250+", label: "��قتراح تم تنفيذه", icon: "✅" },
-                { number: "95%", label: "من الاقتراحات مفيدة", icon: "💡" },
+                { number: "95%", label: "من الاقت��احات مفيدة", icon: "💡" },
                 { number: "48", label: "ساعة متوسط الرد", icon: "⚡" },
               ].map((stat, index) => (
                 <motion.div
@@ -2186,7 +2186,7 @@ export default function Index() {
                       إنتاج المحتوى المرئي
                     </option>
                     <option value="web" className="bg-gray-800">
-                      تطوير الموا��ع
+                      تطوير المواقع
                     </option>
                   </select>
                 </motion.div>
@@ -2255,7 +2255,7 @@ export default function Index() {
                     icon: "⏰",
                     title: "ساعا�� العمل",
                     info: "السبت - الخميس",
-                    description: "من 9 صباحاً إلى 6 مساءً",
+                    description: "من 9 صباحاً إ��ى 6 مساءً",
                     color: "from-orange-500 to-red-500",
                   },
                 ].map((contact, index) => (
