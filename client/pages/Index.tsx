@@ -1485,7 +1485,7 @@ export default function Index() {
               {
                 name: "اسيد محمد البرعي",
                 role: "مصمم جرافيك",
-                experience: "فنان الرسو��يات والإبداع البصري",
+                experience: "فنان الرسوميات والإبداع البصري",
                 image:
                   "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 social: ["behance", "dribbble", "instagram"],
