@@ -376,7 +376,7 @@ export default function Index() {
                 { href: "#portfolio", text: "أعمالنا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
-                { href: "#contact", text: "تواصل ��عنا", icon: "📞" },
+                { href: "#contact", text: "تواصل معنا", icon: "📞" },
               ].map((item, index) => (
                 <motion.a
                   key={index}
@@ -573,7 +573,7 @@ export default function Index() {
                 className="flex items-center gap-1 bg-white/10 px-3 py-2 rounded-full backdrop-blur-sm border border-white/20 touch-target"
               >
                 <span className="text-lg">🏆</span>
-                <span className="hidden sm:inline">أكثر من 500 عميل راضٍ</span>
+                <span className="hidden sm:inline">أكثر من 500 عميل راض��</span>
                 <span className="sm:hidden">500+ عميل</span>
               </motion.span>
               <motion.span
@@ -805,7 +805,7 @@ export default function Index() {
               <p className="text-lg leading-relaxed mb-8 text-pretty">
                 نؤمن بأن كل علامة تجارية لها قصة فريدة تستحق أن تُروى بطريقة
                 إبداعية ومؤثرة تلامس قلوب الجمهور وتحقق النتائج المرجوة في عالم
-                تتزايد فيه المنافسة والتحديات يوماً ��عد يوم.
+                تتزايد فيه المنافسة والتحديات يوماً بعد يوم.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
@@ -1051,7 +1051,7 @@ export default function Index() {
                 description:
                   "حملات إعلانية مدروسة ومستهدفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
                 features: [
-                  "فيسب��ك وإنستقرام المتقدم",
+                  "فيسبوك وإنستقرام المتقدم",
                   "جوجل أدوردز المتخصص",
                   "سناب شات وتيك توك الحديث",
                   "يوتيوب ولينكد إن الاحترافي",
@@ -1246,7 +1246,7 @@ export default function Index() {
               },
               {
                 title: "شركة التقنية الذكية",
-                category: "موقع إلكتروني متقدم",
+                category: "موقع إلكترو��ي متقدم",
                 image:
                   "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-blue-500 to-[rgb(var(--brand-primary))]",
@@ -1427,7 +1427,7 @@ export default function Index() {
           >
             {[
               {
-                name: "يوسف محمد البرطي",
+                name: "يوسف محمد البر��ي",
                 role: "المدير التنفيذي",
                 experience: "قائد الفريق والرؤية الاستراتيجية",
                 image:
@@ -1899,7 +1899,7 @@ export default function Index() {
                   className="space-y-2"
                 >
                   <label className="block text-sm font-medium">
-                    نوع ا��اقتراح
+                    نوع الاقتراح
                   </label>
                   <select className="w-full px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors">
                     <option value="">اختر نوع الاقتراح</option>
@@ -2186,7 +2186,7 @@ export default function Index() {
                       إنتاج المحتوى المرئي
                     </option>
                     <option value="web" className="bg-gray-800">
-                      تطوير المواقع
+                      تطوير الموا��ع
                     </option>
                   </select>
                 </motion.div>
@@ -2413,7 +2413,7 @@ export default function Index() {
                 {[
                   "تصميم الهوية البصرية",
                   "إدارة وسائل التواصل",
-                  "التصمي�� والطباعة",
+                  "التصميم والطباعة",
                   "الإعلانات الممولة",
                   "إنتاج المحتوى المرئي",
                   "تطوير المواقع",
