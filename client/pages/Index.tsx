@@ -1006,7 +1006,7 @@ export default function Index() {
                   "تصميم الشعار الاحترافي",
                   "دليل الهوية البصرية ا��شامل",
                   "القرطاسية والمطبوعات التجارية",
-                  "التطبيقات الرقمية والتفا��لية",
+                  "التطبيقات الرقمية والتفا���لية",
                 ],
                 image:
                   "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
@@ -1075,7 +1075,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
                 color: "from-purple-500 to-indigo-500",
-                pricing: "ابتداءً من 10$/فيديو",
+                pricing: "اب��داءً من 10$/فيديو",
               },
               {
                 icon: "🌐",
@@ -1240,7 +1240,7 @@ export default function Index() {
                   "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-orange-500 to-red-500",
                 description: "تصميم هوية متكاملة تعكس التراث العربي الأصيل",
-                client: "مطعم الأصا��ة",
+                client: "مطعم الأصالة",
                 year: "2024",
                 tags: ["هوية", "مطاعم", "تراث"],
               },
@@ -1267,7 +1267,7 @@ export default function Index() {
                 tags: ["ف��", "إعلان", "ثقافة"],
               },
               {
-                title: "عيادة النخبة الطبية",
+                title: "��يادة النخبة الطبية",
                 category: "تصميم شامل ومتكامل",
                 image:
                   "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
@@ -1446,7 +1446,7 @@ export default function Index() {
                 social: ["behance", "dribbble", "linkedin"],
                 color:
                   "from-[rgb(var(--brand-primary))] to-[rgb(var(--brand-secondary))]",
-                specialties: ["الإبداع", "التصميم", "ا��ابتكار"],
+                specialties: ["الإبداع", "التصميم", "الابتكار"],
                 quote: "كل تصميم يحكي قصة، ونحن نكتب أجمل القصص",
               },
               {
@@ -1491,7 +1491,7 @@ export default function Index() {
                 social: ["behance", "dribbble", "instagram"],
                 color: "from-pink-500 to-[rgb(var(--brand-secondary))]",
                 specialties: ["التصميم", "الجرافيك", "الهوية"],
-                quote: "الفن الحقيقي يكمن في البساط�� المعبرة",
+                quote: "الفن الحقيقي يكمن في البساطة المعبرة",
               },
             ].map((member, index) => (
               <motion.div
@@ -1658,7 +1658,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1494790108755-2616c999db1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 date: "منذ 3 أشهر",
-                project: "هوية طبية + إدارة سوشيا�� ميد��ا",
+                project: "هوية طبية + إدارة سوشيا�� ميديا",
               },
               {
                 name: "خالد يوسف ا��نجار",
@@ -1907,7 +1907,7 @@ export default function Index() {
                     <option value="design">تطوير التصاميم</option>
                     <option value="website">تحسين الموقع</option>
                     <option value="support">خدمة العملاء</option>
-                    <option value="pricing">الأسعار والعروض</option>
+                    <option value="pricing">الأس��ار والعروض</option>
                     <option value="other">أخرى</option>
                   </select>
                 </motion.div>
@@ -1953,7 +1953,7 @@ export default function Index() {
               {[
                 {
                   icon: "🎨",
-                  title: "التصاميم والإبد��ع",
+                  title: "التصاميم والإبداع",
                   description: "اقتراحات حول جودة التصاميم وأساليب الإبداع",
                   color: "from-pink-500 to-rose-500",
                 },
@@ -2198,7 +2198,7 @@ export default function Index() {
                   className="space-y-2"
                 >
                   <label className="block text-white text-sm font-medium">
-                    تفاصيل المشروع
+                    تفا��يل المشروع
                   </label>
                   <textarea
                     rows="4"
@@ -2412,7 +2412,7 @@ export default function Index() {
               <ul className="space-y-3">
                 {[
                   "تصميم الهوية البصرية",
-                  "إدارة وسائل التو��صل",
+                  "إدارة وسائل التواصل",
                   "التصميم والطباعة",
                   "الإعلانات الممولة",
                   "إنتاج المحتوى المرئي",
@@ -2487,7 +2487,7 @@ export default function Index() {
                 ابق على اطلاع
               </h4>
               <p className="mb-4 text-sm leading-relaxed">
-                اشترك في نشرتنا البريدية للحصو�� على آخر الأخبار والعروض
+                اشترك في نشر��نا البريدية للحصو�� على آخر الأخبار والعروض
                 الحصرية.
               </p>
 
