@@ -199,20 +199,10 @@ const LoadingSpinner = () => (
 
 export default function Index() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
   const { isDarkMode, toggleDarkMode } = useDarkMode();
   const { scrollYProgress } = useScroll();
   const heroScale = useTransform(scrollYProgress, [0, 0.5], [1, 1.1]);
   const heroOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0.3]);
-
-  useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return <LoadingSpinner />;
-  }
 
   return (
     <div className="min-h-screen transition-colors duration-300">
@@ -1334,7 +1324,7 @@ export default function Index() {
                 tags: ["طبي", "صحة", "احتراف"],
               },
               {
-                title: "متجر الأزياء العصرية",
+                title: "متجر الأ��ياء العصرية",
                 category: "إدارة سوشيال ميديا",
                 image:
                   "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
@@ -1797,7 +1787,7 @@ export default function Index() {
                 project: "تصميم هوية + مطبوعات",
               },
               {
-                name: "ليلى محمد القاسم",
+                name: "ل��لى محمد القاسم",
                 company: "صالون الأناقة",
                 role: "مالكة الصالون",
                 content:
@@ -1940,7 +1930,7 @@ export default function Index() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="h-1 bg-gradient-brand mx-auto mb-6"
             />
-            <h2 className="heading-secondary mb-6">اقتراحاتك تهمنا</h2>
+            <h2 className="heading-secondary mb-6">اقتراحاتك ت��منا</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
               نسعد بتلقي آرائكم واقتراحاتكم لتطوير خدماتنا وتحسين تجربتكم معنا
             </p>
@@ -2084,7 +2074,7 @@ export default function Index() {
                 {
                   icon: "📈",
                   title: "خدمات جديدة",
-                  description: "اقتراحات لخدمات ومنتجات جديدة",
+                  description: "اقتراحات ��خدمات ومنتجات جديدة",
                   color: "from-indigo-500 to-blue-500",
                 },
               ].map((category, index) => (
