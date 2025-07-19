@@ -812,7 +812,7 @@ export default function Index() {
                 {[
                   {
                     title: "الإبداع اللامحدود",
-                    desc: "تصام💰م مبتكرة تعكس هويتك الف💰يدة وتميزك",
+                    desc: "تصاميم مبتكرة تعكس هويتك الفريدة وتميزك",
                     icon: "🎨",
                     color: "from-pink-500 to-rose-500",
                   },
@@ -1030,7 +1030,7 @@ export default function Index() {
                 pricing: "ابتداءً من 5$/شهر",
               },
               {
-                icon: "🖨️",
+                icon: "��️",
                 title: "التصميم والطباعة",
                 description:
                   "مواد طب💰عية عالية الجودة من الكروت الشخصية إلى اللافتات الكبيرة بأحدث التقنيات والمواد المتطورة",
@@ -1641,7 +1641,7 @@ export default function Index() {
                 company: "مطعم البركة",
                 role: "المدير العام",
                 content:
-                  "تعامل راقي ومهني، حققوا لنا زيادة في المبيعات بنسبة 150% خلال 6 أشهر. فريق محترف وإبداعي حقاً.",
+                  "تعامل راقي ومهني، حققوا لنا زيادة في المبيعات بنسبة 150% خلال 6 أشهر. فريق محترف وإبداعي حق��ً.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1685,11 +1685,11 @@ export default function Index() {
                 project: "حملة تسويقية شاملة",
               },
               {
-                name: "محمد علي الشامي",
+                name: "محمد علي الشام��",
                 company: "مؤسسة الشامي التجارية",
                 role: "صاحب المؤسسة",
                 content:
-                  "فريق متفهم لاحتياجاتنا، سرعة في التنفيذ وجودة عالية في العمل. نوصي بهم بشدة لكل من يريد التميز.",
+                  "فريق متفهم لاحتيا��اتنا، سرعة في التنفيذ وجودة عالية في العمل. نوصي بهم بشدة لكل من يريد التميز.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -2171,7 +2171,7 @@ export default function Index() {
                       اختر نوع الخدمة
                     </option>
                     <option value="branding" className="bg-gray-800">
-                      تصميم الهوية البصرية
+                      تصم��م الهوية البصرية
                     </option>
                     <option value="social" className="bg-gray-800">
                       إدارة وسائل التواصل
@@ -2253,7 +2253,7 @@ export default function Index() {
                   },
                   {
                     icon: "⏰",
-                    title: "ساعات العمل",
+                    title: "ساعات الع��ل",
                     info: "السبت - الخميس",
                     description: "من 9 صباحاً إلى 6 مساءً",
                     color: "from-orange-500 to-red-500",
@@ -2373,7 +2373,7 @@ export default function Index() {
               <div>
                 <img
                   src="https://cdn.builder.io/api/v1/assets/6cac5a504765458ea9034ccfe6de8d2b/logo-25dded?format=webp&width=400"
-                  alt="خطوة للدعاية والإعلان"
+                  alt="خطوة للد��اية والإعلان"
                   className="h-12 w-auto mb-4"
                   loading="lazy"
                 />
@@ -2612,7 +2612,7 @@ export default function Index() {
             whileHover={{ opacity: 1, x: 0 }}
             className="hidden lg:block absolute right-full top-1/2 transform -translate-y-1/2 mr-3 bg-black/80 text-white px-3 py-2 rounded-lg text-sm whitespace-nowrap backdrop-blur-sm"
           >
-            تواصل معنا
+            تواص�� معنا
             <div className="absolute top-1/2 right-0 transform translate-x-full -translate-y-1/2 border-4 border-transparent border-l-black/80"></div>
           </motion.div>
         </motion.div>
