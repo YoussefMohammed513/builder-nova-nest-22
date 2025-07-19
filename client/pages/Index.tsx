@@ -144,7 +144,7 @@ const DarkModeToggle = ({ isDarkMode, toggleDarkMode }) => {
       whileTap={{ scale: 0.95 }}
       className="dark-mode-toggle relative overflow-hidden"
       aria-label={
-        isDarkMode ? "تبديل إلى الوضع الفاتح" : "تبديل ��لى الوضع الداكن"
+        isDarkMode ? "تبديل إلى الوضع الفاتح" : "تبديل إلى الوضع الداكن"
       }
     >
       <motion.div
@@ -268,7 +268,7 @@ export default function Index() {
             {/* Desktop Navigation */}
             <ul className="hidden lg:flex items-center gap-6 xl:gap-8 font-semibold">
               {[
-                { href: "#home", text: "الرئيسي��", icon: "🏠" },
+                { href: "#home", text: "الرئيسية", icon: "🏠" },
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
                 { href: "#services", text: "خدماتنا", icon: "⚙️" },
                 { href: "#stats", text: "إنجازاتنا", icon: "📊" },
@@ -729,7 +729,7 @@ export default function Index() {
             className="mt-16 text-center"
           >
             <h3 className="text-2xl font-bold text-white mb-8">
-              شهادات وجوائز تقدير��ة
+              شهادات وجوائز تقديرية
             </h3>
             <div className="flex flex-wrap justify-center gap-8 opacity-70">
               {[
@@ -804,8 +804,8 @@ export default function Index() {
               </p>
               <p className="text-lg leading-relaxed mb-8 text-pretty">
                 نؤمن بأن كل علامة تجارية لها قصة فريدة تستحق أن تُروى بطريقة
-                إبداعية ومؤثرة تلامس قلوب الجمهور وتحقق النتائج المرجوة في عالم
-                تتزايد فيه ا��منافسة والتحديات يوماً بعد يوم.
+                إبداعية ومؤثرة تلامس قلوب الجمهور وتحق�� النتائج المرجوة في عالم
+                تتزايد فيه المنافسة والتحديات يوماً بعد يوم.
               </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
@@ -830,7 +830,7 @@ export default function Index() {
                   },
                   {
                     title: "الدعم المتواصل",
-                    desc: "مساندة مستمرة لضمان نجاحك وتميزك",
+                    desc: "مساندة مستمرة ل��مان نجاحك وتميزك",
                     icon: "🤝",
                     color: "from-purple-500 to-violet-500",
                   },
@@ -1049,7 +1049,7 @@ export default function Index() {
                 icon: "📈",
                 title: "الإعلانات الممولة",
                 description:
-                  "حملات إعلا��ية مدروسة ومستهدفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
+                  "حملات إعلانية مدروسة ومستهدفة عبر جميع المنصات الرقمية ��ضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
                 features: [
                   "فيسبوك وإنستقرام المتقدم",
                   "جوجل أدوردز المتخصص",
@@ -1261,7 +1261,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-purple-500 to-pink-500",
-                description: "حملة إبداعية شاملة لترويج المعرض الفني",
+                description: "حم��ة إبداعية شاملة لترويج المعرض الفني",
                 client: "معرض الإبداع",
                 year: "2023",
                 tags: ["فن", "إعلان", "ثقافة"],
@@ -1283,7 +1283,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-pink-500 to-[rgb(var(--brand-secondary))]",
-                description: "استراتيجية محتوى جذابة لعلامة أزياء عصرية",
+                description: "استراتيجية محتوى جذابة لعلا��ة أزياء عصرية",
                 client: "Fashion Plus",
                 year: "2024",
                 tags: ["أزياء", "تسويق", "موضة"],
@@ -1637,7 +1637,7 @@ export default function Index() {
           >
             {[
               {
-                name: "أحمد محمد الأسود",
+                name: "أ��مد محمد الأسود",
                 company: "مطعم البركة",
                 role: "المدير العام",
                 content:
@@ -1657,7 +1657,7 @@ export default function Index() {
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1494790108755-2616c999db1c?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-                date: "منذ 3 أشهر",
+                date: "منذ 3 أ��هر",
                 project: "هوية طبية + إدارة سوشيال ميد��ا",
               },
               {
@@ -2452,7 +2452,7 @@ export default function Index() {
                   { text: "من نحن", href: "#about" },
                   { text: "أعمالنا", href: "#portfolio" },
                   { text: "فريقنا", href: "#team" },
-                  { text: "آراء العملاء", href: "#testimonials" },
+                  { text: "آرا�� العملاء", href: "#testimonials" },
                   { text: "اقتراحاتك", href: "#suggestions" },
                   { text: "تواصل معنا", href: "#contact" },
                   { text: "سياسة الخصوصية", href: "#privacy" },
