@@ -1019,7 +1019,7 @@ export default function Index() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="h-1 bg-gradient-brand mx-auto mb-6"
             />
-            <h2 className="heading-secondary mb-6">خدماتنا الاحترافية</h2>
+            <h2 className="heading-secondary mb-6">خ��ماتنا الاحترافية</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
               نقدم مجموعة شاملة من الخدمات المتخصصة لبناء علامتك التجارية وتحقيق
               أهدافك التسويقية بأحدث الاستراتيجيات والتقنيات العالمية
@@ -1090,7 +1090,7 @@ export default function Index() {
                 features: [
                   "فيسبوك وإنستقرام المتقدم",
                   "جوجل أدوردز المتخصص",
-                  "سناب شات وتيك توك الحديث",
+                  "��ناب شات وتيك توك الحديث",
                   "يوتيوب ولينكد إن الاحترافي",
                 ],
                 image:
@@ -1326,7 +1326,7 @@ export default function Index() {
                 tags: ["أزياء", "تسويق", "موضة"],
               },
               {
-                title: "شركة الاستثمار العقاري",
+                title: "شركة الاستثمار ا��عقاري",
                 category: "هوية وموقع إلكتروني",
                 image:
                   "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
@@ -1746,7 +1746,7 @@ export default function Index() {
                 company: "شركة التميز للتجارة",
                 role: "المدير التنفيذي",
                 content:
-                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعاتنا الأونلاين بشكل كبير. شكراً لفريق خطوة المبدع.",
+                  "أفضل استثمار قمنا ب��! الموقع الإلكتروني الجديد زاد من مبيعاتنا الأونلاين بشكل كبير. شكراً لفريق خطوة المبدع.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1767,7 +1767,7 @@ export default function Index() {
               },
               {
                 name: "محمد علي الشامي",
-                company: "مؤسسة الشامي التجارية",
+                company: "مؤسسة الشامي ��لتجارية",
                 role: "صاحب المؤسسة",
                 content:
                   "فريق متفهم لاحتياجاتنا، سرعة في التنفيذ وجودة عالية في العمل. نوصي بهم بشدة لكل من يريد التميز.",
@@ -1987,7 +1987,7 @@ export default function Index() {
                     <option value="service">تحسين الخدمات</option>
                     <option value="design">تطوير التصاميم</option>
                     <option value="website">تحسين الموقع</option>
-                    <option value="support">خدمة العملاء</option>
+                    <option value="support">خدمة الع��لاء</option>
                     <option value="pricing">الأسعار والعروض</option>
                     <option value="other">أخرى</option>
                   </select>
@@ -2390,7 +2390,7 @@ export default function Index() {
                   {[
                     {
                       platform: "Facebook",
-                      icon: "📘",
+                      icon: "���",
                       color: "from-blue-600 to-blue-700",
                     },
                     {
@@ -2469,6 +2469,17 @@ export default function Index() {
                   <span className="text-[rgb(var(--brand-primary))]">📱</span>
                   <span className="font-medium">+967-78-466-8027</span>
                 </div>
+                <motion.a
+                  href="https://wa.me/967784668027?text=مرحباً%20أريد%20التواصل%20معكم"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition-colors duration-300 mt-3"
+                >
+                  <span>💬</span>
+                  <span>تواصل عبر واتساب</span>
+                </motion.a>
                 <div className="flex items-center gap-3">
                   <span className="text-[rgb(var(--brand-primary))]">📧</span>
                   <span>stepdesign.agency@gmail.com</span>
