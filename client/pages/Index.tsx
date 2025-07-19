@@ -573,7 +573,7 @@ export default function Index() {
                 className="flex items-center gap-1 bg-white/10 px-3 py-2 rounded-full backdrop-blur-sm border border-white/20 touch-target"
               >
                 <span className="text-lg">🏆</span>
-                <span className="hidden sm:inline">أكثر من 500 عميل راضٍ</span>
+                <span className="hidden sm:inline">أكثر من 500 ع��يل راضٍ</span>
                 <span className="sm:hidden">500+ عميل</span>
               </motion.span>
               <motion.span
@@ -668,7 +668,7 @@ export default function Index() {
               {
                 number: 1200,
                 suffix: "+",
-                label: "مشروع مكتمل",
+                label: "مشروع م��تمل",
                 icon: "🚀",
                 description: "بجودة عالمية",
                 color: "from-blue-400 to-blue-600",
@@ -733,7 +733,7 @@ export default function Index() {
             </h3>
             <div className="flex flex-wrap justify-center gap-8 opacity-70">
               {[
-                "🏅 أفضل وكالة ��بداعية",
+                "🏅 أفضل وكالة إبداعية",
                 "🎖️ جائزة الابتكار",
                 "⭐ تقييم 5 نجوم",
               ].map((award, index) => (
@@ -811,8 +811,8 @@ export default function Index() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
                 {[
                   {
-                    title: "الإبداع ال��امحدود",
-                    desc: "تصاميم مبتكرة تعكس هويتك الفريدة وتميزك",
+                    title: "الإبداع اللامحدود",
+                    desc: "تصاميم مب��كرة تعكس هويتك الفريدة وتميزك",
                     icon: "🎨",
                     color: "from-pink-500 to-rose-500",
                   },
@@ -982,10 +982,10 @@ export default function Index() {
               transition={{ delay: 0.5, duration: 0.8 }}
               className="h-1 bg-gradient-brand mx-auto mb-6"
             />
-            <h2 className="heading-secondary mb-6">خد��اتنا الاحترافية</h2>
+            <h2 className="heading-secondary mb-6">خدماتنا الاحترافية</h2>
             <p className="text-xl max-w-3xl mx-auto text-pretty">
-              نقدم مجموعة شاملة من الخدمات المتخصصة لبناء علامتك التجارية وتحقيق
-              أهدافك التسويقية بأحدث الأساليب والتقنيات العالمية
+              نقدم مجموعة شاملة من الخ��مات المتخصصة لبناء علامتك التجارية
+              وتحقيق أهدافك التسويقية بأحدث الأساليب والتقنيات العالمية
             </p>
           </motion.div>
 
@@ -1006,7 +1006,7 @@ export default function Index() {
                   "تصميم الشعار الاحترافي",
                   "دليل الهوية البصرية الشامل",
                   "القرطاسية والمطبوعات التجارية",
-                  "التطبيقا�� الرقمية والتفاعلية",
+                  "التطبيقات الرقمية والتفاعلية",
                 ],
                 image:
                   "https://images.unsplash.com/photo-1561070791-2526d30994b5?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
@@ -1245,7 +1245,7 @@ export default function Index() {
                 tags: ["هوية", "مطاعم", "تراث"],
               },
               {
-                title: "شركة التقني�� الذكية",
+                title: "شركة التقنية الذكية",
                 category: "موقع إلكتروني متقدم",
                 image:
                   "https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
@@ -1290,7 +1290,7 @@ export default function Index() {
               },
               {
                 title: "شركة الاستثمار العقاري",
-                category: "هوية وموقع إلكترو��ي",
+                category: "هوية وموقع إلكتروني",
                 image:
                   "https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
                 color: "from-gray-600 to-gray-800",
@@ -1435,7 +1435,7 @@ export default function Index() {
                 social: ["linkedin", "twitter", "instagram"],
                 color: "from-blue-500 to-[rgb(var(--brand-primary))]",
                 specialties: ["القيادة", "الإدارة", "الاستراتيجية"],
-                quote: "نؤمن بقوة الإبداع في تحويل الأحلام إلى واقع",
+                quote: "نؤمن بقوة الإبداع في تحويل الأحل��م إلى واقع",
               },
               {
                 name: "عبدالاله النهاري",
@@ -1613,7 +1613,7 @@ export default function Index() {
               transition={{ delay: 0.3, duration: 0.5 }}
               className="inline-block p-3 bg-[rgb(var(--brand-primary))]/10 rounded-full mb-6"
             >
-              <span className="text-4xl">��</span>
+              <span className="text-4xl">💬</span>
             </motion.div>
             <motion.div
               initial={{ width: 0 }}
@@ -1665,7 +1665,7 @@ export default function Index() {
                 company: "شركة التميز للتجارة",
                 role: "المدير التنفيذي",
                 content:
-                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعاتنا الأونلاين بشكل كبير. شكراً لفريق خطوة المبدع.",
+                  "أفضل استثمار قمنا به! الموقع الإلكتروني الجديد زاد من مبيعاتنا الأونلاين بشكل ك��ير. شكراً لفريق خطوة المبدع.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1689,7 +1689,7 @@ export default function Index() {
                 company: "مؤسسة الشامي التجارية",
                 role: "صاحب المؤسسة",
                 content:
-                  "فريق متفهم لاحتياجاتنا، سرعة في التنفيذ وجودة عالي�� في العمل. نوصي بهم بشدة لكل من يريد التميز.",
+                  "فريق متفهم لاحتياجاتنا، سرعة في التنفيذ وجودة عالية في العمل. نوصي بهم بشدة لكل من يريد التميز.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -2088,7 +2088,7 @@ export default function Index() {
               تواصل معنا الآن
             </h2>
             <p className="text-xl text-white/90 max-w-3xl mx-auto text-pretty">
-              جاهزون لتحويل أفكارك إلى واقع مبهر. تواصل معنا اليوم واحص�� على
+              جاهزون لتحويل أفكارك إلى واقع مبهر. تواصل معنا اليوم واحصل على
               استشارة مجانية
             </p>
           </motion.div>
@@ -2174,7 +2174,7 @@ export default function Index() {
                       تصميم الهوية البصرية
                     </option>
                     <option value="social" className="bg-gray-800">
-                      إدارة وسائل التواصل
+                      إدا��ة وسائل التواصل
                     </option>
                     <option value="printing" className="bg-gray-800">
                       التصميم والطباعة
@@ -2554,7 +2554,7 @@ export default function Index() {
           >
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <div className="text-center md:text-right">
-                <p>&copy; 2024 خ��وة للدعاية والإعلان. جميع الحقوق محفوظة.</p>
+                <p>&copy; 2024 خطوة للدعاية والإعلان. جميع الحقوق محفوظة.</p>
               </div>
 
               <div className="flex items-center gap-6 text-sm">
