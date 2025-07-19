@@ -272,7 +272,7 @@ export default function Index() {
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
                 { href: "#services", text: "خدماتنا", icon: "⚙️" },
                 { href: "#stats", text: "إنجازاتنا", icon: "📊" },
-                { href: "#portfolio", text: "أعمالنا", icon: "💼" },
+                { href: "#portfolio", text: "أعمالن��", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
                 { href: "#suggestions", text: "اقتراحاتك", icon: "💡" },
                 { href: "#contact", text: "تواصل معنا", icon: "📞" },
@@ -548,7 +548,7 @@ export default function Index() {
                 className="btn-secondary text-responsive-lg px-6 sm:px-8 py-3 sm:py-4 flex items-center justify-center gap-2 touch-target mobile-optimized w-full sm:w-auto"
               >
                 <span className="text-xl">👁️</span>
-                <span className="hidden sm:inline">شاهد أعما��نا</span>
+                <span className="hidden sm:inline">شاهد أعمالنا</span>
                 <span className="sm:hidden">أعمالنا</span>
               </motion.a>
             </motion.div>
@@ -812,7 +812,7 @@ export default function Index() {
                 {[
                   {
                     title: "الإبداع اللامحدود",
-                    desc: "تصاميم مبتكرة تعكس هويتك الفريدة وتميزك",
+                    desc: "تصام��م مبتكرة تعكس هويتك الفريدة وتميزك",
                     icon: "🎨",
                     color: "from-pink-500 to-rose-500",
                   },
@@ -1052,7 +1052,7 @@ export default function Index() {
                   "حملات إعلانية مدروسة و��ستهدفة عبر جميع المنصات الرقمية لضمان أفضل عائد استثمار وتحقيق الأهداف المحددة",
                 features: [
                   "فيسب��ك وإنستق��ام المتقدم",
-                  "جوجل أدوردز المتخصص",
+                  "��وجل أدوردز المتخصص",
                   "سناب شات وتيك توك الحدي��",
                   "يوتيوب ولينكد إن الاحترافي",
                 ],
@@ -2088,7 +2088,7 @@ export default function Index() {
               ت��اصل معنا الآن
             </h2>
             <p className="text-xl text-white/90 max-w-3xl mx-auto text-pretty">
-              جاهزون لتحويل أفكارك إلى واقع مبهر. تواصل معنا اليوم واحصل على
+              جاهزون لتحويل أفكارك إلى واقع مبهر. تواصل معنا ال��وم واحصل على
               استشارة مجانية
             </p>
           </motion.div>
