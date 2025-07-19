@@ -830,7 +830,7 @@ export default function Index() {
                   },
                   {
                     title: "الدعم المتواصل",
-                    desc: "مساندة مست��رة لضمان نجاحك وتميزك",
+                    desc: "مساندة مستمرة لضمان نجاحك وتميزك",
                     icon: "🤝",
                     color: "from-purple-500 to-violet-500",
                   },
@@ -1005,7 +1005,7 @@ export default function Index() {
                 features: [
                   "تصميم الشعار الاحترافي",
                   "دليل الهوية البصرية الشامل",
-                  "القرطاسية والمطبوعات التجارية",
+                  "ال��رطاسية والمطبوعات التجارية",
                   "التطبيقات الرقمية والتفاعلية",
                 ],
                 image:
@@ -1403,7 +1403,7 @@ export default function Index() {
               transition={{ delay: 0.3, duration: 0.5 }}
               className="inline-block p-3 bg-[rgb(var(--brand-primary))]/10 rounded-full mb-6"
             >
-              <span className="text-4xl">���</span>
+              <span className="text-4xl">👥</span>
             </motion.div>
             <motion.div
               initial={{ width: 0 }}
@@ -1491,7 +1491,7 @@ export default function Index() {
                 social: ["behance", "dribbble", "instagram"],
                 color: "from-pink-500 to-[rgb(var(--brand-secondary))]",
                 specialties: ["التصميم", "الجرافيك", "الهوية"],
-                quote: "الف�� الحقيقي يكمن في البساطة المعبرة",
+                quote: "الفن الحقيقي يكمن في البساطة المعبرة",
               },
             ].map((member, index) => (
               <motion.div
@@ -1638,7 +1638,7 @@ export default function Index() {
             {[
               {
                 name: "أحمد محمد الأسود",
-                company: "مطعم البركة",
+                company: "م��عم البركة",
                 role: "المدير العام",
                 content:
                   "تعامل راقي ومهني، حققوا لنا زيادة في المبيعات بنسبة 150% خلال 6 أشهر. فريق محترف وإبداعي حقاً.",
@@ -2452,7 +2452,7 @@ export default function Index() {
                   { text: "من نحن", href: "#about" },
                   { text: "أعمالنا", href: "#portfolio" },
                   { text: "فريقنا", href: "#team" },
-                  { text: "آراء العم��اء", href: "#testimonials" },
+                  { text: "آراء العملاء", href: "#testimonials" },
                   { text: "اقتراحاتك", href: "#suggestions" },
                   { text: "تواصل معنا", href: "#contact" },
                   { text: "سياسة الخصوصية", href: "#privacy" },
