@@ -1458,7 +1458,7 @@ export default function Index() {
                 social: ["linkedin", "twitter", "facebook"],
                 color: "from-green-500 to-teal-500",
                 specialties: ["التسويق", "الحملات", "التحليل"],
-                quote: "التسويق الناجح يبدأ بفهم عميق لاحت��اجات العملاء",
+                quote: "التسويق الناجح يبدأ بفهم عميق لاحتياجات العملاء",
               },
               {
                 name: "محمود عبدالغني الشرفي",
