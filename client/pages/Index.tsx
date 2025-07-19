@@ -1427,7 +1427,7 @@ export default function Index() {
           >
             {[
               {
-                name: "يوسف م��مد البرطي",
+                name: "يوسف محمد البرطي",
                 role: "المدير التنفيذي",
                 experience: "قائد الفريق والرؤية الاستراتيجية",
                 image:
