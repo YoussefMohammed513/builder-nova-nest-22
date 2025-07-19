@@ -1570,7 +1570,7 @@ export default function Index() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-2xl mx-auto">
               {[
                 { number: "25+", label: "سنوات خبرة جماعية", icon: "🏆" },
-                { number: "15+", label: "شهاد�� احترافية", icon: "📜" },
+                { number: "15+", label: "شهادة احترافية", icon: "📜" },
                 { number: "100%", label: "التزام بالجودة", icon: "✨" },
               ].map((stat, index) => (
                 <motion.div
