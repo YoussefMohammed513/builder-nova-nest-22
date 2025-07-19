@@ -270,7 +270,7 @@ export default function Index() {
               {[
                 { href: "#home", text: "الرئيسية", icon: "🏠" },
                 { href: "#about", text: "من نحن", icon: "ℹ️" },
-                { href: "#services", text: "خدماتنا", icon: "���️" },
+                { href: "#services", text: "خدماتنا", icon: "⚙️" },
                 { href: "#stats", text: "إنجازاتنا", icon: "📊" },
                 { href: "#portfolio", text: "أعمالنا", icon: "💼" },
                 { href: "#team", text: "فريقنا", icon: "👥" },
@@ -1078,7 +1078,7 @@ export default function Index() {
                 pricing: "اب��داءً من 10$/فيديو",
               },
               {
-                icon: "🌐",
+                icon: "��",
                 title: "تطوير المواق��",
                 description:
                   "مواقع إلكترونية عصرية ومتجاوبة مع جميع الأجهزة مع أفضل تجربة مستخدم وتحسين محركات البحث المتقدم",
@@ -1427,7 +1427,7 @@ export default function Index() {
           >
             {[
               {
-                name: "يوسف محمد البرطي",
+                name: "يوس�� محمد البرطي",
                 role: "المدير التنفيذي",
                 experience: "قائد الفريق والرؤية الاستراتيجية",
                 image:
@@ -1446,7 +1446,7 @@ export default function Index() {
                 social: ["behance", "dribbble", "linkedin"],
                 color:
                   "from-[rgb(var(--brand-primary))] to-[rgb(var(--brand-secondary))]",
-                specialties: ["الإبداع", "التصميم", "الابتكار"],
+                specialties: ["الإبداع", "التصميم", "الا��تكار"],
                 quote: "كل تصميم يحكي قصة، ونحن نكتب أجمل القصص",
               },
               {
@@ -1902,7 +1902,7 @@ export default function Index() {
                     نوع الاقتراح
                   </label>
                   <select className="w-full px-4 py-3 border border-[rgb(var(--outline-variant))] rounded-lg focus:outline-none focus:border-[rgb(var(--brand-primary))] transition-colors">
-                    <option value="">اختر نوع الاقتراح</option>
+                    <option value="">اختر نوع ا��اقتراح</option>
                     <option value="service">تحسين الخدمات</option>
                     <option value="design">تطوير التصاميم</option>
                     <option value="website">تحسين الموقع</option>
