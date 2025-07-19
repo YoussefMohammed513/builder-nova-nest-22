@@ -1646,7 +1646,7 @@ export default function Index() {
                 image:
                   "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
                 date: "منذ شهرين",
-                project: "تصميم هوية بصرية شاملة",
+                project: "تصميم هوية بصري�� شاملة",
               },
               {
                 name: "فاطمة عبدالله السالم",
@@ -1669,7 +1669,7 @@ export default function Index() {
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
-                date: "منذ شهر",
+                date: "منذ ��هر",
                 project: "تطوير موقع إلكتروني متكامل",
               },
               {
@@ -1677,7 +1677,7 @@ export default function Index() {
                 company: "معهد الإبداع التعليمي",
                 role: "مؤسسة المعهد",
                 content:
-                  "تصاميم رائعة وأفك��ر مبتكرة! ساعدونا في جذب الطلاب الجدد وبناء سمعة قوية في السوق التعليمي.",
+                  "تصاميم رائعة وأفكار مبتكرة! ساعدونا في جذب الطلاب الجدد وبناء سمعة قوية في السوق التعليمي.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -1701,7 +1701,7 @@ export default function Index() {
                 company: "صالون الأناقة",
                 role: "مالكة الصالون",
                 content:
-                  "تحسن كبير في حضورنا الرقمي! زبائن جدد كل يوم بفضل الحملات الإ��لانية المدروسة والمحتوى الجذاب.",
+                  "تحسن كبير في حضورنا الرقمي! زبائن جدد كل يوم بفضل الحملات الإعلانية المدروسة والمحتوى الجذاب.",
                 rating: 5,
                 image:
                   "https://images.unsplash.com/photo-1502323777036-f29e3972d82f?ixlib=rb-4.0.3&auto=format&fit=crop&w=300&q=80",
@@ -2120,7 +2120,7 @@ export default function Index() {
                     <input
                       type="text"
                       className="w-full px-4 py-3 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-white/40 transition-colors backdrop-blur-sm"
-                      placeholder="أدخل اسمك الكامل"
+                      placeholder="��دخل اسمك الكامل"
                     />
                   </motion.div>
 
@@ -2198,7 +2198,7 @@ export default function Index() {
                   className="space-y-2"
                 >
                   <label className="block text-white text-sm font-medium">
-                    تفا��يل المشروع
+                    تفاصيل المشروع
                   </label>
                   <textarea
                     rows="4"
@@ -2569,7 +2569,7 @@ export default function Index() {
                   href="#terms"
                   className="hover:text-[rgb(var(--brand-primary))] transition-colors"
                 >
-                  شروط الاستخد��م
+                  شروط الاستخدام
                 </a>
                 <a
                   href="#sitemap"
