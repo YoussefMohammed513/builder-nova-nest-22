@@ -2449,7 +2449,7 @@ export default function Index() {
               </h4>
               <ul className="space-y-3">
                 {[
-                  { text: "م�� نحن", href: "#about" },
+                  { text: "من نحن", href: "#about" },
                   { text: "أعمالنا", href: "#portfolio" },
                   { text: "فريقنا", href: "#team" },
                   { text: "آراء العملاء", href: "#testimonials" },
