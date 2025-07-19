@@ -2241,7 +2241,7 @@ export default function Index() {
                     icon: "📧",
                     title: "البريد الإلكتروني",
                     info: "stepdesign.agency@gmail.com",
-                    description: "نرد خلال سا��ة واحدة",
+                    description: "نرد خلال ساعة واحدة",
                     color: "from-blue-500 to-cyan-500",
                   },
                   {
